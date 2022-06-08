@@ -44,19 +44,19 @@
   &:focus {
     .social-item {
       background-color: $color-white-08;
-      transition: $transition-02;
+      transition: $transition-01;
     }
 
     .h3 {
       color: $color-orange;
-      transition: $transition-02;
+      transition: $transition-01;
     }
   }
 }
 
 .social-item {
   border-radius: 50%;
-  transition: $transition-02;
+  transition: $transition-01;
 }
 
 .social-item__img {

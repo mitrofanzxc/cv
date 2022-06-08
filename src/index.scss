@@ -29,13 +29,13 @@ body {
 
 .body {
   @include scroll;
-  transition: $transition-02;
+  transition: $transition-01;
 }
 
 .body-light {
   background-color: $color-white;
   color: $color-dark;
-  transition: $transition-02;
+  transition: $transition-01;
 }
 
 * {
@@ -78,7 +78,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   @include disableSelection;
-  transition: $transition-02;
+  transition: $transition-01;
 }
 
 .h2 {
@@ -93,7 +93,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   @include disableSelection;
-  transition: $transition-02;
+  transition: $transition-01;
 
   span {
     color: $color-orange;
@@ -110,12 +110,12 @@ body {
   text-align: center;
   text-transform: uppercase;
   @include disableSelection;
-  transition: $transition-02;
+  transition: $transition-01;
 }
 
 .h3-light {
   color: $color-dark;
-  transition: $transition-02;
+  transition: $transition-01;
 }
 
 .h4 {
