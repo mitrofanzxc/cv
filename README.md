@@ -1,3 +1,3 @@
-### Deploy: [CV#2. HTML, CSS & Git Basics](https://mitrofanzxc.github.io/rsschool-cv/)
+### Deploy: [CV#2: React](https://mitrofanzxc.github.io/cv/)
 
-### Deploy: [CV#1. Markdown & Git](https://mitrofanzxc.github.io/rsschool-cv/cv)
+### Deploy: [CV#1: Markdown & Git](https://mitrofanzxc.github.io/cv/cv)
