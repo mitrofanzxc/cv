@@ -1,0 +1,21 @@
+@import '../../sass/Constants.scss';
+
+.skills {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: $base * 4;
+
+  @media (max-width: $breakpoint-md-min) {
+    gap: $base * 3;
+  }
+
+  @media (max-width: $breakpoint-sm-min) {
+    gap: $base * 2;
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    gap: $base;
+  }
+}

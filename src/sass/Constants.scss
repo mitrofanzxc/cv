@@ -1,0 +1,185 @@
+// === MIXIN ===
+
+@mixin scroll {
+  &::-webkit-scrollbar {
+    width: $base;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-dark-02;
+    border-radius: none;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 $base $color-white-05;
+    border-radius: none;
+    height: $base;
+    background-color: $color-white-09;
+  }
+}
+
+@mixin poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+@mixin disableSelection {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+// === / MIXIN ===
+
+// === FUNCTIONS ===
+
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@function rem($num) {
+  @return (strip-unit($num) / 16) * 1rem;
+}
+
+// === / FUNCTIONS ===
+
+// === VARIABLES ===
+
+$base: rem(5px);
+
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+
+$fs-xxs: rem(11px);
+$fs-xs: rem(12px);
+$fs-s: rem(13px);
+$fs-m: rem(14px);
+$fs-l: rem(16px);
+$fs-xl: rem(22px);
+$fs-xxl: rem(26px);
+$fs-xxxl: rem(36px);
+$fs-xxxxl: rem(50px);
+
+$transition-01: 0.1s;
+$transition-02: 0.2s;
+$transition: 0.3s;
+
+$color-dark: rgba(18, 18, 18, 1);
+$color-dark-02: rgba(18, 18, 18, 0.2);
+$color-dark-03: rgba(18, 18, 18, 0.3);
+$color-dark-04: rgba(18, 18, 18, 0.4);
+$color-dark-05: rgba(18, 18, 18, 0.5);
+$color-dark-06: rgba(18, 18, 18, 0.6);
+$color-dark-07: rgba(18, 18, 18, 0.7);
+$color-dark-08: rgba(18, 18, 18, 0.8);
+$color-dark-09: rgba(18, 18, 18, 0.9);
+$color-grey: rgba(229, 229, 229, 1);
+$color-grey-02: rgba(243, 243, 243, 0.2);
+$color-grey-03: rgba(243, 243, 243, 0.3);
+$color-grey-04: rgba(243, 243, 243, 0.4);
+$color-grey-05: rgba(243, 243, 243, 0.5);
+$color-grey-06: rgba(243, 243, 243, 0.6);
+$color-grey-07: rgba(243, 243, 243, 0.7);
+$color-grey-08: rgba(243, 243, 243, 0.8);
+$color-grey-09: rgba(243, 243, 243, 0.9);
+$color-blue-grey: rgba(96, 125, 139, 1);
+$color-blue-grey-02: rgba(96, 125, 139, 0.2);
+$color-blue-grey-03: rgba(96, 125, 139, 0.3);
+$color-blue-grey-04: rgba(96, 125, 139, 0.4);
+$color-blue-grey-05: rgba(96, 125, 139, 0.5);
+$color-blue-grey-06: rgba(96, 125, 139, 0.6);
+$color-blue-grey-07: rgba(96, 125, 139, 0.7);
+$color-blue-grey-08: rgba(96, 125, 139, 0.8);
+$color-blue-grey-09: rgba(96, 125, 139, 0.9);
+$color-white: rgba(255, 255, 255, 1);
+$color-white-02: rgba(255, 255, 255, 0.2);
+$color-white-03: rgba(255, 255, 255, 0.3);
+$color-white-04: rgba(255, 255, 255, 0.4);
+$color-white-05: rgba(255, 255, 255, 0.5);
+$color-white-06: rgba(255, 255, 255, 0.6);
+$color-white-07: rgba(255, 255, 255, 0.7);
+$color-white-08: rgba(255, 255, 255, 0.8);
+$color-white-09: rgba(255, 255, 255, 0.9);
+$color-orange: rgba(236, 122, 92, 1);
+$color-orange-02: rgba(236, 122, 92, 0.2);
+$color-orange-03: rgba(236, 122, 92, 0.3);
+$color-orange-04: rgba(236, 122, 92, 0.4);
+$color-orange-05: rgba(236, 122, 92, 0.5);
+$color-orange-06: rgba(236, 122, 92, 0.6);
+$color-orange-07: rgba(236, 122, 92, 0.7);
+$color-orange-08: rgba(236, 122, 92, 0.8);
+$color-orange-09: rgba(236, 122, 92, 0.9);
+$color-error: rgba(214, 19, 19, 1);
+$color-error-02: rgba(214, 19, 19, 0.2);
+$color-error-03: rgba(214, 19, 19, 0.3);
+$color-error-04: rgba(214, 19, 19, 0.4);
+$color-error-05: rgba(214, 19, 19, 0.5);
+$color-error-06: rgba(214, 19, 19, 0.6);
+$color-error-07: rgba(214, 19, 19, 0.7);
+$color-error-08: rgba(214, 19, 19, 0.8);
+$color-error-09: rgba(214, 19, 19, 0.9);
+$color-green: rgba(0, 255, 119, 1);
+$color-green-02: rgba(0, 255, 119, 0.2);
+$color-green-03: rgba(0, 255, 119, 0.3);
+$color-green-04: rgba(0, 255, 119, 0.4);
+$color-green-05: rgba(0, 255, 119, 0.5);
+$color-green-06: rgba(0, 255, 119, 0.6);
+$color-green-07: rgba(0, 255, 119, 0.7);
+$color-green-08: rgba(0, 255, 119, 0.8);
+$color-green-09: rgba(0, 255, 119, 0.9);
+$color-blue: rgba(0, 3, 51, 1);
+$color-blue-02: rgba(0, 3, 51, 0.2);
+$color-blue-03: rgba(0, 3, 51, 0.3);
+$color-blue-04: rgba(0, 3, 51, 0.4);
+$color-blue-05: rgba(0, 3, 51, 0.5);
+$color-blue-06: rgba(0, 3, 51, 0.6);
+$color-blue-07: rgba(0, 3, 51, 0.7);
+$color-blue-08: rgba(0, 3, 51, 0.8);
+$color-blue-09: rgba(0, 3, 51, 0.9);
+$color-yellow: rgba(233, 192, 10, 1);
+$color-yellow-02: rgba(233, 192, 10, 0.2);
+$color-yellow-03: rgba(233, 192, 10, 0.3);
+$color-yellow-04: rgba(233, 192, 10, 0.4);
+$color-yellow-05: rgba(233, 192, 10, 0.5);
+$color-yellow-06: rgba(233, 192, 10, 0.6);
+$color-yellow-07: rgba(233, 192, 10, 0.7);
+$color-yellow-08: rgba(233, 192, 10, 0.8);
+$color-yellow-09: rgba(233, 192, 10, 0.9);
+$color-purple: rgba(101, 81, 243, 1);
+$color-purple-02: rgba(101, 81, 243, 0.2);
+$color-purple-03: rgba(101, 81, 243, 0.3);
+$color-purple-04: rgba(101, 81, 243, 0.4);
+$color-purple-05: rgba(101, 81, 243, 0.5);
+$color-purple-06: rgba(101, 81, 243, 0.6);
+$color-purple-07: rgba(101, 81, 243, 0.7);
+$color-purple-08: rgba(101, 81, 243, 0.8);
+$color-purple-09: rgba(101, 81, 243, 0.9);
+
+$breakpoint-xxs-min: 320px;
+$breakpoint-xs-min: 480px;
+$breakpoint-sm-min: 576px;
+$breakpoint-md-min: 768px;
+$breakpoint-lg-min: 992px;
+$breakpoint-xl-min: 1200px;
+$breakpoint-xxl-min: 1440px;
+
+$breakpoint-xxxs-max: $breakpoint-xxs-min - 1px;
+$breakpoint-xxs-max: $breakpoint-xs-min - 1px;
+$breakpoint-xs-max: $breakpoint-sm-min - 1px;
+$breakpoint-sm-max: $breakpoint-md-min - 1px;
+$breakpoint-md-max: $breakpoint-lg-min - 1px;
+$breakpoint-lg-max: $breakpoint-xl-min - 1px;
+$breakpoint-xl-max: $breakpoint-xxl-min - 1px;
+
+$calcWidth: 100%;
+
+$total-lines: 4;
+$left-offset: $base * 6;
+$clip-height: $base * 10;
+$line-height: $clip-height - $base;
+
+// === / VARIABLES ===
