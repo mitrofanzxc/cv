@@ -1,7 +1,7 @@
 {
-  "name": "rsschool-cv",
+  "name": "cv",
   "version": "0.1.0",
-  "homepage": "https://mitrofanzxc.github.io/rsschool-cv",
+  "homepage": "https://mitrofanzxc.github.io/cv",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
