@@ -1,0 +1,72 @@
+@import '../../../sass/Constants.scss';
+
+.list-item__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: $base;
+  width: 31%;
+
+  @media (max-width: $breakpoint-sm-min) {
+    width: 47%;
+  }
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-white;
+  border-radius: $base * 4;
+  border: $base solid $color-orange;
+  overflow: hidden;
+}
+
+.list-item__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: $base * 2;
+  pointer-events: none;
+  @include disableSelection;
+
+  @media (max-width: $breakpoint-xs-min) {
+    padding: $base;
+  }
+}
+
+.social-item__wrapper {
+  cursor: pointer;
+
+  &:hover,
+  &:active,
+  &:focus {
+    .social-item {
+      background-color: $color-white-08;
+      transition: $transition-02;
+    }
+
+    .h3 {
+      color: $color-orange;
+      transition: $transition-02;
+    }
+  }
+}
+
+.social-item {
+  border-radius: 50%;
+  transition: $transition-02;
+}
+
+.social-item__img {
+  padding: $base * 7;
+
+  @media (max-width: $breakpoint-xs-min) {
+    padding: $base * 5;
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    padding: $base * 4;
+  }
+}

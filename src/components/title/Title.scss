@@ -1,0 +1,32 @@
+@import '../../sass/Constants.scss';
+
+.title__wrapper {
+  position: relative;
+  padding: $base * 4 0;
+}
+
+.title {
+  font-size: $base * 8;
+  font-weight: $fw-bold;
+}
+
+.title-bg {
+  @include disableSelection;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  font-size: calc(3em + 4vw);
+  font-weight: $fw-bold;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: $color-white-02;
+
+  @media (max-width: $breakpoint-xs-min) {
+    font-size: calc(2em + 4vw);
+  }
+}
+
+.title-bg-light {
+  color: $color-blue-grey-02;
+}

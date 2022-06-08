@@ -1,0 +1,68 @@
+@import '../../sass/Constants.scss';
+
+.main-page {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.avatar__wrapper {
+  @include disableSelection;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 40%;
+  border-radius: $base * 4;
+}
+
+.avatar {
+  width: 100%;
+  height: auto;
+  border-radius: $base * 4;
+  box-shadow: -$base $base $base $color-dark;
+  pointer-events: none;
+}
+
+.home__container {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: $base * 3;
+  flex-basis: 55%;
+
+  .h1,
+  .h2 {
+    text-align: end;
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    flex-basis: 65%;
+  }
+}
+
+.home__about {
+  width: 90%;
+  margin-top: $base * 5;
+  font-size: calc(0.1em + 1.5vw);
+  font-weight: $fw-semi-bold;
+  letter-spacing: 0.125rem;
+  line-height: $base * 5;
+  @include disableSelection;
+
+  @media (max-width: $breakpoint-sm-min) {
+    font-size: calc(0.5em + 1.5vw);
+  }
+}
+
+.color__block {
+  position: fixed;
+  top: -50%;
+  left: -83%;
+  z-index: 1;
+  width: 100%;
+  height: 200%;
+  transform: rotate(-15deg);
+  background: linear-gradient(165deg, $color-white 0%, $color-green 80%);
+}
