@@ -27,13 +27,9 @@
   display: block;
   width: 100%;
   height: auto;
-  padding: $base * 2;
+  border-radius: $base * 2;
   pointer-events: none;
   @include disableSelection;
-
-  @media (max-width: $breakpoint-xs-min) {
-    padding: $base;
-  }
 }
 
 .social-item__wrapper {
