@@ -1,5 +1,6 @@
 import { ILIST } from './interface';
 
+import imgRsschoolStage3 from '../images/icons/certificates/rsschoolstage3.jpg';
 import imgRsschoolStage0 from '../images/icons/certificates/rsschoolstage0.jpg';
 import imgEfset from '../images/icons/certificates/efset.jpg';
 import imgReactSolo from '../images/icons/certificates/reactreduxsololearn.jpg';
@@ -11,6 +12,14 @@ import imgHtmlSolo from '../images/icons/certificates/htmlsololearn.jpg';
 import imgSqlSolo from '../images/icons/certificates/sqlsololearn.jpg';
 
 const CERTIFICATES_LIST: ILIST[] = [
+  {
+    src: imgRsschoolStage3,
+    alt: 'RSSchool Stage 3',
+    altRu: 'РССкул Стадия 3',
+    description: 'RSSchool Stage 3',
+    descriptionRu: 'РССкул Стадия 3',
+    id: '8bf20ac4-4eac-496c-88ce-36a972c48521',
+  },
   {
     src: imgRsschoolStage0,
     alt: 'RSSchool Stage 0',

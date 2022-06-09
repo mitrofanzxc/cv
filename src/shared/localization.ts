@@ -3,7 +3,7 @@ export const LOCALIZATION = {
     name: 'Дмитрий Каракулько',
     specialization: 'Фронт-енд Разработчик',
     aboutMe: `Крайне заинтересован в направлении Фронт-енд разработки, так как считаю, что
-    разработка качественного пользовательского интерфейса, улучшение пользовательского опыта являются ключевыми
+    разработка качественного пользовательского интерфейса, улучшение пользовательского опыта - являются ключевыми
     источники успеха для любого веб-приложения.`,
     notFound: 'Не найдено',
     resourseRequest: 'Запрашиваемый ресурс не найден!',
@@ -24,7 +24,7 @@ export const LOCALIZATION = {
     name: 'Dzmitry Karakulka',
     specialization: 'Front-end Developer',
     aboutMe: `Extremely interested in the direction of Front-end development, as I believe that the
-    development of a high-quality user interface, improving user experience are the key
+    development of a high-quality user interface, improving user experience - are the key
     sources of success for any web application.`,
     notFound: 'Not Found',
     resourseRequest: 'The resourse requested could not be found!',
