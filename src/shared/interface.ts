@@ -25,6 +25,8 @@ export interface ILIST {
   altRu?: string;
   description: string;
   descriptionRu: string;
+  deploy?: string;
+  code?: string;
   key?: string;
   id?: string;
   language?: string;

@@ -17,6 +17,8 @@ const PORTFOLIO_LIST: ILIST[] = [
     altRu: 'Приложение для управления проектами',
     description: 'Project Management App',
     descriptionRu: 'Приложение для управления проектами',
+    deploy: '',
+    code: '',
     id: '1df505e9-67d7-44d5-af50-1bec2252c8b6',
   },
   {
@@ -25,6 +27,8 @@ const PORTFOLIO_LIST: ILIST[] = [
     altRu: 'РССкул Стадия 3',
     description: 'RSSchool Stage 3',
     descriptionRu: 'РССкул Стадия 3',
+    deploy: '',
+    code: '',
     id: '95d33a4d-1c55-45b0-855e-85a8f1281582',
   },
   {
@@ -33,6 +37,8 @@ const PORTFOLIO_LIST: ILIST[] = [
     altRu: 'CSS Мем Слайдер',
     description: 'СSS Mem Slider',
     descriptionRu: 'CSS Мем Слайдер',
+    deploy: '',
+    code: '',
     id: 'db26059a-66ad-43d1-9e8c-d4e8db8b364e',
   },
   {
@@ -41,6 +47,8 @@ const PORTFOLIO_LIST: ILIST[] = [
     altRu: 'Виртуальная Клавиатура',
     description: 'Virtual Keyboard',
     descriptionRu: 'Виртуальная Клавиатура',
+    deploy: '',
+    code: '',
     id: '043762e5-3f6b-4dc2-9af4-b301baba32ef',
   },
   {
@@ -49,6 +57,8 @@ const PORTFOLIO_LIST: ILIST[] = [
     altRu: 'Умный Магазин',
     description: 'Clever Shop',
     descriptionRu: 'Умный Магазин',
+    deploy: '',
+    code: '',
     id: 'ca102e38-7dff-4a39-8e32-cb57cad0bffd',
   },
   {
@@ -57,6 +67,8 @@ const PORTFOLIO_LIST: ILIST[] = [
     altRu: 'Приют',
     description: 'Shelter',
     descriptionRu: 'Приют',
+    deploy: '',
+    code: '',
     id: '4ae3c9ac-d607-40db-8a03-2930cc0ae753',
   },
   {
@@ -65,6 +77,8 @@ const PORTFOLIO_LIST: ILIST[] = [
     altRu: 'Пользовательский Видеоплеер',
     description: 'Custom Video Player',
     descriptionRu: 'Пользовательский Видеоплеер',
+    deploy: '',
+    code: '',
     id: '62a00433-8549-44c7-b14d-5826b0e42634',
   },
   {
@@ -73,6 +87,8 @@ const PORTFOLIO_LIST: ILIST[] = [
     altRu: 'Портфолио',
     description: 'Portfolio',
     descriptionRu: 'Портфолио',
+    deploy: '',
+    code: '',
     id: '7e44fd62-022f-41c3-a3e0-5c1396f7eae3',
   },
   {
@@ -81,6 +97,8 @@ const PORTFOLIO_LIST: ILIST[] = [
     altRu: 'Веб-разработка',
     description: 'WebDev',
     descriptionRu: 'Веб-разработка',
+    deploy: '',
+    code: '',
     id: '42f74b42-0daf-4e1e-97d3-1cfa53cc841a',
   },
 ];

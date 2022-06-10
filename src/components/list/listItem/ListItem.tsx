@@ -12,8 +12,10 @@ const ListItem: FC<ILIST> = ({
   altRu,
   description,
   descriptionRu,
-  key,
   link,
+  deploy,
+  code,
+  key,
   language,
 }) => {
   const { about, portfolio, certificates, contacts } = PATHS;
@@ -34,6 +36,11 @@ const ListItem: FC<ILIST> = ({
         <li key={key} className="list-item__wrapper">
           <div className="list-item">
             <img src={src} alt={language === 'en' ? alt : altRu} className="list-item__img" />
+            <div className="list-item-hover">
+              <a href={link} target="_blank" rel="noreferrer noopener" className="list-item-link">
+                {LOCALIZATION[LANG].link}
+              </a>
+            </div>
           </div>
           <h3 className="h3">{language === 'en' ? description : descriptionRu}</h3>
         </li>
@@ -43,10 +50,10 @@ const ListItem: FC<ILIST> = ({
           <div className="list-item">
             <img src={src} alt={language === 'en' ? alt : altRu} className="list-item__img" />
             <div className="list-item-hover">
-              <a href="" target="_blank" rel="noreferrer noopener" className="list-item-link">
+              <a href={deploy} target="_blank" rel="noreferrer noopener" className="list-item-link">
                 {LOCALIZATION[LANG].deploy}
               </a>
-              <a href="" target="_blank" rel="noreferrer noopener" className="list-item-link">
+              <a href={code} target="_blank" rel="noreferrer noopener" className="list-item-link">
                 {LOCALIZATION[LANG].code}
               </a>
             </div>

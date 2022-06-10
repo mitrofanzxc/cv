@@ -8,7 +8,7 @@ import './List.scss';
 const List: FC<ILIST_PROPS> = ({ list, language }) => {
   return (
     <ul className="list">
-      {list.map(({ src, alt, altRu, description, descriptionRu, id, link }) => {
+      {list.map(({ src, alt, altRu, description, descriptionRu, link, deploy, code, id }) => {
         return (
           <ListItem
             src={src}
@@ -16,8 +16,10 @@ const List: FC<ILIST_PROPS> = ({ list, language }) => {
             altRu={altRu}
             description={description}
             descriptionRu={descriptionRu}
-            key={id}
             link={link}
+            deploy={deploy}
+            code={code}
+            key={id}
             language={language}
           />
         );

@@ -18,6 +18,7 @@ const CERTIFICATES_LIST: ILIST[] = [
     altRu: 'РССкул Стадия 3',
     description: 'RSSchool Stage 3',
     descriptionRu: 'РССкул Стадия 3',
+    link: 'https://app.rs.school/certificate/nyjj4w4a',
     id: '8bf20ac4-4eac-496c-88ce-36a972c48521',
   },
   {
@@ -26,6 +27,7 @@ const CERTIFICATES_LIST: ILIST[] = [
     altRu: 'РССкул Стадия 0',
     description: 'RSSchool Stage 0',
     descriptionRu: 'РССкул Стадия 0',
+    link: 'https://app.rs.school/certificate/nh8m3dkn',
     id: '11bbabb1-702c-4989-a409-703520b75b60',
   },
   {
@@ -34,6 +36,7 @@ const CERTIFICATES_LIST: ILIST[] = [
     altRu: 'Efset Английский',
     description: 'Efset English',
     descriptionRu: 'Efset Английский',
+    link: 'https://www.efset.org/cert/xmuzdG',
     id: '9f169aee-7c4a-40a7-b7cd-604d80b2844f',
   },
   {
@@ -42,6 +45,7 @@ const CERTIFICATES_LIST: ILIST[] = [
     altRu: 'Реакт + Редакс Сололеарн',
     description: 'React + Redux Sololearn',
     descriptionRu: 'Реакт + Редакс Сололеарн',
+    link: 'https://www.sololearn.com/Certificate/1097-24283992/jpg',
     id: '736594ff-5b04-4244-855a-36eab11ac671',
   },
   {
@@ -50,6 +54,7 @@ const CERTIFICATES_LIST: ILIST[] = [
     altRu: 'JQuery Сололеарн',
     description: 'JQuery Sololearn',
     descriptionRu: 'JQuery Сололеарн',
+    link: 'https://www.sololearn.com/Certificate/1082-24283992/jpg',
     id: '421a7e1e-f33c-4ec5-ac44-7e43fc45d4fd',
   },
   {
@@ -58,6 +63,7 @@ const CERTIFICATES_LIST: ILIST[] = [
     altRu: 'ДжаваСкрипт Сололеарн',
     description: 'JavaScript Sololearn',
     descriptionRu: 'ДжаваСкрипт Сололеарн',
+    link: 'https://www.sololearn.com/certificates/course/en/24283992/1024/landscape/png',
     id: '8e2200ea-daeb-4061-a595-d3ca144868f3',
   },
   {
@@ -66,6 +72,7 @@ const CERTIFICATES_LIST: ILIST[] = [
     altRu: 'Адаптивный Веб-дизайн Сололеарн',
     description: 'Responsive Web Design Sololearn',
     descriptionRu: 'Адаптивный Веб-дизайн Сололеарн',
+    link: 'https://www.sololearn.com/Certificate/1162-24283992/jpg',
     id: '934e34a8-afdf-4521-9007-1b74defb0c16',
   },
   {
@@ -74,6 +81,7 @@ const CERTIFICATES_LIST: ILIST[] = [
     altRu: 'CSS Сололеарн',
     description: 'CSS Sololearn',
     descriptionRu: 'CSS Сололеарн',
+    link: 'https://www.sololearn.com/Certificate/1023-24283992/jpg',
     id: 'd8c6d7ee-692b-4f08-ab86-20e285de57c6',
   },
   {
@@ -82,6 +90,7 @@ const CERTIFICATES_LIST: ILIST[] = [
     altRu: 'HTML Сололеарн',
     description: 'HTML Sololearn',
     descriptionRu: 'HTML Сололеарн',
+    link: 'https://www.sololearn.com/Certificate/1014-24283992/jpg',
     id: '23dd870d-bab7-47c2-953d-8f7c904739f5',
   },
   {
@@ -90,6 +99,7 @@ const CERTIFICATES_LIST: ILIST[] = [
     altRu: 'SQL Сололеарн',
     description: 'SQL Sololearn',
     descriptionRu: 'SQL Сололеарн',
+    link: 'https://www.sololearn.com/certificates/course/en/24283992/1060/landscape/png',
     id: '05a4df37-b839-4e75-bedd-586aa963214f',
   },
 ];
