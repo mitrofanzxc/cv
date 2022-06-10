@@ -1,7 +1,6 @@
 import { FC } from 'react';
 import { Outlet } from 'react-router-dom';
 import { ISTATE } from '../../shared/interface';
-
 import { Header } from '../index';
 
 const Layout: FC<ISTATE> = ({
