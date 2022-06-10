@@ -1,7 +1,6 @@
 import { FC } from 'react';
 import { ISTATE } from '../../shared/interface';
 import { LOCALIZATION } from '../../shared/localization';
-
 import { Title } from '../../components/title/Title';
 import { SOCIALS_LIST } from '../../shared/socials';
 import { List } from '../../components/list/List';
