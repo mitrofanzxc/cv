@@ -1,0 +1,31 @@
+@import '../../sass/Constants.scss';
+
+.list-item__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: $base * 2;
+  pointer-events: none;
+  @include disableSelection;
+}
+
+.list-item__img-loading {
+  filter: blur($base);
+}
+
+.list-item__img-onload {
+  filter: blur(0);
+  transition: filter $transition-02 linear;
+}
+
+.social-item__img {
+  padding: $base * 7;
+
+  @media (max-width: $breakpoint-xs-min) {
+    padding: $base * 5;
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    padding: $base * 4;
+  }
+}

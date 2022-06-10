@@ -21,6 +21,7 @@ export const LOCALIZATION = {
     resume: 'Резюме',
     deploy: 'Деплой',
     code: 'Код',
+    link: 'Ссылка',
   },
   en: {
     name: 'Dzmitry Karakulka',
@@ -44,5 +45,6 @@ export const LOCALIZATION = {
     resume: 'Resume',
     deploy: 'Deploy',
     code: 'Code',
+    link: 'Link',
   },
 };

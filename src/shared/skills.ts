@@ -1,23 +1,38 @@
 import { ILIST } from './interface';
 
 import imgReact from '../images/icons/skills/react.png';
+import imgReactSmall from '../images/icons/skills/react-small.png';
 import imgRedux from '../images/icons/skills/redux.png';
+import imgReduxSmall from '../images/icons/skills/redux-small.png';
 import imgTs from '../images/icons/skills/ts.png';
+import imgTsSmall from '../images/icons/skills/ts-small.png';
 import imgRtl from '../images/icons/skills/react-testing-library.png';
+import imgRtlSmall from '../images/icons/skills/react-testing-library-small.png';
 import imgJs from '../images/icons/skills/js.png';
+import imgJsSmall from '../images/icons/skills/js-small.png';
 import imgSass from '../images/icons/skills/sass.png';
+import imgSassSmall from '../images/icons/skills/sass-small.png';
 import imgCss from '../images/icons/skills/css.png';
+import imgCssSmall from '../images/icons/skills/css-small.png';
 import imgHtml from '../images/icons/skills/html.png';
+import imgHtmlSmall from '../images/icons/skills/html-small.png';
 import imgGit from '../images/icons/skills/git.png';
+import imgGitSmall from '../images/icons/skills/git-small.png';
 import imgVscode from '../images/icons/skills/vscode.png';
+import imgVscodeSmall from '../images/icons/skills/vscode-small.png';
 import imgWebpack from '../images/icons/skills/webpack.png';
+import imgWebpackSmall from '../images/icons/skills/webpack-small.png';
 import imgGulp from '../images/icons/skills/gulp.png';
+import imgGulpSmall from '../images/icons/skills/gulp-small.png';
 import imgFigma from '../images/icons/skills/figma.png';
+import imgFigmaSmall from '../images/icons/skills/figma-small.png';
 import imgPhotoshop from '../images/icons/skills/photoshop.png';
+import imgPhotoshopSmall from '../images/icons/skills/photoshop-small.png';
 
 const SKILLS_LIST: ILIST[] = [
   {
     src: imgReact,
+    srcSmall: imgReactSmall,
     alt: 'React',
     altRu: 'Реакт',
     description: 'React',
@@ -26,6 +41,7 @@ const SKILLS_LIST: ILIST[] = [
   },
   {
     src: imgRedux,
+    srcSmall: imgReduxSmall,
     alt: 'Redux',
     altRu: 'Редакс',
     description: 'Redux',
@@ -34,6 +50,7 @@ const SKILLS_LIST: ILIST[] = [
   },
   {
     src: imgTs,
+    srcSmall: imgTsSmall,
     alt: 'TypeScript',
     altRu: 'ТайпСкрипт',
     description: 'TypeScript',
@@ -42,6 +59,7 @@ const SKILLS_LIST: ILIST[] = [
   },
   {
     src: imgRtl,
+    srcSmall: imgRtlSmall,
     alt: 'React Testing Library',
     altRu: 'Библиотека Тестирования Реакт',
     description: 'React Testing Library',
@@ -50,6 +68,7 @@ const SKILLS_LIST: ILIST[] = [
   },
   {
     src: imgJs,
+    srcSmall: imgJsSmall,
     alt: 'JavaScript',
     altRu: 'ДжаваСкрипт',
     description: 'JavaScript',
@@ -58,6 +77,7 @@ const SKILLS_LIST: ILIST[] = [
   },
   {
     src: imgSass,
+    srcSmall: imgSassSmall,
     alt: 'SASS / SCSS',
     altRu: 'SASS / SCSS',
     description: 'SASS / SCSS',
@@ -66,6 +86,7 @@ const SKILLS_LIST: ILIST[] = [
   },
   {
     src: imgCss,
+    srcSmall: imgCssSmall,
     alt: 'CSS',
     altRu: 'CSS',
     description: 'CSS',
@@ -74,6 +95,7 @@ const SKILLS_LIST: ILIST[] = [
   },
   {
     src: imgHtml,
+    srcSmall: imgHtmlSmall,
     alt: 'HTML',
     altRu: 'HTML',
     description: 'HTML',
@@ -82,6 +104,7 @@ const SKILLS_LIST: ILIST[] = [
   },
   {
     src: imgGit,
+    srcSmall: imgGitSmall,
     alt: 'Git / GitHub',
     altRu: 'Гит / ГитХаб',
     description: 'Git / GitHub',
@@ -90,6 +113,7 @@ const SKILLS_LIST: ILIST[] = [
   },
   {
     src: imgVscode,
+    srcSmall: imgVscodeSmall,
     alt: 'VS Code',
     altRu: 'VS Code',
     description: 'VS Code',
@@ -98,6 +122,7 @@ const SKILLS_LIST: ILIST[] = [
   },
   {
     src: imgWebpack,
+    srcSmall: imgWebpackSmall,
     alt: 'WebPack',
     altRu: 'ВебПак',
     description: 'WebPack',
@@ -106,6 +131,7 @@ const SKILLS_LIST: ILIST[] = [
   },
   {
     src: imgGulp,
+    srcSmall: imgGulpSmall,
     alt: 'Gulp',
     altRu: 'Галп',
     description: 'Gulp',
@@ -114,6 +140,7 @@ const SKILLS_LIST: ILIST[] = [
   },
   {
     src: imgFigma,
+    srcSmall: imgFigmaSmall,
     alt: 'Figma',
     altRu: 'Фигма',
     description: 'Figma',
@@ -122,6 +149,7 @@ const SKILLS_LIST: ILIST[] = [
   },
   {
     src: imgPhotoshop,
+    srcSmall: imgPhotoshopSmall,
     alt: 'Photoshop',
     altRu: 'Фотошоп',
     description: 'Photoshop',
