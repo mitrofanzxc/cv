@@ -9,6 +9,7 @@ import imgInstagram from '../images/icons/socials/instagram.png';
 const SOCIALS_LIST: ILIST[] = [
   {
     src: imgLinkedin,
+    srcSmall: imgLinkedin,
     alt: 'Linkedin',
     altRu: 'Линкедин',
     description: 'Linkedin',
@@ -18,6 +19,7 @@ const SOCIALS_LIST: ILIST[] = [
   },
   {
     src: imgGithub,
+    srcSmall: imgGithub,
     alt: 'GitHub',
     altRu: 'ГитХаб',
     description: 'GitHub',
@@ -27,6 +29,7 @@ const SOCIALS_LIST: ILIST[] = [
   },
   {
     src: imgCodewars,
+    srcSmall: imgCodewars,
     alt: 'CodeWars',
     altRu: 'КодВарс',
     description: 'CodeWars',
@@ -36,6 +39,7 @@ const SOCIALS_LIST: ILIST[] = [
   },
   {
     src: imgYoutube,
+    srcSmall: imgYoutube,
     alt: 'YouTube',
     altRu: 'Ютуб',
     description: 'YouTube',
@@ -45,6 +49,7 @@ const SOCIALS_LIST: ILIST[] = [
   },
   {
     src: imgInstagram,
+    srcSmall: imgInstagram,
     alt: 'Instagram',
     altRu: 'Инстаграм',
     description: 'Instagram',

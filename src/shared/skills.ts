@@ -18,6 +18,7 @@ import imgPhotoshop from '../images/icons/skills/photoshop.png';
 const SKILLS_LIST: ILIST[] = [
   {
     src: imgReact,
+    srcSmall: imgReact,
     alt: 'React',
     altRu: 'Реакт',
     description: 'React',
@@ -26,6 +27,7 @@ const SKILLS_LIST: ILIST[] = [
   },
   {
     src: imgRedux,
+    srcSmall: imgRedux,
     alt: 'Redux',
     altRu: 'Редакс',
     description: 'Redux',
@@ -34,6 +36,7 @@ const SKILLS_LIST: ILIST[] = [
   },
   {
     src: imgTs,
+    srcSmall: imgTs,
     alt: 'TypeScript',
     altRu: 'ТайпСкрипт',
     description: 'TypeScript',
@@ -42,6 +45,7 @@ const SKILLS_LIST: ILIST[] = [
   },
   {
     src: imgRtl,
+    srcSmall: imgRtl,
     alt: 'React Testing Library',
     altRu: 'Библиотека Тестирования Реакт',
     description: 'React Testing Library',
@@ -50,6 +54,7 @@ const SKILLS_LIST: ILIST[] = [
   },
   {
     src: imgJs,
+    srcSmall: imgJs,
     alt: 'JavaScript',
     altRu: 'ДжаваСкрипт',
     description: 'JavaScript',
@@ -58,6 +63,7 @@ const SKILLS_LIST: ILIST[] = [
   },
   {
     src: imgSass,
+    srcSmall: imgSass,
     alt: 'SASS / SCSS',
     altRu: 'SASS / SCSS',
     description: 'SASS / SCSS',
@@ -66,6 +72,7 @@ const SKILLS_LIST: ILIST[] = [
   },
   {
     src: imgCss,
+    srcSmall: imgCss,
     alt: 'CSS',
     altRu: 'CSS',
     description: 'CSS',
@@ -74,6 +81,7 @@ const SKILLS_LIST: ILIST[] = [
   },
   {
     src: imgHtml,
+    srcSmall: imgHtml,
     alt: 'HTML',
     altRu: 'HTML',
     description: 'HTML',
@@ -82,6 +90,7 @@ const SKILLS_LIST: ILIST[] = [
   },
   {
     src: imgGit,
+    srcSmall: imgGit,
     alt: 'Git / GitHub',
     altRu: 'Гит / ГитХаб',
     description: 'Git / GitHub',
@@ -90,6 +99,7 @@ const SKILLS_LIST: ILIST[] = [
   },
   {
     src: imgVscode,
+    srcSmall: imgVscode,
     alt: 'VS Code',
     altRu: 'VS Code',
     description: 'VS Code',
@@ -98,6 +108,7 @@ const SKILLS_LIST: ILIST[] = [
   },
   {
     src: imgWebpack,
+    srcSmall: imgWebpack,
     alt: 'WebPack',
     altRu: 'ВебПак',
     description: 'WebPack',
@@ -106,6 +117,7 @@ const SKILLS_LIST: ILIST[] = [
   },
   {
     src: imgGulp,
+    srcSmall: imgGulp,
     alt: 'Gulp',
     altRu: 'Галп',
     description: 'Gulp',
@@ -114,6 +126,7 @@ const SKILLS_LIST: ILIST[] = [
   },
   {
     src: imgFigma,
+    srcSmall: imgFigma,
     alt: 'Figma',
     altRu: 'Фигма',
     description: 'Figma',
@@ -122,6 +135,7 @@ const SKILLS_LIST: ILIST[] = [
   },
   {
     src: imgPhotoshop,
+    srcSmall: imgPhotoshop,
     alt: 'Photoshop',
     altRu: 'Фотошоп',
     description: 'Photoshop',

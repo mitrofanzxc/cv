@@ -20,9 +20,10 @@ export interface IPATHS {
 
 export interface ILIST {
   link?: string;
-  src?: string;
-  alt?: string;
-  altRu?: string;
+  src: string;
+  srcSmall: string;
+  alt: string;
+  altRu: string;
   description: string;
   descriptionRu: string;
   deploy?: string;
@@ -35,6 +36,17 @@ export interface ILIST {
 export interface ILIST_PROPS {
   list: ILIST[];
   language: string;
+}
+
+export interface IImage {
+  src: string;
+  srcSmall: string;
+  alt: string;
+  className: string;
+  Image?: {
+    prototype: HTMLImageElement;
+    new (): HTMLImageElement;
+  };
 }
 
 export interface PreloaderSuspenseProps {

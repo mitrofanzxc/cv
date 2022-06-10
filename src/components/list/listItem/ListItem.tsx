@@ -3,11 +3,13 @@ import { useLocation } from 'react-router-dom';
 import { PATHS } from '../../../shared/routes';
 import { ILIST } from '../../../shared/interface';
 import { LOCALIZATION } from '../../../shared/localization';
+import { Image } from '../../image/Image';
 
 import './ListItem.scss';
 
 const ListItem: FC<ILIST> = ({
   src,
+  srcSmall,
   alt,
   altRu,
   description,
@@ -27,7 +29,12 @@ const ListItem: FC<ILIST> = ({
       {LOCATION === `/${about}` && (
         <li key={key} className="list-item__wrapper">
           <div className="list-item">
-            <img src={src} alt={language === 'en' ? alt : altRu} className="list-item__img" />
+            <Image
+              src={src}
+              srcSmall={srcSmall}
+              alt={language === 'en' ? alt : altRu}
+              className="list-item__img"
+            />
           </div>
           <h3 className="h3">{language === 'en' ? description : descriptionRu}</h3>
         </li>
@@ -35,7 +42,12 @@ const ListItem: FC<ILIST> = ({
       {LOCATION === `/${certificates}` && (
         <li key={key} className="list-item__wrapper">
           <div className="list-item">
-            <img src={src} alt={language === 'en' ? alt : altRu} className="list-item__img" />
+            <Image
+              src={src}
+              srcSmall={srcSmall}
+              alt={language === 'en' ? alt : altRu}
+              className="list-item__img"
+            />
             <div className="list-item-hover">
               <a href={link} target="_blank" rel="noreferrer noopener" className="list-item-link">
                 {LOCALIZATION[LANG].link}
@@ -48,7 +60,12 @@ const ListItem: FC<ILIST> = ({
       {LOCATION === `/${portfolio}` && (
         <li key={key} className="list-item__wrapper">
           <div className="list-item">
-            <img src={src} alt={language === 'en' ? alt : altRu} className="list-item__img" />
+            <Image
+              src={src}
+              srcSmall={srcSmall}
+              alt={language === 'en' ? alt : altRu}
+              className="list-item__img"
+            />
             <div className="list-item-hover">
               <a href={deploy} target="_blank" rel="noreferrer noopener" className="list-item-link">
                 {LOCALIZATION[LANG].deploy}
@@ -69,8 +86,9 @@ const ListItem: FC<ILIST> = ({
             rel="noreferrer noopener"
             className="list-item social-item"
           >
-            <img
+            <Image
               src={src}
+              srcSmall={srcSmall}
               alt={language === 'en' ? alt : altRu}
               className="list-item__img social-item__img"
             />

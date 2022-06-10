@@ -1,19 +1,30 @@
 import { ILIST } from './interface';
 
 import imgRsschoolStage3 from '../images/icons/certificates/rsschoolstage3.jpg';
+import imgRsschoolStage3Small from '../images/icons/certificates/rsschoolstage3-small.jpg';
 import imgRsschoolStage0 from '../images/icons/certificates/rsschoolstage0.jpg';
+import imgRsschoolStage0Small from '../images/icons/certificates/rsschoolstage0-small.jpg';
 import imgEfset from '../images/icons/certificates/efset.jpg';
+import imgEfsetSmall from '../images/icons/certificates/efset-small.jpg';
 import imgReactSolo from '../images/icons/certificates/reactreduxsololearn.jpg';
+import imgReactSoloSmall from '../images/icons/certificates/reactreduxsololearn-small.jpg';
 import imgJquerySolo from '../images/icons/certificates/jquerysololearn.jpg';
+import imgJquerySoloSmall from '../images/icons/certificates/jquerysololearn-small.jpg';
 import imgJsSolo from '../images/icons/certificates/javascriptsololearn.jpg';
+import imgJsSoloSmall from '../images/icons/certificates/javascriptsololearn-small.jpg';
 import imgResponsiveSolo from '../images/icons/certificates/responsivewebdesignsololearn.jpg';
+import imgResponsiveSoloSmall from '../images/icons/certificates/responsivewebdesignsololearn-small.jpg';
 import imgCssSolo from '../images/icons/certificates/csssololearn.jpg';
+import imgCssSoloSmall from '../images/icons/certificates/csssololearn-small.jpg';
 import imgHtmlSolo from '../images/icons/certificates/htmlsololearn.jpg';
+import imgHtmlSoloSmall from '../images/icons/certificates/htmlsololearn-small.jpg';
 import imgSqlSolo from '../images/icons/certificates/sqlsololearn.jpg';
+import imgSqlSoloSmall from '../images/icons/certificates/sqlsololearn-small.jpg';
 
 const CERTIFICATES_LIST: ILIST[] = [
   {
     src: imgRsschoolStage3,
+    srcSmall: imgRsschoolStage3Small,
     alt: 'RSSchool Stage 3',
     altRu: 'РССкул Стадия 3',
     description: 'RSSchool Stage 3',
@@ -23,6 +34,7 @@ const CERTIFICATES_LIST: ILIST[] = [
   },
   {
     src: imgRsschoolStage0,
+    srcSmall: imgRsschoolStage0Small,
     alt: 'RSSchool Stage 0',
     altRu: 'РССкул Стадия 0',
     description: 'RSSchool Stage 0',
@@ -32,6 +44,7 @@ const CERTIFICATES_LIST: ILIST[] = [
   },
   {
     src: imgEfset,
+    srcSmall: imgEfsetSmall,
     alt: 'Efset English',
     altRu: 'Efset Английский',
     description: 'Efset English',
@@ -41,6 +54,7 @@ const CERTIFICATES_LIST: ILIST[] = [
   },
   {
     src: imgReactSolo,
+    srcSmall: imgReactSoloSmall,
     alt: 'React + Redux Sololearn',
     altRu: 'Реакт + Редакс Сололеарн',
     description: 'React + Redux Sololearn',
@@ -50,6 +64,7 @@ const CERTIFICATES_LIST: ILIST[] = [
   },
   {
     src: imgJquerySolo,
+    srcSmall: imgJquerySoloSmall,
     alt: 'JQuery Sololearn',
     altRu: 'JQuery Сололеарн',
     description: 'JQuery Sololearn',
@@ -59,6 +74,7 @@ const CERTIFICATES_LIST: ILIST[] = [
   },
   {
     src: imgJsSolo,
+    srcSmall: imgJsSoloSmall,
     alt: 'JavaScript Sololearn',
     altRu: 'ДжаваСкрипт Сололеарн',
     description: 'JavaScript Sololearn',
@@ -68,6 +84,7 @@ const CERTIFICATES_LIST: ILIST[] = [
   },
   {
     src: imgResponsiveSolo,
+    srcSmall: imgResponsiveSoloSmall,
     alt: 'Responsive Web Design Sololearn',
     altRu: 'Адаптивный Веб-дизайн Сололеарн',
     description: 'Responsive Web Design Sololearn',
@@ -77,6 +94,7 @@ const CERTIFICATES_LIST: ILIST[] = [
   },
   {
     src: imgCssSolo,
+    srcSmall: imgCssSoloSmall,
     alt: 'CSS Sololearn',
     altRu: 'CSS Сололеарн',
     description: 'CSS Sololearn',
@@ -86,6 +104,7 @@ const CERTIFICATES_LIST: ILIST[] = [
   },
   {
     src: imgHtmlSolo,
+    srcSmall: imgHtmlSoloSmall,
     alt: 'HTML Sololearn',
     altRu: 'HTML Сололеарн',
     description: 'HTML Sololearn',
@@ -95,6 +114,7 @@ const CERTIFICATES_LIST: ILIST[] = [
   },
   {
     src: imgSqlSolo,
+    srcSmall: imgSqlSoloSmall,
     alt: 'SQL Sololearn',
     altRu: 'SQL Сололеарн',
     description: 'SQL Sololearn',
