@@ -1,15 +1,20 @@
 import { ILIST } from './interface';
 
 import imgLinkedin from '../images/icons/socials/linkedin.png';
+import imgLinkedinSmall from '../images/icons/socials/linkedin-small.png';
 import imgGithub from '../images/icons/socials/github.png';
+import imgGithubSmall from '../images/icons/socials/github-small.png';
 import imgCodewars from '../images/icons/socials/codewars.png';
+import imgCodewarsSmall from '../images/icons/socials/codewars-small.png';
 import imgYoutube from '../images/icons/socials/youtube.png';
+import imgYoutubeSmall from '../images/icons/socials/youtube-small.png';
 import imgInstagram from '../images/icons/socials/instagram.png';
+import imgInstagramSmall from '../images/icons/socials/instagram-small.png';
 
 const SOCIALS_LIST: ILIST[] = [
   {
     src: imgLinkedin,
-    srcSmall: imgLinkedin,
+    srcSmall: imgLinkedinSmall,
     alt: 'Linkedin',
     altRu: 'Линкедин',
     description: 'Linkedin',
@@ -19,7 +24,7 @@ const SOCIALS_LIST: ILIST[] = [
   },
   {
     src: imgGithub,
-    srcSmall: imgGithub,
+    srcSmall: imgGithubSmall,
     alt: 'GitHub',
     altRu: 'ГитХаб',
     description: 'GitHub',
@@ -29,7 +34,7 @@ const SOCIALS_LIST: ILIST[] = [
   },
   {
     src: imgCodewars,
-    srcSmall: imgCodewars,
+    srcSmall: imgCodewarsSmall,
     alt: 'CodeWars',
     altRu: 'КодВарс',
     description: 'CodeWars',
@@ -39,7 +44,7 @@ const SOCIALS_LIST: ILIST[] = [
   },
   {
     src: imgYoutube,
-    srcSmall: imgYoutube,
+    srcSmall: imgYoutubeSmall,
     alt: 'YouTube',
     altRu: 'Ютуб',
     description: 'YouTube',
@@ -49,7 +54,7 @@ const SOCIALS_LIST: ILIST[] = [
   },
   {
     src: imgInstagram,
-    srcSmall: imgInstagram,
+    srcSmall: imgInstagramSmall,
     alt: 'Instagram',
     altRu: 'Инстаграм',
     description: 'Instagram',

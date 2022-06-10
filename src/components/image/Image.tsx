@@ -4,7 +4,7 @@ import { IImage } from '../../shared/interface';
 import './Image.scss';
 
 const Image: FC<IImage> = ({ src, srcSmall, alt, className }) => {
-  const [imageSrc, setImageSrc] = useState(srcSmall);
+  const [imageSrc, setImageSrc] = useState<string>(srcSmall);
 
   const CLASSNAME = `${className} ${
     imageSrc === srcSmall ? 'list-item__img-loading' : 'list-item__img-onload'
