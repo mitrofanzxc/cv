@@ -3,28 +3,17 @@
 .modal {
   display: none;
   position: fixed;
-  top: -$base * 2;
+  top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   z-index: 3;
-  width: $base * 180;
-  height: $base * 100;
+  width: 70%;
+  height: 50%;
+  padding: $base * 2;
   margin: auto;
   background-color: $color-white;
   border-radius: $base * 2;
-
-  @media (max-width: $breakpoint-lg-max) {
-    top: $base * 6;
-    width: $base * 126;
-    height: $base * 70;
-  }
-
-  @media (max-width: $breakpoint-sm-max) {
-    top: -$base * 2;
-    width: $base * 48;
-    height: 44%;
-  }
 }
 
 .modal__active {
@@ -33,24 +22,17 @@
 
 .modal__container {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  height: 100%;
   color: $color-dark-08;
 }
 
 .modal__img {
   display: block;
-  width: $base * 100;
-  height: $base * 100;
-  border-radius: $base * 2;
-
-  @media (max-width: $breakpoint-lg-max) {
-    width: $base * 70;
-    height: $base * 70;
-  }
-
-  @media (max-width: $breakpoint-sm-max) {
-    display: none;
-  }
+  width: 60%;
+  height: auto;
+  border-radius: $base * 4;
+  border: $base solid $color-orange;
 }
 
 .modal__container__info {
@@ -60,12 +42,6 @@
   margin-top: $base * 11;
   padding-left: $base * 6;
   padding-right: $base * 4;
-
-  @media (max-width: $breakpoint-lg-max) {
-    margin-top: $base * 2;
-    padding-left: $base * 2;
-    padding-right: $base;
-  }
 }
 
 .modal__name {
@@ -75,11 +51,6 @@
   font-weight: $fw-regular;
   line-height: 2.844rem;
   letter-spacing: 0.06em;
-
-  @media (max-width: $breakpoint-sm-max) {
-    width: 100%;
-    text-align: center;
-  }
 }
 
 .modal__type__breed {
@@ -89,15 +60,6 @@
   font-weight: $fw-regular;
   line-height: 1.438rem;
   letter-spacing: 0.06em;
-
-  @media (max-width: $breakpoint-lg-max) {
-    margin-top: $base * 2;
-  }
-
-  @media (max-width: $breakpoint-sm-max) {
-    width: 100%;
-    text-align: center;
-  }
 }
 
 .modal__description {
@@ -107,22 +69,11 @@
   font-weight: $fw-regular;
   line-height: 1.031rem;
   letter-spacing: 0.06em;
-
-  @media (max-width: $breakpoint-lg-max) {
-    margin-top: $base * 4;
-    font-size: 0.813rem;
-    line-height: 0.894rem;
-    text-align: justify;
-  }
 }
 
 .modal__list {
   margin-top: $base * 7;
   padding: 0;
-
-  @media (max-width: $breakpoint-lg-max) {
-    margin-top: $base * 3;
-  }
 }
 
 .modal__list__item {
@@ -186,11 +137,11 @@
   background-repeat: no-repeat;
   cursor: pointer;
   z-index: 2;
-  transition: $transition;
+  transition: $transition-01;
 
   &:hover {
     background-color: $color-orange;
-    transition: $transition;
+    transition: $transition-01;
   }
 }
 
