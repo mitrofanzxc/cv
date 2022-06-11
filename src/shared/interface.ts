@@ -1,4 +1,4 @@
-import { ReactElement } from 'react';
+import { MouseEvent } from 'react';
 
 export interface ISTATE {
   useScrollToTop: () => void;
@@ -7,6 +7,8 @@ export interface ISTATE {
   theme: string;
   setLanguage?: () => void;
   setTheme?: () => void;
+  isModalOpen?: boolean;
+  handleIsModalOpen?: (data: boolean) => void;
 }
 
 export interface IPATHS {
@@ -31,6 +33,7 @@ export interface ILIST {
   key?: string;
   id?: string;
   language?: string;
+  modalCreate?: (event: MouseEvent<HTMLLIElement>) => void;
 }
 
 export interface ILIST_PROPS {
@@ -49,23 +52,17 @@ export interface IImage {
   };
 }
 
-export interface PreloaderSuspenseProps {
-  children: ReactElement;
-}
-
-export interface ErrorProps {
-  errorMsg: string;
-}
-
-export interface ModalProps {
-  activeModal: boolean;
-  setActiveModal: (active: boolean) => void;
-  children: JSX.Element | JSX.Element[];
-}
-
-export interface TitleProps {
+export interface ITitle {
   firstWord: string;
   secondWord?: string;
   bgWord: string;
   theme: string;
+}
+
+export interface IModal {
+  useModalOpen: () => void;
+  modalData: ILIST;
+  isModalOpen: boolean;
+  handleIsModalOpen: (data: boolean) => void;
+  language: string;
 }
