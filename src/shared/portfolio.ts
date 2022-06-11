@@ -29,6 +29,8 @@ const PORTFOLIO_LIST: ILIST[] = [
     descriptionRu: 'Приложение для управления проектами',
     deploy: 'https://project-management-app-team53.netlify.app/',
     code: 'https://github.com/mitrofanzxc/project-management-app',
+    stack:
+      'React, Redux Toolkit (RTK Query), React Hook Form, React Beautiful DnD, React Testing Library, TypeScript, SCSS',
     id: '1df505e9-67d7-44d5-af50-1bec2252c8b6',
   },
   {
@@ -40,6 +42,7 @@ const PORTFOLIO_LIST: ILIST[] = [
     descriptionRu: 'РССкул Стадия 3',
     deploy: 'https://rolling-scopes-school.github.io/mitrofanzxc-REACT2022Q1/',
     code: 'https://github.com/rolling-scopes-school/mitrofanzxc-REACT2022Q1',
+    stack: 'React, React Testing Library, TypeScript, SCSS',
     id: '95d33a4d-1c55-45b0-855e-85a8f1281582',
   },
   {
@@ -51,6 +54,7 @@ const PORTFOLIO_LIST: ILIST[] = [
     descriptionRu: 'CSS Мем Слайдер',
     deploy: 'https://mitrofanzxc.github.io/cssMemSlider/cssMemSlider/',
     code: 'https://github.com/mitrofanzxc/cssMemSlider',
+    stack: 'HTML, SCSS',
     id: 'db26059a-66ad-43d1-9e8c-d4e8db8b364e',
   },
   {
@@ -62,6 +66,7 @@ const PORTFOLIO_LIST: ILIST[] = [
     descriptionRu: 'Виртуальная Клавиатура',
     deploy: 'https://mitrofanzxc.github.io/virtual-keyboard/',
     code: 'https://github.com/mitrofanzxc/virtual-keyboard',
+    stack: 'HTML, SCSS, JavaScript',
     id: '043762e5-3f6b-4dc2-9af4-b301baba32ef',
   },
   {
@@ -73,6 +78,7 @@ const PORTFOLIO_LIST: ILIST[] = [
     descriptionRu: 'Умный Магазин',
     deploy: 'https://mitrofanzxc.github.io/training-shop/',
     code: 'https://github.com/mitrofanzxc/training-shop',
+    stack: 'React, Swiper, SCSS',
     id: 'ca102e38-7dff-4a39-8e32-cb57cad0bffd',
   },
   {
@@ -84,6 +90,7 @@ const PORTFOLIO_LIST: ILIST[] = [
     descriptionRu: 'Приют',
     deploy: 'https://rolling-scopes-school.github.io/mitrofanzxc-JSFE2022Q1/shelter/pages/main/',
     code: 'https://github.com/rolling-scopes-school/mitrofanzxc-JSFE2022Q1',
+    stack: 'HTML, SCSS, JavaScript',
     id: '4ae3c9ac-d607-40db-8a03-2930cc0ae753',
   },
   {
@@ -95,6 +102,7 @@ const PORTFOLIO_LIST: ILIST[] = [
     descriptionRu: 'Пользовательский Видеоплеер',
     deploy: 'https://rolling-scopes-school.github.io/mitrofanzxc-JSFEPRESCHOOL/js30/',
     code: 'https://github.com/rolling-scopes-school/mitrofanzxc-JSFEPRESCHOOL',
+    stack: 'HTML, SCSS, JavaScript',
     id: '62a00433-8549-44c7-b14d-5826b0e42634',
   },
   {
@@ -106,6 +114,7 @@ const PORTFOLIO_LIST: ILIST[] = [
     descriptionRu: 'Портфолио',
     deploy: 'https://rolling-scopes-school.github.io/mitrofanzxc-JSFEPRESCHOOL/portfolio/',
     code: 'https://github.com/rolling-scopes-school/mitrofanzxc-JSFEPRESCHOOL',
+    stack: 'HTML, SCSS, JavaScript',
     id: '7e44fd62-022f-41c3-a3e0-5c1396f7eae3',
   },
   {
@@ -117,6 +126,7 @@ const PORTFOLIO_LIST: ILIST[] = [
     descriptionRu: 'Веб-разработка',
     deploy: 'https://rolling-scopes-school.github.io/mitrofanzxc-JSFELT/webdev/',
     code: 'https://github.com/rolling-scopes-school/mitrofanzxc-JSFELT',
+    stack: 'HTML, SCSS',
     id: '42f74b42-0daf-4e1e-97d3-1cfa53cc841a',
   },
 ];
