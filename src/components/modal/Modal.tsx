@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { IModal } from '../../shared/interface';
 import { Image } from '../image/Image';
 import { LOCALIZATION } from '../../shared/localization';
+import { ButtonNavigation } from '../buttons';
 
 import './Modal.scss';
 
@@ -12,7 +13,7 @@ const Modal: FC<IModal> = ({
   handleIsModalOpen,
   language,
 }) => {
-  const { src, srcSmall, alt, altRu, description, descriptionRu, deploy, code } = modalData;
+  const { src, srcSmall, alt, altRu, description, descriptionRu, deploy, code, stack } = modalData;
   const LANG = language as keyof typeof LOCALIZATION;
 
   const modalEventHandler = () => {
@@ -25,9 +26,9 @@ const Modal: FC<IModal> = ({
     <>
       <div
         onClick={modalEventHandler}
-        className={`modal__shadow ${isModalOpen ? 'modal__shadow__active' : ''}`}
+        className={`modal__shadow ${isModalOpen ? 'modal__shadow-active' : ''}`}
       />
-      <div className={`modal ${isModalOpen ? 'modal__active' : ''}`}>
+      <div className={`modal ${isModalOpen ? 'modal-active' : ''}`}>
         <div className="modal__container">
           <Image
             src={src}
@@ -35,37 +36,42 @@ const Modal: FC<IModal> = ({
             alt={language === 'en' ? alt : altRu}
             className="modal__img"
           />
-          <div className="modal__container__info">
-            <h4 className="modal__name">{language === 'en' ? description : descriptionRu}</h4>
-            <div className="modal__type__breed"></div>
-            <div className="modal__description"></div>
+          <div className="modal__info">
+            <h3 className="h3">{language === 'en' ? description : descriptionRu}</h3>
             <ul className="modal__list">
-              <li className="modal__list__item">
+              <li className="modal__list-item">
                 {`${LOCALIZATION[LANG].deploy}: `}
                 <a
                   href={deploy}
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="modal__list__item__span modal__age"
+                  className="modal__list-item-span"
                 >
                   {LOCALIZATION[LANG].link}
                 </a>
               </li>
-              <li className="modal__list__item">
+              <li className="modal__list-item">
                 {`${LOCALIZATION[LANG].code}: `}
                 <a
                   href={code}
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="modal__list__item__span modal__inoculations"
+                  className="modal__list-item-span"
                 >
                   {LOCALIZATION[LANG].link}
                 </a>
               </li>
+              <li className="modal__list-item">
+                {`${LOCALIZATION[LANG].stack}: `}
+                <span className="stack">{stack}</span>
+              </li>
             </ul>
           </div>
         </div>
-        <button onClick={modalEventHandler} className="button__pagination close" />
+        <ButtonNavigation
+          onClick={modalEventHandler}
+          className="button-navigation button-navigation__close"
+        />
       </div>
     </>
   );

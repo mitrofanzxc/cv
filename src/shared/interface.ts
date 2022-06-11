@@ -34,6 +34,7 @@ export interface ILIST {
   id?: string;
   language?: string;
   modalCreate?: (event: MouseEvent<HTMLLIElement>) => void;
+  stack?: string;
 }
 
 export interface ILIST_PROPS {
@@ -65,4 +66,9 @@ export interface IModal {
   isModalOpen: boolean;
   handleIsModalOpen: (data: boolean) => void;
   language: string;
+}
+
+export interface IButtonNavigation {
+  onClick: () => void;
+  className: string;
 }
