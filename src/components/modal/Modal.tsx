@@ -16,7 +16,7 @@ const Modal: FC<IModal> = ({
   const LANG = language as keyof typeof LOCALIZATION;
 
   const modalEventHandler = () => {
-    handleIsModalOpen(true);
+    handleIsModalOpen(false);
   };
 
   useModalOpen();
