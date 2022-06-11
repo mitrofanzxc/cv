@@ -1,8 +1,10 @@
 import { FC } from 'react';
 import { ISTATE } from '../../shared/interface';
 import { LOCALIZATION } from '../../shared/localization';
+import { Image } from '../../components/image/Image';
 
 import Avatar from '../../images/avatar.jpg';
+import AvatarSmall from '../../images/avatar-small.jpg';
 import './Main.scss';
 
 const Main: FC<ISTATE> = ({ useScrollToTop, useSwitchTheme, language }) => {
@@ -14,7 +16,12 @@ const Main: FC<ISTATE> = ({ useScrollToTop, useSwitchTheme, language }) => {
     <>
       <section data-testid="mainpage" className="main-page">
         <div className="avatar__wrapper">
-          <img src={Avatar} alt={LOCALIZATION[LANG].name} className="avatar" />
+          <Image
+            src={Avatar}
+            srcSmall={AvatarSmall}
+            alt={LOCALIZATION[LANG].name}
+            className="avatar"
+          />
         </div>
         <div className="home__container">
           <h1 className="h1">{LOCALIZATION[LANG].name}</h1>

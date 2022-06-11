@@ -1,33 +1,73 @@
 import { FC } from 'react';
-import { ModalProps } from '../../shared/interface';
+import { IModal } from '../../shared/interface';
+import { Image } from '../image/Image';
+import { LOCALIZATION } from '../../shared/localization';
 
 import './Modal.scss';
 
-const Modal: FC<ModalProps> = (props) => {
+const Modal: FC<IModal> = ({
+  useModalOpen,
+  modalData,
+  isModalOpen,
+  handleIsModalOpen,
+  language,
+}) => {
+  const { src, srcSmall, alt, altRu, description, descriptionRu, deploy, code } = modalData;
+  const LANG = language as keyof typeof LOCALIZATION;
+
+  const modalEventHandler = () => {
+    handleIsModalOpen(false);
+  };
+
+  useModalOpen();
+
   return (
-    <div
-      className={props.activeModal ? 'modal active' : 'modal'}
-      data-testid="modal"
-      onClick={() => {
-        props.setActiveModal(false);
-      }}
-    >
+    <>
       <div
-        className={props.activeModal ? 'modal__content active' : 'modal__content'}
-        onClick={(e) => e.stopPropagation()}
-      >
-        {props.children}
-        <div
-          role="button"
-          className="modal__close"
-          onClick={() => {
-            props.setActiveModal(false);
-          }}
-        >
-          &#128939;
+        onClick={modalEventHandler}
+        className={`modal__shadow ${isModalOpen ? 'modal__shadow__active' : ''}`}
+      />
+      <div className={`modal ${isModalOpen ? 'modal__active' : ''}`}>
+        <div className="modal__container">
+          <Image
+            src={src}
+            srcSmall={srcSmall}
+            alt={language === 'en' ? alt : altRu}
+            className="modal__img"
+          />
+          <div className="modal__container__info">
+            <h4 className="modal__name">{language === 'en' ? description : descriptionRu}</h4>
+            <div className="modal__type__breed"></div>
+            <div className="modal__description"></div>
+            <ul className="modal__list">
+              <li className="modal__list__item">
+                {`${LOCALIZATION[LANG].deploy}: `}
+                <a
+                  href={deploy}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="modal__list__item__span modal__age"
+                >
+                  {LOCALIZATION[LANG].link}
+                </a>
+              </li>
+              <li className="modal__list__item">
+                {`${LOCALIZATION[LANG].code}: `}
+                <a
+                  href={code}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="modal__list__item__span modal__inoculations"
+                >
+                  {LOCALIZATION[LANG].link}
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <button onClick={modalEventHandler} className="button__pagination close" />
       </div>
-    </div>
+    </>
   );
 };
 

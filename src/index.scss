@@ -38,6 +38,10 @@ body {
   transition: $transition-01;
 }
 
+.body__overflow {
+  overflow-y: hidden;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

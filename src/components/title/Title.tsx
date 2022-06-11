@@ -1,9 +1,9 @@
 import { FC } from 'react';
-import { TitleProps } from '../../shared/interface';
+import { ITitle } from '../../shared/interface';
 
 import './Title.scss';
 
-const Title: FC<TitleProps> = ({ firstWord, secondWord, bgWord, theme }) => {
+const Title: FC<ITitle> = ({ firstWord, secondWord, bgWord, theme }) => {
   return (
     <div className="title__wrapper">
       <h2 className="h2 title">
