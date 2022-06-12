@@ -29,7 +29,7 @@ const CERTIFICATES_LIST: ILIST[] = [
     altRu: 'РССкул Стадия 3',
     description: 'RSSchool Stage 3',
     descriptionRu: 'РССкул Стадия 3',
-    link: 'https://app.rs.school/certificate/nyjj4w4a',
+    link: 'https://app.rs.school/certificate/ocrpfs0q',
     id: '8bf20ac4-4eac-496c-88ce-36a972c48521',
   },
   {
