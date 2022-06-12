@@ -24,6 +24,7 @@ export const LOCALIZATION = {
     link: 'Ссылка',
     title: 'Название',
     stack: 'Стек',
+    electronicForm: 'Электронный вид',
   },
   en: {
     name: 'Dzmitry Karakulka',
@@ -50,5 +51,6 @@ export const LOCALIZATION = {
     link: 'Link',
     title: 'Title',
     stack: 'Stack',
+    electronicForm: 'Electronic Form',
   },
 };

@@ -115,36 +115,3 @@
 .modal__shadow-active {
   display: block;
 }
-
-.button-navigation {
-  @include poppins;
-  position: absolute;
-  top: -$base * 10;
-  left: 99%;
-  display: block;
-  width: $base * 10;
-  height: $base * 10;
-  font-size: $fs-m;
-  letter-spacing: 0.06em;
-  line-height: $base * 5;
-  color: $color-dark;
-  text-align: center;
-  border-radius: 50%;
-  border: 0.125rem solid $color-orange;
-  background-color: $color-white;
-  background-size: 60%;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  z-index: 2;
-  transition: $transition-01;
-
-  &:hover {
-    background-color: $color-orange;
-    transition: $transition-01;
-  }
-}
-
-.button-navigation__close {
-  background-image: url('../../images/modal/close.svg');
-}

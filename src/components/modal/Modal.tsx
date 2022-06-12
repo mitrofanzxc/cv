@@ -3,6 +3,8 @@ import { IModal } from '../../shared/interface';
 import { Image } from '../image/Image';
 import { LOCALIZATION } from '../../shared/localization';
 import { ButtonNavigation } from '../buttons';
+import { useLocation } from 'react-router-dom';
+import { PATHS } from '../../shared/routes';
 
 import './Modal.scss';
 
@@ -13,8 +15,11 @@ const Modal: FC<IModal> = ({
   handleIsModalOpen,
   language,
 }) => {
-  const { src, srcSmall, alt, altRu, description, descriptionRu, deploy, code, stack } = modalData;
+  const { src, srcSmall, alt, altRu, description, descriptionRu, deploy, code, link, stack } =
+    modalData;
   const LANG = language as keyof typeof LOCALIZATION;
+  const LOCATION = useLocation().pathname;
+  const { portfolio, certificates } = PATHS;
 
   const modalEventHandler = () => {
     handleIsModalOpen(false);
@@ -39,32 +44,49 @@ const Modal: FC<IModal> = ({
           <div className="modal__info">
             <h3 className="h3">{language === 'en' ? description : descriptionRu}</h3>
             <ul className="modal__list">
-              <li className="modal__list-item">
-                {`${LOCALIZATION[LANG].deploy}: `}
-                <a
-                  href={deploy}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="modal__list-item-span"
-                >
-                  {LOCALIZATION[LANG].link}
-                </a>
-              </li>
-              <li className="modal__list-item">
-                {`${LOCALIZATION[LANG].code}: `}
-                <a
-                  href={code}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="modal__list-item-span"
-                >
-                  {LOCALIZATION[LANG].link}
-                </a>
-              </li>
-              <li className="modal__list-item">
-                {`${LOCALIZATION[LANG].stack}: `}
-                <span className="stack">{stack}</span>
-              </li>
+              {LOCATION === `/${portfolio}` && (
+                <>
+                  <li className="modal__list-item">
+                    {`${LOCALIZATION[LANG].deploy}: `}
+                    <a
+                      href={deploy}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="modal__list-item-span"
+                    >
+                      {LOCALIZATION[LANG].link}
+                    </a>
+                  </li>
+                  <li className="modal__list-item">
+                    {`${LOCALIZATION[LANG].code}: `}
+                    <a
+                      href={code}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="modal__list-item-span"
+                    >
+                      {LOCALIZATION[LANG].link}
+                    </a>
+                  </li>
+                  <li className="modal__list-item">
+                    {`${LOCALIZATION[LANG].stack}: `}
+                    <span className="stack">{stack}</span>
+                  </li>
+                </>
+              )}
+              {LOCATION === `/${certificates}` && (
+                <li className="modal__list-item">
+                  {`${LOCALIZATION[LANG].electronicForm}: `}
+                  <a
+                    href={link}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="modal__list-item-span"
+                  >
+                    {LOCALIZATION[LANG].link}
+                  </a>
+                </li>
+              )}
             </ul>
           </div>
         </div>
