@@ -13,6 +13,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-bottom: $base * 2;
   border: $base solid $color-orange;
   border-radius: $base * 4;
 }
@@ -21,5 +22,5 @@
   width: 100%;
   height: $base * 63;
   margin: auto;
-  border-radius: $base * 4;
+  border-radius: $base * 3;
 }
