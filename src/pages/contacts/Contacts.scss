@@ -7,3 +7,19 @@
   flex-wrap: wrap;
   gap: $base * 4;
 }
+
+.iframe__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: $base solid $color-orange;
+  border-radius: $base * 4;
+}
+
+.iframe {
+  width: 100%;
+  height: $base * 63;
+  margin: auto;
+  border-radius: $base * 4;
+}

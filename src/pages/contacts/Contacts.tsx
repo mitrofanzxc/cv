@@ -21,6 +21,21 @@ const Contacts: FC<ISTATE> = ({ useScrollToTop, useSwitchTheme, language, theme 
         theme={theme}
       />
       <List list={SOCIALS_LIST} language={LANG} />
+      <Title
+        firstWord={LOCALIZATION[LANG].self}
+        secondWord={LOCALIZATION[LANG].introduction}
+        theme={theme}
+      />
+      <div className="iframe__wrapper">
+        <iframe
+          className="iframe"
+          src="https://www.youtube.com/embed/TXFqCdTC6dk"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </div>
     </section>
   );
 };

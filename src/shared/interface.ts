@@ -56,7 +56,7 @@ export interface IImage {
 export interface ITitle {
   firstWord: string;
   secondWord?: string;
-  bgWord: string;
+  bgWord?: string;
   theme: string;
 }
 
