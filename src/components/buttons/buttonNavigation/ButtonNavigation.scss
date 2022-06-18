@@ -3,8 +3,8 @@
 .button-navigation {
   @include poppins;
   position: absolute;
-  top: -$base * 10;
-  left: 99%;
+  top: -$base * 5;
+  left: calc(100% - ($base * 5));
   display: block;
   width: $base * 10;
   height: $base * 10;
