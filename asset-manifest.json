@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cv/static/css/main.633b7c35.css",
-    "main.js": "/cv/static/js/main.53a5f463.js",
+    "main.js": "/cv/static/js/main.b1fb98f3.js",
     "static/media/avatar.jpg": "/cv/static/media/avatar.49d9d4563ab568151bfd.jpg",
     "static/media/cssmemslider.jpg": "/cv/static/media/cssmemslider.7d6f15777f68346add42.jpg",
     "static/media/react-testing-library.png": "/cv/static/media/react-testing-library.9961737176e8376d5684.png",
@@ -37,25 +37,18 @@
     "static/media/sass.png": "/cv/static/media/sass.c24d49020428e4f1b071.png",
     "static/media/redux.png": "/cv/static/media/redux.c52e81acfcdb0f1d56d9.png",
     "static/media/react.png": "/cv/static/media/react.808ae4f842e68b6f3f9a.png",
-    "static/media/rsschoolstage0-small.jpg": "/cv/static/media/rsschoolstage0-small.1e26b646f36b4814f841.jpg",
     "static/media/git.png": "/cv/static/media/git.944fa122ab9a3ef18d6c.png",
     "static/media/gulp.png": "/cv/static/media/gulp.92e995ad84408bf1b92c.png",
-    "static/media/rsschoolstage3-small.jpg": "/cv/static/media/rsschoolstage3-small.62241d0e471038e7cfbf.jpg",
     "static/media/vscode.png": "/cv/static/media/vscode.532ec7e7ca3b3fc2cab0.png",
     "static/media/cssmemslider-small.jpg": "/cv/static/media/cssmemslider-small.c0c8fa3ff9e659283492.jpg",
     "static/media/avatar-small.jpg": "/cv/static/media/avatar-small.7c606afed7eb683c4616.jpg",
     "static/media/html.png": "/cv/static/media/html.33cd92e5aa042734f96e.png",
     "static/media/css.png": "/cv/static/media/css.ae5e268eb1e4d1c2b302.png",
     "static/media/reactstage3-small.jpg": "/cv/static/media/reactstage3-small.963d4d869f373630127f.jpg",
-    "static/media/responsivewebdesignsololearn-small.jpg": "/cv/static/media/responsivewebdesignsololearn-small.f3bbf2c083404df4d77d.jpg",
+    "static/media/rsschoolstage0-small.jpg": "/cv/static/media/rsschoolstage0-small.3a4839f27d6192e64bdd.jpg",
+    "static/media/rsschoolstage3-small.jpg": "/cv/static/media/rsschoolstage3-small.346293714493a697a68d.jpg",
     "static/media/photoshop.png": "/cv/static/media/photoshop.8733677678917eddc745.png",
     "static/media/js.png": "/cv/static/media/js.e42e9090806917d92310.png",
-    "static/media/reactreduxsololearn-small.jpg": "/cv/static/media/reactreduxsololearn-small.142d74d3c45a4d5a1265.jpg",
-    "static/media/javascriptsololearn-small.jpg": "/cv/static/media/javascriptsololearn-small.1266ee73e59d53860f9a.jpg",
-    "static/media/htmlsololearn-small.jpg": "/cv/static/media/htmlsololearn-small.6f1220c6e7670c6cb58e.jpg",
-    "static/media/jquerysololearn-small.jpg": "/cv/static/media/jquerysololearn-small.ac807a4519660d1369cf.jpg",
-    "static/media/csssololearn-small.jpg": "/cv/static/media/csssololearn-small.a33b0a280bc36358b046.jpg",
-    "static/media/sqlsololearn-small.jpg": "/cv/static/media/sqlsololearn-small.f35803352090eb41dad3.jpg",
     "static/media/portfolio-small.jpg": "/cv/static/media/portfolio-small.56f5f2e0227d91f11acd.jpg",
     "static/media/projectmanagementapp-small.jpg": "/cv/static/media/projectmanagementapp-small.efdb7d39aad0b610c203.jpg",
     "static/media/customvideoplayer-small.jpg": "/cv/static/media/customvideoplayer-small.b38fb4797e73b3a7b169.jpg",
@@ -74,10 +67,10 @@
     "static/media/close.svg": "/cv/static/media/close.058fe2685c37899c77d6.svg",
     "static/media/main.svg": "/cv/static/media/main.b7a1df79adc410a75188.svg",
     "main.633b7c35.css.map": "/cv/static/css/main.633b7c35.css.map",
-    "main.53a5f463.js.map": "/cv/static/js/main.53a5f463.js.map"
+    "main.b1fb98f3.js.map": "/cv/static/js/main.b1fb98f3.js.map"
   },
   "entrypoints": [
     "static/css/main.633b7c35.css",
-    "static/js/main.53a5f463.js"
+    "static/js/main.b1fb98f3.js"
   ]
 }
