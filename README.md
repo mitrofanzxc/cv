@@ -1,3 +1,3 @@
-### Deploy: [Link](https://mitrofanzxc.github.io/cv/)
+# Deploy: [Link](https://mitrofanzxc.github.io/cv/)
 
-### Markdown: [Link](https://mitrofanzxc.github.io/cv/cv)
+# Markdown: [Link](https://mitrofanzxc.github.io/cv/cv)
