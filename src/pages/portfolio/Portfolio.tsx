@@ -2,8 +2,7 @@ import { FC } from 'react';
 import { useScrollToTop, useSwitchTheme } from '../../features';
 import { useAppSelector } from '../../app/hooks';
 import { Title, List } from '../../components';
-import { LOCALIZATION } from '../../shared/localization';
-import { PORTFOLIO_LIST } from '../../shared/portfolio';
+import { LOCALIZATION, PORTFOLIO_LIST } from '../../shared';
 import './Portfolio.scss';
 
 const Portfolio: FC = () => {

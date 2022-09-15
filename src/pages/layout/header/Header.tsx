@@ -7,7 +7,7 @@ import {
   useSwitchTheme,
 } from '../../../features';
 import { useAppSelector, useAppDispatch } from '../../../app/hooks';
-import { PATHS } from '../../../shared/routes';
+import { PATHS } from '../../../shared';
 import './Header.scss';
 
 const Header: FC = () => {

@@ -3,10 +3,8 @@ import { useLocation } from 'react-router-dom';
 import { useAppDispatch } from '../../app/hooks';
 import { useModalOpen, setModalOpen } from '../../features';
 import { ListItem, Modal } from '..';
-import { ILIST, ILIST_PROPS } from '../../shared/interface';
-import { PORTFOLIO_LIST } from '../../shared/portfolio';
-import { CERTIFICATES_LIST } from '../../shared/certificates';
-import { PATHS } from '../../shared/routes';
+import { PORTFOLIO_LIST, CERTIFICATES_LIST, PATHS } from '../../shared';
+import { ILIST, ILIST_PROPS } from '../../shared/interface/interface';
 import './List.scss';
 
 const List: FC<ILIST_PROPS> = ({ list, isLanguageEn }) => {

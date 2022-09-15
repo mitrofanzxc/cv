@@ -1,4 +1,4 @@
-import { ILIST } from './interface';
+import { ILIST } from '../interface/interface';
 
 import imgRsschoolStage3 from '../images/certificates/rsschoolstage3.jpg';
 import imgRsschoolStage3Small from '../images/certificates/rsschoolstage3-small.jpg';

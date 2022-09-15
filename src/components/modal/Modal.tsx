@@ -3,9 +3,8 @@ import { useLocation } from 'react-router-dom';
 import { useAppSelector, useAppDispatch } from '../../app/hooks';
 import { setModalClose, useModalOpen } from '../../features';
 import { Image, ButtonNavigation } from '..';
-import { IModal } from '../../shared/interface';
-import { LOCALIZATION } from '../../shared/localization';
-import { PATHS } from '../../shared/routes';
+import { LOCALIZATION, PATHS } from '../../shared';
+import { IModal } from '../../shared/interface/interface';
 import './Modal.scss';
 
 const Modal: FC<IModal> = ({ modalData }) => {

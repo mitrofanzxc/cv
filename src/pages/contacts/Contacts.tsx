@@ -2,8 +2,7 @@ import { FC } from 'react';
 import { useScrollToTop, useSwitchTheme } from '../../features';
 import { useAppSelector } from '../../app/hooks';
 import { Title, List } from '../../components';
-import { LOCALIZATION } from '../../shared/localization';
-import { SOCIALS_LIST } from '../../shared/socials';
+import { LOCALIZATION, SOCIALS_LIST } from '../../shared';
 import './Contacts.scss';
 
 const Contacts: FC = () => {

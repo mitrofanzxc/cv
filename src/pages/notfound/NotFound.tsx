@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { useScrollToTop, useSwitchTheme } from '../../features';
 import { useAppSelector } from '../../app/hooks';
-import { LOCALIZATION } from '../../shared/localization';
+import { LOCALIZATION } from '../../shared';
 import './NotFound.scss';
 
 const NotFound: FC = () => {

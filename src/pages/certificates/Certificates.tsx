@@ -2,8 +2,7 @@ import { FC } from 'react';
 import { useScrollToTop, useSwitchTheme } from '../../features';
 import { useAppSelector } from '../../app/hooks';
 import { Title, List } from '../../components';
-import { LOCALIZATION } from '../../shared/localization';
-import { CERTIFICATES_LIST } from '../../shared/certificates';
+import { LOCALIZATION, CERTIFICATES_LIST } from '../../shared';
 import './Certificates.scss';
 
 const Certificates: FC = () => {

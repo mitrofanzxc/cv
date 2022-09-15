@@ -1,4 +1,4 @@
-import { ILIST } from './interface';
+import { ILIST } from '../interface/interface';
 
 import imgAsyncRace from '../images/portfolio/async-race.jpg';
 import imgAsyncRaceSmall from '../images/portfolio/async-race-small.jpg';

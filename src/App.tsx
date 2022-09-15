@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { useScrollToTop, useSwitchTheme } from './features';
-import { PATHS } from './shared/routes';
+import { PATHS } from './shared/routes/routes';
 import { Layout, NotFound, Main, About, Portfolio, Certificates, Contacts } from './pages';
 
 const App: FC = () => {

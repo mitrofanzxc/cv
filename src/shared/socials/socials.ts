@@ -1,4 +1,4 @@
-import { ILIST } from './interface';
+import { ILIST } from '../interface/interface';
 
 import imgLinkedin from '../images/icons/socials/linkedin.png';
 import imgLinkedinSmall from '../images/icons/socials/linkedin-small.png';

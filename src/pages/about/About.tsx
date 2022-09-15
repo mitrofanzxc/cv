@@ -1,9 +1,8 @@
 import { FC } from 'react';
 import { useAppSelector } from '../../app/hooks';
 import { useScrollToTop, useSwitchTheme } from '../../features';
-import { LOCALIZATION } from '../../shared/localization';
-import { SKILLS_LIST } from '../../shared/skills';
 import { Title, List } from '../../components';
+import { LOCALIZATION, SKILLS_LIST } from '../../shared';
 import './About.scss';
 
 const About: FC = () => {

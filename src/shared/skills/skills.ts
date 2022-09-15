@@ -1,4 +1,4 @@
-import { ILIST } from './interface';
+import { ILIST } from '../interface/interface';
 
 import imgReact from '../images/icons/skills/react.png';
 import imgReactSmall from '../images/icons/skills/react-small.png';

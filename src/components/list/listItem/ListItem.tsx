@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import { useLocation } from 'react-router-dom';
-import { PATHS } from '../../../shared/routes';
-import { ILIST } from '../../../shared/interface';
-import { Image } from '../../image/Image';
+import { PATHS } from '../../../shared/routes/routes';
+import { ILIST } from '../../../shared/interface/interface';
+import { Image } from '../..';
 import './ListItem.scss';
 
 const ListItem: FC<ILIST> = ({

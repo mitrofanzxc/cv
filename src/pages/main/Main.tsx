@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import { useAppSelector } from '../../app/hooks';
 import { useScrollToTop, useSwitchTheme } from '../../features';
-import { LOCALIZATION } from '../../shared/localization';
-import { Image } from '../../components/image/Image';
+import { Image } from '../../components';
+import { LOCALIZATION } from '../../shared';
 import Avatar from '../../images/avatar.jpg';
 import AvatarSmall from '../../images/avatar-small.jpg';
 import './Main.scss';
