@@ -15,39 +15,9 @@ const App: FC = () => {
       <Route path={main} element={<Layout />}>
         <Route index element={<Main />} />
         <Route path={about} element={<About />} />
-        <Route
-          path={portfolio}
-          element={
-            <Portfolio
-              useScrollToTop={useScrollToTop}
-              useSwitchTheme={useSwitchTheme}
-              language={isEn}
-              theme={isDark}
-            />
-          }
-        />
-        <Route
-          path={certificates}
-          element={
-            <Certificates
-              useScrollToTop={useScrollToTop}
-              useSwitchTheme={useSwitchTheme}
-              language={isEn}
-              theme={isDark}
-            />
-          }
-        />
-        <Route
-          path={contacts}
-          element={
-            <Contacts
-              useScrollToTop={useScrollToTop}
-              useSwitchTheme={useSwitchTheme}
-              language={isEn}
-              theme={isDark}
-            />
-          }
-        />
+        <Route path={portfolio} element={<Portfolio />} />
+        <Route path={certificates} element={<Certificates />} />
+        <Route path={contacts} element={<Contacts />} />
         <Route path={notFound} element={<NotFound />} />
       </Route>
     </Routes>
