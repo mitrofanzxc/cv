@@ -1,26 +1,25 @@
 import { FC } from 'react';
-import { ISTATE } from '../../shared/interface';
+import { useScrollToTop, useSwitchTheme } from '../../features';
+import { useAppSelector } from '../../app/hooks';
+import { Title, List } from '../../components';
 import { LOCALIZATION } from '../../shared/localization';
-import { Title } from '../../components/title/Title';
 import { CERTIFICATES_LIST } from '../../shared/certificates';
-import { List } from '../../components/list/List';
-
 import './Certificates.scss';
 
-const Certificates: FC<ISTATE> = ({ useScrollToTop, useSwitchTheme, language, theme }) => {
-  const LANG = language as keyof typeof LOCALIZATION;
+const Certificates: FC = () => {
+  const isLanguageEn = useAppSelector(({ language: { value } }) => value);
+
   useScrollToTop();
   useSwitchTheme();
 
   return (
     <section className="certificates-page">
       <Title
-        firstWord={LOCALIZATION[LANG].myI}
-        secondWord={LOCALIZATION[LANG].certificates}
-        bgWord={LOCALIZATION[LANG].awards}
-        theme={theme}
+        firstWord={isLanguageEn ? LOCALIZATION.en.myI : LOCALIZATION.ru.myI}
+        secondWord={isLanguageEn ? LOCALIZATION.en.certificates : LOCALIZATION.ru.certificates}
+        bgWord={isLanguageEn ? LOCALIZATION.en.awards : LOCALIZATION.ru.awards}
       />
-      <List list={CERTIFICATES_LIST} language={LANG} />
+      <List list={CERTIFICATES_LIST} isLanguageEn={isLanguageEn} />
     </section>
   );
 };

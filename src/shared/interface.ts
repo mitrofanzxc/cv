@@ -1,16 +1,5 @@
 import { MouseEvent } from 'react';
 
-export interface ISTATE {
-  useScrollToTop: () => void;
-  useSwitchTheme: () => void;
-  language: string;
-  theme: string;
-  setLanguage?: () => void;
-  setTheme?: () => void;
-  isModalOpen?: boolean;
-  handleIsModalOpen?: (data: boolean) => void;
-}
-
 export interface IPATHS {
   main: string;
   about: string;
@@ -56,7 +45,7 @@ export interface IImage {
 export interface ITitle {
   firstWord: string;
   secondWord: string;
-  bgWord: string;
+  bgWord?: string;
 }
 
 export interface IModal {

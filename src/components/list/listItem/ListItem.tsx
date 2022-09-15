@@ -13,7 +13,6 @@ const ListItem: FC<ILIST> = ({
   description,
   descriptionRu,
   link,
-  key,
   id,
   isLanguageEn,
   modalCreate,
@@ -63,7 +62,7 @@ const ListItem: FC<ILIST> = ({
         </li>
       )}
       {LOCATION === `/${contacts}` && (
-        <li key={key} className="list-item__wrapper social-item__wrapper">
+        <li className="list-item__wrapper social-item__wrapper">
           <a
             href={link}
             target="_blank"

@@ -1,30 +1,28 @@
 import { FC } from 'react';
-import { ISTATE } from '../../shared/interface';
+import { useScrollToTop, useSwitchTheme } from '../../features';
+import { useAppSelector } from '../../app/hooks';
+import { Title, List } from '../../components';
 import { LOCALIZATION } from '../../shared/localization';
-import { Title } from '../../components/title/Title';
 import { SOCIALS_LIST } from '../../shared/socials';
-import { List } from '../../components/list/List';
-
 import './Contacts.scss';
 
-const Contacts: FC<ISTATE> = ({ useScrollToTop, useSwitchTheme, language, theme }) => {
-  const LANG = language as keyof typeof LOCALIZATION;
+const Contacts: FC = () => {
+  const isLanguageEn = useAppSelector(({ language: { value } }) => value);
+
   useScrollToTop();
   useSwitchTheme();
 
   return (
     <section className="contacts-page">
       <Title
-        firstWord={LOCALIZATION[LANG].getIn}
-        secondWord={LOCALIZATION[LANG].touch}
-        bgWord={LOCALIZATION[LANG].contacts}
-        theme={theme}
+        firstWord={isLanguageEn ? LOCALIZATION.en.getIn : LOCALIZATION.ru.getIn}
+        secondWord={isLanguageEn ? LOCALIZATION.en.touch : LOCALIZATION.ru.touch}
+        bgWord={isLanguageEn ? LOCALIZATION.en.contacts : LOCALIZATION.ru.contacts}
       />
-      <List list={SOCIALS_LIST} language={LANG} />
+      <List list={SOCIALS_LIST} isLanguageEn={isLanguageEn} />
       <Title
-        firstWord={LOCALIZATION[LANG].self}
-        secondWord={LOCALIZATION[LANG].introduction}
-        theme={theme}
+        firstWord={isLanguageEn ? LOCALIZATION.en.self : LOCALIZATION.ru.self}
+        secondWord={isLanguageEn ? LOCALIZATION.en.introduction : LOCALIZATION.ru.introduction}
       />
       <div className="iframe__wrapper">
         <iframe
