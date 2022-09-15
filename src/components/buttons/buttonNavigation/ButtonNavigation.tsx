@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { IButtonNavigation } from '../../../shared/interface';
+import { IButtonNavigation } from '../../../shared/interface/interface';
 
 import './ButtonNavigation.scss';
 

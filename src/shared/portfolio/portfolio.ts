@@ -1,25 +1,79 @@
-import { ILIST } from './interface';
+import { ILIST } from '../interface/interface';
 
-import imgProjectManagementApp from '../images/portfolio/projectmanagementapp.jpg';
-import imgProjectManagementAppSmall from '../images/portfolio/projectmanagementapp-small.jpg';
-import imgReactStage3 from '../images/portfolio/reactstage3.jpg';
-import imgReactStage3Small from '../images/portfolio/reactstage3-small.jpg';
-import imgCssMemSlider from '../images/portfolio/cssmemslider.jpg';
-import imgCssMemSliderSmall from '../images/portfolio/cssmemslider-small.jpg';
-import imgVirtualKeyboard from '../images/portfolio/virtualkeyboard.jpg';
-import imgVirtualKeyboardSmall from '../images/portfolio/virtualkeyboard-small.jpg';
-import imgCleverShop from '../images/portfolio/clevershop.jpg';
-import imgCleverShopSmall from '../images/portfolio/clevershop-small.jpg';
-import imgShelter from '../images/portfolio/shelter.jpg';
-import imgShelterSmall from '../images/portfolio/shelter-small.jpg';
-import imgCustomVideoPlayer from '../images/portfolio/customvideoplayer.jpg';
-import imgCustomVideoPlayerSmall from '../images/portfolio/customvideoplayer-small.jpg';
-import imgPortfolio from '../images/portfolio/portfolio.jpg';
-import imgPortfolioSmall from '../images/portfolio/portfolio-small.jpg';
-import imgWebDev from '../images/portfolio/webdev.jpg';
-import imgWebDevSmall from '../images/portfolio/webdev-small.jpg';
+import imgRSLang from '../../images/portfolio/rslang.jpg';
+import imgRSLangSmall from '../../images/portfolio/rslang-small.jpg';
+import imgAsyncRace from '../../images/portfolio/async-race.jpg';
+import imgAsyncRaceSmall from '../../images/portfolio/async-race-small.jpg';
+import imgOnlineStore from '../../images/portfolio/online-store.jpg';
+import imgOnlineStoreSmall from '../../images/portfolio/online-store-small.jpg';
+import imgNewsApi from '../../images/portfolio/news-api.jpg';
+import imgNewsApiSmall from '../../images/portfolio/news-api-small.jpg';
+import imgProjectManagementApp from '../../images/portfolio/projectmanagementapp.jpg';
+import imgProjectManagementAppSmall from '../../images/portfolio/projectmanagementapp-small.jpg';
+import imgReactStage3 from '../../images/portfolio/reactstage3.jpg';
+import imgReactStage3Small from '../../images/portfolio/reactstage3-small.jpg';
+import imgCssMemSlider from '../../images/portfolio/cssmemslider.jpg';
+import imgCssMemSliderSmall from '../../images/portfolio/cssmemslider-small.jpg';
+import imgVirtualKeyboard from '../../images/portfolio/virtualkeyboard.jpg';
+import imgVirtualKeyboardSmall from '../../images/portfolio/virtualkeyboard-small.jpg';
+import imgShelter from '../../images/portfolio/shelter.jpg';
+import imgShelterSmall from '../../images/portfolio/shelter-small.jpg';
+import imgCustomVideoPlayer from '../../images/portfolio/customvideoplayer.jpg';
+import imgCustomVideoPlayerSmall from '../../images/portfolio/customvideoplayer-small.jpg';
+import imgPortfolio from '../../images/portfolio/portfolio.jpg';
+import imgPortfolioSmall from '../../images/portfolio/portfolio-small.jpg';
+import imgWebDev from '../../images/portfolio/webdev.jpg';
+import imgWebDevSmall from '../../images/portfolio/webdev-small.jpg';
 
 const PORTFOLIO_LIST: ILIST[] = [
+  {
+    src: imgRSLang,
+    srcSmall: imgRSLangSmall,
+    alt: 'RS Lang',
+    altRu: 'РС Лэнг',
+    description: 'RS Lang',
+    descriptionRu: 'РС Лэнг',
+    deploy: 'https://gendev-1001.github.io/rslang/',
+    code: 'https://github.com/mitrofanzxc/rslang',
+    stack: 'React, Redux Toolkit, RTK Query, TypeScript, SCSS',
+    id: 'c1cfa258-9044-4c06-a8ea-347543923496',
+  },
+  {
+    src: imgAsyncRace,
+    srcSmall: imgAsyncRaceSmall,
+    alt: 'Async Race',
+    altRu: 'Асинхронные гонки',
+    description: 'Async Race',
+    descriptionRu: 'Асинхронные гонки',
+    deploy: 'https://rolling-scopes-school.github.io/mitrofanzxc-JSFE2022Q1/async-race/',
+    code: 'https://github.com/rolling-scopes-school/mitrofanzxc-JSFE2022Q1/tree/async-race',
+    stack: 'React, Redux Toolkit, TypeScript, React Testing Library, SCSS',
+    id: 'ca102e38-7dff-4a39-8e32-cb57cad0bff3',
+  },
+  {
+    src: imgOnlineStore,
+    srcSmall: imgOnlineStoreSmall,
+    alt: 'Online Store',
+    altRu: 'Онлайн Магазин',
+    description: 'Online Store',
+    descriptionRu: 'Онлайн Магазин',
+    deploy: 'https://rolling-scopes-school.github.io/mitrofanzxc-JSFE2022Q1/online-store/',
+    code: 'https://github.com/rolling-scopes-school/mitrofanzxc-JSFE2022Q1/tree/online-store',
+    stack: 'React, Redux Toolkit, TypeScript, React Testing Library, Swiper, SCSS',
+    id: 'ca102e38-7dff-4a39-8e32-cb57cad0bff2',
+  },
+  {
+    src: imgNewsApi,
+    srcSmall: imgNewsApiSmall,
+    alt: 'News API',
+    altRu: 'Новостные АПИ',
+    description: 'News API',
+    descriptionRu: 'Новостные АПИ',
+    deploy: 'https://rolling-scopes-school.github.io/mitrofanzxc-JSFE2022Q1/online-store/',
+    code: 'https://github.com/rolling-scopes-school/mitrofanzxc-JSFE2022Q1/tree/online-store',
+    stack: 'React, Redux Toolkit, TypeScript, React Testing Library, SCSS',
+    id: 'ca102e38-7dff-4a39-8e32-cb57cad0bff1',
+  },
   {
     src: imgProjectManagementApp,
     srcSmall: imgProjectManagementAppSmall,
@@ -68,18 +122,6 @@ const PORTFOLIO_LIST: ILIST[] = [
     code: 'https://github.com/mitrofanzxc/virtual-keyboard',
     stack: 'HTML, SCSS, JavaScript',
     id: '043762e5-3f6b-4dc2-9af4-b301baba32ef',
-  },
-  {
-    src: imgCleverShop,
-    srcSmall: imgCleverShopSmall,
-    alt: 'Clever Shop',
-    altRu: 'Умный Магазин',
-    description: 'Clever Shop',
-    descriptionRu: 'Умный Магазин',
-    deploy: 'https://mitrofanzxc.github.io/training-shop/',
-    code: 'https://github.com/mitrofanzxc/training-shop',
-    stack: 'React, Swiper, SCSS',
-    id: 'ca102e38-7dff-4a39-8e32-cb57cad0bffd',
   },
   {
     src: imgShelter,

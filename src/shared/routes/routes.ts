@@ -1,4 +1,4 @@
-import { IPATHS } from './interface';
+import { IPATHS } from '../interface/interface';
 
 const PATHS: IPATHS = {
   main: '/',

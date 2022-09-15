@@ -1,14 +1,15 @@
 import { FC } from 'react';
-import { ISTATE } from '../../shared/interface';
-import { LOCALIZATION } from '../../shared/localization';
-import { Image } from '../../components/image/Image';
-
+import { useAppSelector } from '../../app/hooks';
+import { useScrollToTop, useSwitchTheme } from '../../features';
+import { Image } from '../../components';
+import { LOCALIZATION } from '../../shared';
 import Avatar from '../../images/avatar.jpg';
 import AvatarSmall from '../../images/avatar-small.jpg';
 import './Main.scss';
 
-const Main: FC<ISTATE> = ({ useScrollToTop, useSwitchTheme, language }) => {
-  const LANG = language as keyof typeof LOCALIZATION;
+const Main: FC = () => {
+  const language = useAppSelector(({ language: { value } }) => value);
+
   useScrollToTop();
   useSwitchTheme();
 
@@ -19,14 +20,18 @@ const Main: FC<ISTATE> = ({ useScrollToTop, useSwitchTheme, language }) => {
           <Image
             src={Avatar}
             srcSmall={AvatarSmall}
-            alt={LOCALIZATION[LANG].name}
+            alt={language ? LOCALIZATION.en.name : LOCALIZATION.ru.name}
             className="avatar"
           />
         </div>
         <div className="home__container">
-          <h1 className="h1">{LOCALIZATION[LANG].name}</h1>
-          <h2 className="h2">{LOCALIZATION[LANG].specialization}</h2>
-          <div className="home__about">{LOCALIZATION[LANG].aboutMe}</div>
+          <h1 className="h1">{language ? LOCALIZATION.en.name : LOCALIZATION.ru.name}</h1>
+          <h2 className="h2">
+            {language ? LOCALIZATION.en.specialization : LOCALIZATION.ru.specialization}
+          </h2>
+          <div className="home__about">
+            {language ? LOCALIZATION.en.aboutMe : LOCALIZATION.ru.aboutMe}
+          </div>
         </div>
       </section>
       <div className="color__block" />

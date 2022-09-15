@@ -1,25 +1,25 @@
-import { ILIST } from './interface';
+import { ILIST } from '../interface/interface';
 
-import imgRsschoolStage3 from '../images/certificates/rsschoolstage3.jpg';
-import imgRsschoolStage3Small from '../images/certificates/rsschoolstage3-small.jpg';
-import imgRsschoolStage0 from '../images/certificates/rsschoolstage0.jpg';
-import imgRsschoolStage0Small from '../images/certificates/rsschoolstage0-small.jpg';
-import imgEfset from '../images/certificates/efset.jpg';
-import imgEfsetSmall from '../images/certificates/efset-small.jpg';
-import imgReactSolo from '../images/certificates/reactreduxsololearn.jpg';
-import imgReactSoloSmall from '../images/certificates/reactreduxsololearn-small.jpg';
-import imgJquerySolo from '../images/certificates/jquerysololearn.jpg';
-import imgJquerySoloSmall from '../images/certificates/jquerysololearn-small.jpg';
-import imgJsSolo from '../images/certificates/javascriptsololearn.jpg';
-import imgJsSoloSmall from '../images/certificates/javascriptsololearn-small.jpg';
-import imgResponsiveSolo from '../images/certificates/responsivewebdesignsololearn.jpg';
-import imgResponsiveSoloSmall from '../images/certificates/responsivewebdesignsololearn-small.jpg';
-import imgCssSolo from '../images/certificates/csssololearn.jpg';
-import imgCssSoloSmall from '../images/certificates/csssololearn-small.jpg';
-import imgHtmlSolo from '../images/certificates/htmlsololearn.jpg';
-import imgHtmlSoloSmall from '../images/certificates/htmlsololearn-small.jpg';
-import imgSqlSolo from '../images/certificates/sqlsololearn.jpg';
-import imgSqlSoloSmall from '../images/certificates/sqlsololearn-small.jpg';
+import imgRsschoolStage3 from '../../images/certificates/rsschoolstage3.jpg';
+import imgRsschoolStage3Small from '../../images/certificates/rsschoolstage3-small.jpg';
+import imgRsschoolStage0 from '../../images/certificates/rsschoolstage0.jpg';
+import imgRsschoolStage0Small from '../../images/certificates/rsschoolstage0-small.jpg';
+import imgEfset from '../../images/certificates/efset.jpg';
+import imgEfsetSmall from '../../images/certificates/efset-small.jpg';
+import imgReactSolo from '../../images/certificates/reactreduxsololearn.jpg';
+import imgReactSoloSmall from '../../images/certificates/reactreduxsololearn-small.jpg';
+import imgJquerySolo from '../../images/certificates/jquerysololearn.jpg';
+import imgJquerySoloSmall from '../../images/certificates/jquerysololearn-small.jpg';
+import imgJsSolo from '../../images/certificates/javascriptsololearn.jpg';
+import imgJsSoloSmall from '../../images/certificates/javascriptsololearn-small.jpg';
+import imgResponsiveSolo from '../../images/certificates/responsivewebdesignsololearn.jpg';
+import imgResponsiveSoloSmall from '../../images/certificates/responsivewebdesignsololearn-small.jpg';
+import imgCssSolo from '../../images/certificates/csssololearn.jpg';
+import imgCssSoloSmall from '../../images/certificates/csssololearn-small.jpg';
+import imgHtmlSolo from '../../images/certificates/htmlsololearn.jpg';
+import imgHtmlSoloSmall from '../../images/certificates/htmlsololearn-small.jpg';
+import imgSqlSolo from '../../images/certificates/sqlsololearn.jpg';
+import imgSqlSoloSmall from '../../images/certificates/sqlsololearn-small.jpg';
 
 const CERTIFICATES_LIST: ILIST[] = [
   {

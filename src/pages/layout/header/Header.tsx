@@ -1,12 +1,24 @@
 import { FC } from 'react';
 import { NavLink } from 'react-router-dom';
-import { PATHS } from '../../../shared/routes';
-import { ISTATE } from '../../../shared/interface';
-
+import {
+  setThemeByAmount,
+  setLanguageByAmount,
+  useScrollToTop,
+  useSwitchTheme,
+} from '../../../features';
+import { useAppSelector, useAppDispatch } from '../../../app/hooks';
+import { PATHS } from '../../../shared';
 import './Header.scss';
 
-const Header: FC<ISTATE> = ({ language, theme, setLanguage, setTheme }) => {
+const Header: FC = () => {
   const { main, about, portfolio, certificates, contacts } = PATHS;
+
+  const theme = useAppSelector(({ theme: { value } }) => value);
+  const language = useAppSelector(({ language: { value } }) => value);
+  const dispatch = useAppDispatch();
+
+  useScrollToTop();
+  useSwitchTheme();
 
   return (
     <header data-testid="header" className="header">
@@ -31,13 +43,17 @@ const Header: FC<ISTATE> = ({ language, theme, setLanguage, setTheme }) => {
         <ul className="nav__list nav__list-secondary">
           <li className="nav__list-item">
             <div
-              className={`nav__list-item__link ${language}`}
+              className={`nav__list-item__link ${language ? 'en' : 'ru'}`}
               role="button"
-              onClick={setLanguage}
+              onClick={() => dispatch(setLanguageByAmount(!language))}
             />
           </li>
           <li className="nav__list-item">
-            <div className={`nav__list-item__link ${theme}`} role="button" onClick={setTheme} />
+            <div
+              className={`nav__list-item__link ${theme ? 'dark' : 'light'}`}
+              role="button"
+              onClick={() => dispatch(setThemeByAmount(!theme))}
+            />
           </li>
         </ul>
       </nav>

@@ -4,6 +4,8 @@
   "homepage": "https://mitrofanzxc.github.io/cv",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.5",
+    "@types/react-redux": "^7.1.24",
     "gh-pages": "^4.0.0",
     "jwt-decode": "^3.1.2",
     "react": "^18.1.0",
@@ -32,9 +34,9 @@
       "not op_mini all"
     ],
     "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      "last 4 chrome version",
+      "last 4 firefox version",
+      "last 4 safari version"
     ]
   },
   "devDependencies": {
@@ -52,6 +54,8 @@
     "eslint-config-react": "^1.1.7",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "2.6.0",
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0",
     "sass": "^1.51.0",
     "typescript": "^4.6.4"
   }

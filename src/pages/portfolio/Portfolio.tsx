@@ -1,26 +1,24 @@
 import { FC } from 'react';
-import { ISTATE } from '../../shared/interface';
-import { LOCALIZATION } from '../../shared/localization';
-import { Title } from '../../components/title/Title';
-import { List } from '../../components/list/List';
-import { PORTFOLIO_LIST } from '../../shared/portfolio';
-
+import { useScrollToTop, useSwitchTheme } from '../../features';
+import { useAppSelector } from '../../app/hooks';
+import { Title, List } from '../../components';
+import { LOCALIZATION, PORTFOLIO_LIST } from '../../shared';
 import './Portfolio.scss';
 
-const Portfolio: FC<ISTATE> = ({ useScrollToTop, useSwitchTheme, language, theme }) => {
-  const LANG = language as keyof typeof LOCALIZATION;
+const Portfolio: FC = () => {
+  const isLanguageEn = useAppSelector(({ language: { value } }) => value);
+
   useScrollToTop();
   useSwitchTheme();
 
   return (
     <section className="portfolio-page">
       <Title
-        firstWord={LOCALIZATION[LANG].myE}
-        secondWord={LOCALIZATION[LANG].portfolio}
-        bgWord={LOCALIZATION[LANG].works}
-        theme={theme}
+        firstWord={isLanguageEn ? LOCALIZATION.en.myE : LOCALIZATION.ru.myE}
+        secondWord={isLanguageEn ? LOCALIZATION.en.portfolio : LOCALIZATION.ru.portfolio}
+        bgWord={isLanguageEn ? LOCALIZATION.en.works : LOCALIZATION.ru.works}
       />
-      <List list={PORTFOLIO_LIST} language={LANG} />
+      <List list={PORTFOLIO_LIST} isLanguageEn={isLanguageEn} />
     </section>
   );
 };

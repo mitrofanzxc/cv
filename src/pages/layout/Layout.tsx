@@ -1,26 +1,11 @@
 import { FC } from 'react';
 import { Outlet } from 'react-router-dom';
-import { ISTATE } from '../../shared/interface';
-import { Header } from '../index';
+import { Header } from '..';
 
-const Layout: FC<ISTATE> = ({
-  useScrollToTop,
-  useSwitchTheme,
-  language,
-  theme,
-  setLanguage,
-  setTheme,
-}) => {
+const Layout: FC = () => {
   return (
     <>
-      <Header
-        useScrollToTop={useScrollToTop}
-        useSwitchTheme={useSwitchTheme}
-        language={language}
-        theme={theme}
-        setLanguage={setLanguage}
-        setTheme={setTheme}
-      />
+      <Header />
       <main className="main">
         <Outlet />
       </main>

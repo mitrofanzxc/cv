@@ -1,30 +1,24 @@
-import { FC, useState, useEffect, MouseEvent } from 'react';
+import { FC, useState, MouseEvent } from 'react';
 import { useLocation } from 'react-router-dom';
-import { ILIST } from '../../shared/interface';
-import { ILIST_PROPS } from '../../shared/interface';
-import { ListItem } from './listItem/ListItem';
-import { Modal } from '../modal/Modal';
-import { PORTFOLIO_LIST } from '../../shared/portfolio';
-import { CERTIFICATES_LIST } from '../../shared/certificates';
-import { PATHS } from '../../shared/routes';
-
+import { useAppDispatch } from '../../app/hooks';
+import { useModalOpen, setModalOpen } from '../../features';
+import { ListItem, Modal } from '..';
+import { PORTFOLIO_LIST, CERTIFICATES_LIST, PATHS } from '../../shared';
+import { ILIST, ILIST_PROPS } from '../../shared/interface/interface';
 import './List.scss';
 
-const List: FC<ILIST_PROPS> = ({ list, language }) => {
-  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+const List: FC<ILIST_PROPS> = ({ list, isLanguageEn }) => {
   const [modalData, setModalData] = useState<ILIST>(PORTFOLIO_LIST[0]);
+  const dispatch = useAppDispatch();
 
   const { portfolio, certificates } = PATHS;
   const LOCATION = useLocation().pathname;
 
-  const handleIsModalOpen = (data: boolean) => {
-    setIsModalOpen(data);
-  };
-
   const modalCreate = (event: MouseEvent<HTMLLIElement>) => {
-    const currentTarget = event.currentTarget.id;
+    const currentTarget = event.currentTarget.id as string;
 
     let data;
+
     if (LOCATION === `/${portfolio}`) {
       data = PORTFOLIO_LIST;
     } else if (LOCATION === `/${certificates}`) {
@@ -33,22 +27,11 @@ const List: FC<ILIST_PROPS> = ({ list, language }) => {
 
     const findObject = data?.filter((element: ILIST) => element.id === currentTarget)[0];
 
-    setIsModalOpen(true);
+    dispatch(setModalOpen());
 
     if (findObject) {
       setModalData(findObject);
     }
-  };
-
-  const useModalOpen = () => {
-    useEffect(() => {
-      const BODY = document.querySelector('.body');
-      if (isModalOpen) {
-        BODY?.classList.add('body__overflow');
-      } else {
-        BODY?.classList.remove('body__overflow');
-      }
-    }, [isModalOpen]);
   };
 
   useModalOpen();
@@ -58,6 +41,7 @@ const List: FC<ILIST_PROPS> = ({ list, language }) => {
       {list.map(({ src, srcSmall, alt, altRu, description, descriptionRu, link, id }) => {
         return (
           <ListItem
+            key={id}
             src={src}
             srcSmall={srcSmall}
             alt={alt}
@@ -65,20 +49,13 @@ const List: FC<ILIST_PROPS> = ({ list, language }) => {
             description={description}
             descriptionRu={descriptionRu}
             link={link}
-            key={id}
             id={id}
-            language={language}
+            isLanguageEn={isLanguageEn}
             modalCreate={modalCreate}
           />
         );
       })}
-      <Modal
-        useModalOpen={useModalOpen}
-        isModalOpen={isModalOpen}
-        modalData={modalData}
-        handleIsModalOpen={handleIsModalOpen}
-        language={language}
-      />
+      <Modal modalData={modalData} />
     </ul>
   );
 };

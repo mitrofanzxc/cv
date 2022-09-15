@@ -1,36 +1,28 @@
 import { FC } from 'react';
-import { IModal } from '../../shared/interface';
-import { Image } from '../image/Image';
-import { LOCALIZATION } from '../../shared/localization';
-import { ButtonNavigation } from '../buttons';
 import { useLocation } from 'react-router-dom';
-import { PATHS } from '../../shared/routes';
-
+import { useAppSelector, useAppDispatch } from '../../app/hooks';
+import { setModalClose, useModalOpen } from '../../features';
+import { Image, ButtonNavigation } from '..';
+import { LOCALIZATION, PATHS } from '../../shared';
+import { IModal } from '../../shared/interface/interface';
 import './Modal.scss';
 
-const Modal: FC<IModal> = ({
-  useModalOpen,
-  modalData,
-  isModalOpen,
-  handleIsModalOpen,
-  language,
-}) => {
+const Modal: FC<IModal> = ({ modalData }) => {
   const { src, srcSmall, alt, altRu, description, descriptionRu, deploy, code, link, stack } =
     modalData;
-  const LANG = language as keyof typeof LOCALIZATION;
-  const LOCATION = useLocation().pathname;
   const { portfolio, certificates } = PATHS;
+  const LOCATION = useLocation().pathname;
 
-  const modalEventHandler = () => {
-    handleIsModalOpen(false);
-  };
+  const isLanguageEn = useAppSelector(({ language: { value } }) => value);
+  const isModalOpen = useAppSelector(({ modal: { value } }) => value);
+  const dispatch = useAppDispatch();
 
   useModalOpen();
 
   return (
     <>
       <div
-        onClick={modalEventHandler}
+        onClick={() => dispatch(setModalClose())}
         className={`modal__shadow ${isModalOpen ? 'modal__shadow-active' : ''}`}
       />
       <div className={`modal ${isModalOpen ? 'modal-active' : ''}`}>
@@ -38,52 +30,54 @@ const Modal: FC<IModal> = ({
           <Image
             src={src}
             srcSmall={srcSmall}
-            alt={language === 'en' ? alt : altRu}
+            alt={isLanguageEn ? alt : altRu}
             className="modal__img"
           />
           <div className="modal__info">
-            <h3 className="h3">{language === 'en' ? description : descriptionRu}</h3>
+            <h3 className="h3">{isLanguageEn ? description : descriptionRu}</h3>
             <ul className="modal__list">
               {LOCATION === `/${portfolio}` && (
                 <>
                   <li className="modal__list-item">
-                    {`${LOCALIZATION[LANG].deploy}: `}
+                    {`${isLanguageEn ? LOCALIZATION.en.deploy : LOCALIZATION.ru.deploy}: `}
                     <a
                       href={deploy}
                       target="_blank"
                       rel="noreferrer noopener"
                       className="modal__list-item-span"
                     >
-                      {LOCALIZATION[LANG].link}
+                      {isLanguageEn ? LOCALIZATION.en.link : LOCALIZATION.ru.link}
                     </a>
                   </li>
                   <li className="modal__list-item">
-                    {`${LOCALIZATION[LANG].code}: `}
+                    {`${isLanguageEn ? LOCALIZATION.en.code : LOCALIZATION.ru.code}: `}
                     <a
                       href={code}
                       target="_blank"
                       rel="noreferrer noopener"
                       className="modal__list-item-span"
                     >
-                      {LOCALIZATION[LANG].link}
+                      {isLanguageEn ? LOCALIZATION.en.link : LOCALIZATION.ru.link}
                     </a>
                   </li>
                   <li className="modal__list-item">
-                    {`${LOCALIZATION[LANG].stack}: `}
+                    {`${isLanguageEn ? LOCALIZATION.en.stack : LOCALIZATION.ru.stack}: `}
                     <span className="stack">{stack}</span>
                   </li>
                 </>
               )}
               {LOCATION === `/${certificates}` && (
                 <li className="modal__list-item">
-                  {`${LOCALIZATION[LANG].electronicForm}: `}
+                  {`${
+                    isLanguageEn ? LOCALIZATION.en.electronicForm : LOCALIZATION.ru.electronicForm
+                  }: `}
                   <a
                     href={link}
                     target="_blank"
                     rel="noreferrer noopener"
                     className="modal__list-item-span"
                   >
-                    {LOCALIZATION[LANG].link}
+                    {isLanguageEn ? LOCALIZATION.en.link : LOCALIZATION.ru.link}
                   </a>
                 </li>
               )}
@@ -91,7 +85,7 @@ const Modal: FC<IModal> = ({
           </div>
         </div>
         <ButtonNavigation
-          onClick={modalEventHandler}
+          onClick={() => dispatch(setModalClose())}
           className="button-navigation button-navigation__close"
         />
       </div>
