@@ -1,27 +1,27 @@
 import { ILIST } from '../interface/interface';
 
-import imgAsyncRace from '../images/portfolio/async-race.jpg';
-import imgAsyncRaceSmall from '../images/portfolio/async-race-small.jpg';
-import imgOnlineStore from '../images/portfolio/online-store.jpg';
-import imgOnlineStoreSmall from '../images/portfolio/online-store-small.jpg';
-import imgNewsApi from '../images/portfolio/news-api.jpg';
-import imgNewsApiSmall from '../images/portfolio/news-api-small.jpg';
-import imgProjectManagementApp from '../images/portfolio/projectmanagementapp.jpg';
-import imgProjectManagementAppSmall from '../images/portfolio/projectmanagementapp-small.jpg';
-import imgReactStage3 from '../images/portfolio/reactstage3.jpg';
-import imgReactStage3Small from '../images/portfolio/reactstage3-small.jpg';
-import imgCssMemSlider from '../images/portfolio/cssmemslider.jpg';
-import imgCssMemSliderSmall from '../images/portfolio/cssmemslider-small.jpg';
-import imgVirtualKeyboard from '../images/portfolio/virtualkeyboard.jpg';
-import imgVirtualKeyboardSmall from '../images/portfolio/virtualkeyboard-small.jpg';
-import imgShelter from '../images/portfolio/shelter.jpg';
-import imgShelterSmall from '../images/portfolio/shelter-small.jpg';
-import imgCustomVideoPlayer from '../images/portfolio/customvideoplayer.jpg';
-import imgCustomVideoPlayerSmall from '../images/portfolio/customvideoplayer-small.jpg';
-import imgPortfolio from '../images/portfolio/portfolio.jpg';
-import imgPortfolioSmall from '../images/portfolio/portfolio-small.jpg';
-import imgWebDev from '../images/portfolio/webdev.jpg';
-import imgWebDevSmall from '../images/portfolio/webdev-small.jpg';
+import imgAsyncRace from '../../images/portfolio/async-race.jpg';
+import imgAsyncRaceSmall from '../../images/portfolio/async-race-small.jpg';
+import imgOnlineStore from '../../images/portfolio/online-store.jpg';
+import imgOnlineStoreSmall from '../../images/portfolio/online-store-small.jpg';
+import imgNewsApi from '../../images/portfolio/news-api.jpg';
+import imgNewsApiSmall from '../../images/portfolio/news-api-small.jpg';
+import imgProjectManagementApp from '../../images/portfolio/projectmanagementapp.jpg';
+import imgProjectManagementAppSmall from '../../images/portfolio/projectmanagementapp-small.jpg';
+import imgReactStage3 from '../../images/portfolio/reactstage3.jpg';
+import imgReactStage3Small from '../../images/portfolio/reactstage3-small.jpg';
+import imgCssMemSlider from '../../images/portfolio/cssmemslider.jpg';
+import imgCssMemSliderSmall from '../../images/portfolio/cssmemslider-small.jpg';
+import imgVirtualKeyboard from '../../images/portfolio/virtualkeyboard.jpg';
+import imgVirtualKeyboardSmall from '../../images/portfolio/virtualkeyboard-small.jpg';
+import imgShelter from '../../images/portfolio/shelter.jpg';
+import imgShelterSmall from '../../images/portfolio/shelter-small.jpg';
+import imgCustomVideoPlayer from '../../images/portfolio/customvideoplayer.jpg';
+import imgCustomVideoPlayerSmall from '../../images/portfolio/customvideoplayer-small.jpg';
+import imgPortfolio from '../../images/portfolio/portfolio.jpg';
+import imgPortfolioSmall from '../../images/portfolio/portfolio-small.jpg';
+import imgWebDev from '../../images/portfolio/webdev.jpg';
+import imgWebDevSmall from '../../images/portfolio/webdev-small.jpg';
 
 const PORTFOLIO_LIST: ILIST[] = [
   {

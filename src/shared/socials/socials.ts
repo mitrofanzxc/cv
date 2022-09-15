@@ -1,15 +1,15 @@
 import { ILIST } from '../interface/interface';
 
-import imgLinkedin from '../images/icons/socials/linkedin.png';
-import imgLinkedinSmall from '../images/icons/socials/linkedin-small.png';
-import imgGithub from '../images/icons/socials/github.png';
-import imgGithubSmall from '../images/icons/socials/github-small.png';
-import imgCodewars from '../images/icons/socials/codewars.png';
-import imgCodewarsSmall from '../images/icons/socials/codewars-small.png';
-import imgYoutube from '../images/icons/socials/youtube.png';
-import imgYoutubeSmall from '../images/icons/socials/youtube-small.png';
-import imgInstagram from '../images/icons/socials/instagram.png';
-import imgInstagramSmall from '../images/icons/socials/instagram-small.png';
+import imgLinkedin from '../../images/icons/socials/linkedin.png';
+import imgLinkedinSmall from '../../images/icons/socials/linkedin-small.png';
+import imgGithub from '../../images/icons/socials/github.png';
+import imgGithubSmall from '../../images/icons/socials/github-small.png';
+import imgCodewars from '../../images/icons/socials/codewars.png';
+import imgCodewarsSmall from '../../images/icons/socials/codewars-small.png';
+import imgYoutube from '../../images/icons/socials/youtube.png';
+import imgYoutubeSmall from '../../images/icons/socials/youtube-small.png';
+import imgInstagram from '../../images/icons/socials/instagram.png';
+import imgInstagramSmall from '../../images/icons/socials/instagram-small.png';
 
 const SOCIALS_LIST: ILIST[] = [
   {
