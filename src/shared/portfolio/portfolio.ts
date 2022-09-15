@@ -1,5 +1,7 @@
 import { ILIST } from '../interface/interface';
 
+import imgRSLang from '../../images/portfolio/rslang.jpg';
+import imgRSLangSmall from '../../images/portfolio/rslang-small.jpg';
 import imgAsyncRace from '../../images/portfolio/async-race.jpg';
 import imgAsyncRaceSmall from '../../images/portfolio/async-race-small.jpg';
 import imgOnlineStore from '../../images/portfolio/online-store.jpg';
@@ -24,6 +26,18 @@ import imgWebDev from '../../images/portfolio/webdev.jpg';
 import imgWebDevSmall from '../../images/portfolio/webdev-small.jpg';
 
 const PORTFOLIO_LIST: ILIST[] = [
+  {
+    src: imgRSLang,
+    srcSmall: imgRSLangSmall,
+    alt: 'RS Lang',
+    altRu: 'РС Лэнг',
+    description: 'RS Lang',
+    descriptionRu: 'РС Лэнг',
+    deploy: 'https://gendev-1001.github.io/rslang/',
+    code: 'https://github.com/mitrofanzxc/rslang',
+    stack: 'React, Redux Toolkit, RTK Query, TypeScript, SCSS',
+    id: 'c1cfa258-9044-4c06-a8ea-347543923496',
+  },
   {
     src: imgAsyncRace,
     srcSmall: imgAsyncRaceSmall,
