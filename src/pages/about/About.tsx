@@ -1,26 +1,26 @@
 import { FC } from 'react';
-import { ISTATE } from '../../shared/interface';
+import { useAppSelector } from '../../app/hooks';
+import { useScrollToTop, useSwitchTheme } from '../../features';
 import { LOCALIZATION } from '../../shared/localization';
-import { Title } from '../../components/title/Title';
 import { SKILLS_LIST } from '../../shared/skills';
-import { List } from '../../components/list/List';
+import { Title, List } from '../../components';
 
 import './About.scss';
 
-const About: FC<ISTATE> = ({ useScrollToTop, useSwitchTheme, language, theme }) => {
-  const LANG = language as keyof typeof LOCALIZATION;
+const About: FC = () => {
+  const language = useAppSelector(({ language: { value } }) => value);
+
   useScrollToTop();
   useSwitchTheme();
 
   return (
     <section className="about-page">
       <Title
-        firstWord={LOCALIZATION[LANG].about}
-        secondWord={LOCALIZATION[LANG].me}
-        bgWord={LOCALIZATION[LANG].resume}
-        theme={theme}
+        firstWord={language ? LOCALIZATION.en.about : LOCALIZATION.ru.about}
+        secondWord={language ? LOCALIZATION.en.me : LOCALIZATION.ru.me}
+        bgWord={language ? LOCALIZATION.en.resume : LOCALIZATION.ru.resume}
       />
-      <List list={SKILLS_LIST} language={LANG} />
+      <List list={SKILLS_LIST} language={language ? 'en' : 'ru'} />
     </section>
   );
 };

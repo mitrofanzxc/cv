@@ -57,7 +57,6 @@ export interface ITitle {
   firstWord: string;
   secondWord?: string;
   bgWord?: string;
-  theme: string;
 }
 
 export interface IModal {
