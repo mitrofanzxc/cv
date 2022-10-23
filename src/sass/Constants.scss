@@ -36,11 +36,11 @@
 // === FUNCTIONS ===
 
 @function strip-unit($num) {
-  @return $num / ($num * 0 + 1);
+  @return calc($num / ($num * 0 + 1px));
 }
 
 @function rem($num) {
-  @return (strip-unit($num) / 16) * 1rem;
+  @return (calc(strip-unit($num) / 16)) * 1rem;
 }
 
 // === / FUNCTIONS ===
