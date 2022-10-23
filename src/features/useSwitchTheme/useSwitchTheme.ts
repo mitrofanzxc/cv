@@ -6,7 +6,7 @@ const useSwitchTheme = () => {
 
   useEffect(() => {
     const BODY = document.querySelector('.body') as HTMLBodyElement;
-    const H3 = document.querySelectorAll('.h3') as NodeListOf<HTMLHeadingElement>;
+    const H3 = document.querySelectorAll('.h3');
 
     if (!isDark) {
       BODY.classList.add('body-light');

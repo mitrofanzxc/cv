@@ -15,7 +15,7 @@ const List: FC<ILIST_PROPS> = ({ list, isLanguageEn }) => {
   const LOCATION = useLocation().pathname;
 
   const modalCreate = (event: MouseEvent<HTMLLIElement>) => {
-    const currentTarget = event.currentTarget.id as string;
+    const currentTarget = event.currentTarget.id;
 
     let data;
 
