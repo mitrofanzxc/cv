@@ -1,11 +1,21 @@
 import { ILIST } from '../interface/interface';
 
+import imgCalculator from '../../images/portfolio/calculator.jpg';
+import imgCalculatorSmall from '../../images/portfolio/calculator-small.jpg';
+import imgCoincapApi from '../../images/portfolio/coincap-api.jpg';
+import imgCoincapApiSmall from '../../images/portfolio/coincap-api-small.jpg';
 import imgRSLang from '../../images/portfolio/rslang.jpg';
 import imgRSLangSmall from '../../images/portfolio/rslang-small.jpg';
 import imgAsyncRace from '../../images/portfolio/async-race.jpg';
 import imgAsyncRaceSmall from '../../images/portfolio/async-race-small.jpg';
 import imgOnlineStore from '../../images/portfolio/online-store.jpg';
 import imgOnlineStoreSmall from '../../images/portfolio/online-store-small.jpg';
+import imgReactForm from '../../images/portfolio/react-form.jpg';
+import imgReactFormSmall from '../../images/portfolio/react-form-small.jpg';
+import imgLLCMarketingTest from '../../images/portfolio/llc-marketing-test.jpg';
+import imgLLCMarketingTestSmall from '../../images/portfolio/llc-marketing-test-small.jpg';
+import imgParadigmaTest from '../../images/portfolio/paradigma-test.jpg';
+import imgParadigmaTestSmall from '../../images/portfolio/paradigma-test-small.jpg';
 import imgNewsApi from '../../images/portfolio/news-api.jpg';
 import imgNewsApiSmall from '../../images/portfolio/news-api-small.jpg';
 import imgProjectManagementApp from '../../images/portfolio/projectmanagementapp.jpg';
@@ -26,6 +36,30 @@ import imgWebDev from '../../images/portfolio/webdev.jpg';
 import imgWebDevSmall from '../../images/portfolio/webdev-small.jpg';
 
 const PORTFOLIO_LIST: ILIST[] = [
+  {
+    src: imgCalculator,
+    srcSmall: imgCalculatorSmall,
+    alt: 'Calculator',
+    altRu: 'Калькулятор',
+    description: 'Calculator',
+    descriptionRu: 'Калькулятор',
+    deploy: 'https://mitrofanzxc.github.io/calculator/',
+    code: 'https://github.com/mitrofanzxc/calculator',
+    stack: 'React, Redux Toolkit, Styled Components, Cypress, TypeScript, SCSS',
+    id: 'c1cfa258-9044-4c06-a8ea-347543923498',
+  },
+  {
+    src: imgCoincapApi,
+    srcSmall: imgCoincapApiSmall,
+    alt: 'CoinCap API',
+    altRu: 'КоинКап АПИ',
+    description: 'CoinCap API',
+    descriptionRu: 'КоинКап АПИ',
+    deploy: 'https://mitrofanzxc.github.io/coincap-api/',
+    code: 'https://github.com/mitrofanzxc/coincap-api',
+    stack: 'React, Redux Toolkit, RTK Query, TypeScript, SCSS',
+    id: 'c1cfa258-9044-4c06-a8ea-347543923497',
+  },
   {
     src: imgRSLang,
     srcSmall: imgRSLangSmall,
@@ -60,6 +94,42 @@ const PORTFOLIO_LIST: ILIST[] = [
     deploy: 'https://rolling-scopes-school.github.io/mitrofanzxc-JSFE2022Q1/online-store/',
     code: 'https://github.com/rolling-scopes-school/mitrofanzxc-JSFE2022Q1/tree/online-store',
     stack: 'React, Redux Toolkit, TypeScript, React Testing Library, Swiper, SCSS',
+    id: 'ca102e38-7dff-4a39-8e32-cb57cad0bff2',
+  },
+  {
+    src: imgLLCMarketingTest,
+    srcSmall: imgLLCMarketingTestSmall,
+    alt: 'Montajcolec.by',
+    altRu: 'Монтажколец.бай',
+    description: 'Montajcolec.by',
+    descriptionRu: 'Монтажколец.бай',
+    deploy: 'https://mitrofanzxc.github.io/llc-marketing-test/',
+    code: 'https://github.com/mitrofanzxc/llc-marketing-test',
+    stack: 'React, Redux Toolkit, TypeScript, React Testing Library, Swiper, SCSS',
+    id: 'ca102e38-7dff-4a39-8e32-cb57cad0bff2',
+  },
+  {
+    src: imgReactForm,
+    srcSmall: imgReactFormSmall,
+    alt: 'React From',
+    altRu: 'Реакт Форма',
+    description: 'React From',
+    descriptionRu: 'Реакт Форма',
+    deploy: 'https://mitrofanzxc.github.io/react-form-test/',
+    code: 'https://github.com/mitrofanzxc/react-form-test',
+    stack: 'React, TypeScript, SCSS',
+    id: 'ca102e38-7dff-4a39-8e32-cb57cad0bff2',
+  },
+  {
+    src: imgParadigmaTest,
+    srcSmall: imgParadigmaTestSmall,
+    alt: 'Roofing Academy',
+    altRu: 'Академия Кровли',
+    description: 'Roofing Academy',
+    descriptionRu: 'Академия Кровли',
+    deploy: 'https://mitrofanzxc.github.io/paradigma-test/',
+    code: 'https://github.com/mitrofanzxc/paradigma-test',
+    stack: 'React, Redux Toolkit, TypeScript, Swiper, SCSS',
     id: 'ca102e38-7dff-4a39-8e32-cb57cad0bff2',
   },
   {

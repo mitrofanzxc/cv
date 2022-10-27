@@ -18,6 +18,14 @@ const Contacts: FC = () => {
         secondWord={isLanguageEn ? LOCALIZATION.en.touch : LOCALIZATION.ru.touch}
         bgWord={isLanguageEn ? LOCALIZATION.en.contacts : LOCALIZATION.ru.contacts}
       />
+      <a
+        href="https://drive.google.com/file/d/1jU63AOhtD3uks_hfX9_VgPH8_TWDW6NH/view?usp=sharing"
+        target="_blank"
+        rel="noreferrer noopener"
+        className="h2 title"
+      >
+        {isLanguageEn ? LOCALIZATION.en.cv : LOCALIZATION.ru.cv}
+      </a>
       <List list={SOCIALS_LIST} isLanguageEn={isLanguageEn} />
       <Title
         firstWord={isLanguageEn ? LOCALIZATION.en.self : LOCALIZATION.ru.self}

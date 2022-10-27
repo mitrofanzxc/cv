@@ -21,7 +21,9 @@ const Modal: FC<IModal> = ({ modalData }) => {
 
   return (
     <>
-      <div
+      <button
+        type="button"
+        aria-label="Close modal"
         onClick={() => dispatch(setModalClose())}
         className={`modal__shadow ${isModalOpen ? 'modal__shadow-active' : ''}`}
       />

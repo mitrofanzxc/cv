@@ -1,9 +1,17 @@
-@import '../../sass/Constants.scss';
+@import '../../sass/constants.scss';
 
 .main-page {
   display: flex;
   align-items: center;
   height: 100vh;
+
+  @media (max-width: $breakpoint-xs-min) {
+    position: relative;
+    z-index: 2;
+    flex-direction: column;
+    row-gap: $base * 2;
+    padding: $base 0;
+  }
 }
 
 .avatar__wrapper {
@@ -32,13 +40,22 @@
   gap: $base * 3;
   flex-basis: 55%;
 
+  @media (max-width: $breakpoint-md-min) {
+    flex-basis: 65%;
+  }
+
+  @media (max-width: $breakpoint-xs-min) {
+    align-items: flex-start;
+    text-align: start;
+  }
+
   .h1,
   .h2 {
     text-align: end;
-  }
 
-  @media (max-width: $breakpoint-md-min) {
-    flex-basis: 65%;
+    @media (max-width: $breakpoint-xs-min) {
+      text-align: start;
+    }
   }
 }
 

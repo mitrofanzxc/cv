@@ -27,6 +27,7 @@ export const LOCALIZATION = {
     electronicForm: 'Электронный вид',
     self: 'Само',
     introduction: 'Презентация',
+    cv: 'Нажмите здесь, чтобы скачать резюме pdf',
   },
   en: {
     name: 'Dzmitry Karakulka',
@@ -56,5 +57,6 @@ export const LOCALIZATION = {
     electronicForm: 'Electronic Form',
     self: 'Self',
     introduction: 'Introduction',
+    cv: 'Click here to download cv pdf',
   },
 };

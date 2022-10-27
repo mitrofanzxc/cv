@@ -25,7 +25,7 @@ const Header: FC = () => {
       <nav className="nav">
         <ul className="nav__list">
           <li className="nav__list-item">
-            <NavLink to={main} className="nav__list-item__link home" />
+            <NavLink to={main} end className="nav__list-item__link home" />
           </li>
           <li className="nav__list-item">
             <NavLink to={about} className="nav__list-item__link about" />
@@ -42,16 +42,18 @@ const Header: FC = () => {
         </ul>
         <ul className="nav__list nav__list-secondary">
           <li className="nav__list-item">
-            <div
+            <button
               className={`nav__list-item__link ${language ? 'en' : 'ru'}`}
-              role="button"
+              type="button"
+              aria-label="Change language"
               onClick={() => dispatch(setLanguageByAmount(!language))}
             />
           </li>
           <li className="nav__list-item">
-            <div
+            <button
               className={`nav__list-item__link ${theme ? 'dark' : 'light'}`}
-              role="button"
+              type="button"
+              aria-label="Change theme"
               onClick={() => dispatch(setThemeByAmount(!theme))}
             />
           </li>

@@ -1,4 +1,19 @@
-@import '../../sass/Constants.scss';
+@import '../../sass/constants.scss';
+
+.contacts-page {
+  .h2 {
+    display: block;
+    margin: 0 auto;
+    padding: $base * 3 0 $base * 5 0;
+    color: $color-white;
+    text-align: center;
+    transition: all $transition-01 ease-out;
+
+    &:hover {
+      color: $color-orange;
+    }
+  }
+}
 
 .socials {
   display: flex;
