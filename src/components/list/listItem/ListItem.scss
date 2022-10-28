@@ -3,10 +3,9 @@
 .list-item__wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   gap: $base;
-  width: 31%;
   cursor: pointer;
   transition: $transition-02;
 
@@ -17,10 +16,6 @@
       color: $color-orange;
       transition: $transition-02;
     }
-  }
-
-  @media (max-width: $breakpoint-sm-min) {
-    width: 47%;
   }
 }
 
