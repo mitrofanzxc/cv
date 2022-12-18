@@ -1,10 +1,10 @@
 import { ISocialsMock } from './interface';
-import imgGithub from '../../images/icons/socials/github.png';
-import imgGithubSmall from '../../images/icons/socials/github-small.png';
-import imgCodewars from '../../images/icons/socials/codewars.png';
-import imgCodewarsSmall from '../../images/icons/socials/codewars-small.png';
-import imgLinkedin from '../../images/icons/socials/linkedin.png';
-import imgLinkedinSmall from '../../images/icons/socials/linkedin-small.png';
+import imgGithub from '../assets/images/icons/socials/github.png';
+import imgGithubSmall from '../assets/images/icons/socials/github-small.png';
+import imgCodewars from '../assets/images/icons/socials/codewars.png';
+import imgCodewarsSmall from '../assets/images/icons/socials/codewars-small.png';
+import imgLinkedin from '../assets/images/icons/socials/linkedin.png';
+import imgLinkedinSmall from '../assets/images/icons/socials/linkedin-small.png';
 
 const SocialsMock: ISocialsMock[] = [
   {

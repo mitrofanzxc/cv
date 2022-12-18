@@ -1,4 +1,4 @@
-@import '../../../sass/constants.scss';
+@import '../../../styles/constants.scss';
 
 .button-navigation {
   @include poppins;
@@ -25,5 +25,5 @@
 }
 
 .button-navigation__close {
-  background-image: url('../../../images/modal/close.svg');
+  background-image: url('../../../assets/images/modal/close.svg');
 }

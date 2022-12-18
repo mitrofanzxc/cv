@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { useLocation } from 'react-router-dom';
-import { PATHS } from '../../../shared/routes/routes';
-import { ILIST } from '../../../shared/interface/interface';
+import { Paths } from '../../../constants';
+import { ILIST } from '../../../constants/interface';
 import { Image } from '../..';
 import './ListItem.scss';
 
@@ -17,7 +17,7 @@ const ListItem: FC<ILIST> = ({
   isLanguageEn,
   modalCreate,
 }) => {
-  const { about, portfolio, certificates, contacts } = PATHS;
+  const { about, portfolio, certificates, contacts } = Paths;
   const LOCATION = useLocation().pathname;
 
   return (

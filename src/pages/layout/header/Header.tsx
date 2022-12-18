@@ -1,17 +1,12 @@
 import { FC } from 'react';
 import { NavLink } from 'react-router-dom';
-import {
-  setThemeByAmount,
-  setLanguageByAmount,
-  useScrollToTop,
-  useSwitchTheme,
-} from '../../../features';
-import { useAppSelector, useAppDispatch } from '../../../app/hooks';
-import { PATHS } from '../../../shared';
+import { useAppSelector, useAppDispatch, setThemeByAmount, setLanguageByAmount } from 'store';
+import { useScrollToTop, useSwitchTheme } from 'hooks';
+import { Paths } from '../../../constants';
 import './Header.scss';
 
 const Header: FC = () => {
-  const { main, about, portfolio, certificates, contacts } = PATHS;
+  const { main, about, portfolio, certificates, contacts } = Paths;
 
   const theme = useAppSelector(({ theme: { value } }) => value);
   const language = useAppSelector(({ language: { value } }) => value);

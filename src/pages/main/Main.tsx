@@ -1,10 +1,10 @@
 import { FC } from 'react';
-import { useAppSelector } from '../../app/hooks';
-import { useScrollToTop, useSwitchTheme } from '../../features';
-import { Image } from '../../components';
-import { LOCALIZATION } from '../../shared';
-import Avatar from '../../images/avatar.jpg';
-import AvatarSmall from '../../images/avatar-small.jpg';
+import { useAppSelector } from 'store';
+import { useScrollToTop, useSwitchTheme } from 'hooks';
+import { Image } from 'components';
+import { Localization } from '../../constants';
+import Avatar from '../../assets/images/avatar.jpg';
+import AvatarSmall from '../../assets/images/avatar-small.jpg';
 import './Main.scss';
 
 const Main: FC = () => {
@@ -20,17 +20,17 @@ const Main: FC = () => {
           <Image
             src={Avatar}
             srcSmall={AvatarSmall}
-            alt={language ? LOCALIZATION.en.name : LOCALIZATION.ru.name}
+            alt={language ? Localization.en.name : Localization.ru.name}
             className="avatar"
           />
         </div>
         <div className="home__container">
-          <h1 className="h1">{language ? LOCALIZATION.en.name : LOCALIZATION.ru.name}</h1>
+          <h1 className="h1">{language ? Localization.en.name : Localization.ru.name}</h1>
           <h2 className="h2">
-            {language ? LOCALIZATION.en.specialization : LOCALIZATION.ru.specialization}
+            {language ? Localization.en.specialization : Localization.ru.specialization}
           </h2>
           <div className="home__about">
-            {language ? LOCALIZATION.en.aboutMe : LOCALIZATION.ru.aboutMe}
+            {language ? Localization.en.aboutMe : Localization.ru.aboutMe}
           </div>
         </div>
       </section>

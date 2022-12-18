@@ -1,8 +1,8 @@
 import { FC } from 'react';
-import { useScrollToTop, useSwitchTheme } from '../../features';
-import { useAppSelector } from '../../app/hooks';
-import { Title, List } from '../../components';
-import { LOCALIZATION, SOCIALS_LIST } from '../../shared';
+import { useAppSelector } from 'store';
+import { useScrollToTop, useSwitchTheme } from 'hooks';
+import { Title, List } from 'components';
+import { Localization, SocialsMock } from '../../constants';
 import './Contacts.scss';
 
 const Contacts: FC = () => {
@@ -14,9 +14,9 @@ const Contacts: FC = () => {
   return (
     <section className="contacts-page">
       <Title
-        firstWord={isLanguageEn ? LOCALIZATION.en.getIn : LOCALIZATION.ru.getIn}
-        secondWord={isLanguageEn ? LOCALIZATION.en.touch : LOCALIZATION.ru.touch}
-        bgWord={isLanguageEn ? LOCALIZATION.en.contacts : LOCALIZATION.ru.contacts}
+        firstWord={isLanguageEn ? Localization.en.getIn : Localization.ru.getIn}
+        secondWord={isLanguageEn ? Localization.en.touch : Localization.ru.touch}
+        bgWord={isLanguageEn ? Localization.en.contacts : Localization.ru.contacts}
       />
       <a
         href="https://drive.google.com/file/d/1jU63AOhtD3uks_hfX9_VgPH8_TWDW6NH/view?usp=sharing"
@@ -24,12 +24,12 @@ const Contacts: FC = () => {
         rel="noreferrer noopener"
         className="h2 title"
       >
-        {isLanguageEn ? LOCALIZATION.en.cv : LOCALIZATION.ru.cv}
+        {isLanguageEn ? Localization.en.cv : Localization.ru.cv}
       </a>
-      <List list={SOCIALS_LIST} isLanguageEn={isLanguageEn} />
+      <List list={SocialsMock} isLanguageEn={isLanguageEn} />
       <Title
-        firstWord={isLanguageEn ? LOCALIZATION.en.self : LOCALIZATION.ru.self}
-        secondWord={isLanguageEn ? LOCALIZATION.en.introduction : LOCALIZATION.ru.introduction}
+        firstWord={isLanguageEn ? Localization.en.self : Localization.ru.self}
+        secondWord={isLanguageEn ? Localization.en.introduction : Localization.ru.introduction}
       />
       <div className="iframe__wrapper">
         <iframe

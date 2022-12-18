@@ -1,16 +1,16 @@
 import { FC } from 'react';
 import { useLocation } from 'react-router-dom';
-import { useAppSelector, useAppDispatch } from '../../app/hooks';
-import { setModalClose, useModalOpen } from '../../features';
-import { Image, ButtonNavigation } from '..';
-import { LOCALIZATION, PATHS } from '../../shared';
-import { IModal } from '../../shared/interface/interface';
+import { useAppSelector, useAppDispatch, setModalClose } from 'store';
+import { useModalOpen } from 'hooks';
+import { Image, ButtonNavigation } from 'components';
+import { Localization, Paths } from '../../constants';
+import { IModal } from '../../constants/interface';
 import './Modal.scss';
 
 const Modal: FC<IModal> = ({ modalData }) => {
   const { src, srcSmall, alt, altRu, description, descriptionRu, deploy, code, link, stack } =
     modalData;
-  const { portfolio, certificates } = PATHS;
+  const { portfolio, certificates } = Paths;
   const LOCATION = useLocation().pathname;
 
   const isLanguageEn = useAppSelector(({ language: { value } }) => value);
@@ -41,37 +41,38 @@ const Modal: FC<IModal> = ({ modalData }) => {
               {LOCATION === `/${portfolio}` && (
                 <>
                   <li className="modal__list-item">
-                    {`${isLanguageEn ? LOCALIZATION.en.deploy : LOCALIZATION.ru.deploy}: `}
+                    {`${isLanguageEn ? Localization.en.deploy : Localization.ru.deploy}: `}
                     <a
                       href={deploy}
                       target="_blank"
                       rel="noreferrer noopener"
                       className="modal__list-item-span"
                     >
-                      {isLanguageEn ? LOCALIZATION.en.link : LOCALIZATION.ru.link}
+                      {isLanguageEn ? Localization.en.link : Localization.ru.link}
                     </a>
                   </li>
                   <li className="modal__list-item">
-                    {`${isLanguageEn ? LOCALIZATION.en.code : LOCALIZATION.ru.code}: `}
+                    {`${isLanguageEn ? Localization.en.code : Localization.ru.code}: `}
                     <a
                       href={code}
                       target="_blank"
                       rel="noreferrer noopener"
                       className="modal__list-item-span"
                     >
-                      {isLanguageEn ? LOCALIZATION.en.link : LOCALIZATION.ru.link}
+                      {isLanguageEn ? Localization.en.link : Localization.ru.link}
                     </a>
                   </li>
                   <li className="modal__list-item">
-                    {`${isLanguageEn ? LOCALIZATION.en.stack : LOCALIZATION.ru.stack}: `}
+                    {`${isLanguageEn ? Localization.en.stack : Localization.ru.stack}: `}
                     <span className="stack">{stack}</span>
                   </li>
                 </>
               )}
+
               {LOCATION === `/${certificates}` && (
                 <li className="modal__list-item">
                   {`${
-                    isLanguageEn ? LOCALIZATION.en.electronicForm : LOCALIZATION.ru.electronicForm
+                    isLanguageEn ? Localization.en.electronicForm : Localization.ru.electronicForm
                   }: `}
                   <a
                     href={link}
@@ -79,7 +80,7 @@ const Modal: FC<IModal> = ({ modalData }) => {
                     rel="noreferrer noopener"
                     className="modal__list-item-span"
                   >
-                    {isLanguageEn ? LOCALIZATION.en.link : LOCALIZATION.ru.link}
+                    {isLanguageEn ? Localization.en.link : Localization.ru.link}
                   </a>
                 </li>
               )}

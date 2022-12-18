@@ -1,38 +1,38 @@
 import { IPortfolioMock } from './interface';
-import imgCalculator from '../../images/portfolio/calculator.jpg';
-import imgCalculatorSmall from '../../images/portfolio/calculator-small.jpg';
-import imgCoincapApi from '../../images/portfolio/coincap-api.jpg';
-import imgCoincapApiSmall from '../../images/portfolio/coincap-api-small.jpg';
-import imgRSLang from '../../images/portfolio/rslang.jpg';
-import imgRSLangSmall from '../../images/portfolio/rslang-small.jpg';
-import imgAsyncRace from '../../images/portfolio/async-race.jpg';
-import imgAsyncRaceSmall from '../../images/portfolio/async-race-small.jpg';
-import imgOnlineStore from '../../images/portfolio/online-store.jpg';
-import imgOnlineStoreSmall from '../../images/portfolio/online-store-small.jpg';
-import imgReactForm from '../../images/portfolio/react-form.jpg';
-import imgReactFormSmall from '../../images/portfolio/react-form-small.jpg';
-import imgLLCMarketingTest from '../../images/portfolio/llc-marketing-test.jpg';
-import imgLLCMarketingTestSmall from '../../images/portfolio/llc-marketing-test-small.jpg';
-import imgParadigmaTest from '../../images/portfolio/paradigma-test.jpg';
-import imgParadigmaTestSmall from '../../images/portfolio/paradigma-test-small.jpg';
-import imgNewsApi from '../../images/portfolio/news-api.jpg';
-import imgNewsApiSmall from '../../images/portfolio/news-api-small.jpg';
-import imgProjectManagementApp from '../../images/portfolio/projectmanagementapp.jpg';
-import imgProjectManagementAppSmall from '../../images/portfolio/projectmanagementapp-small.jpg';
-import imgReactStage3 from '../../images/portfolio/reactstage3.jpg';
-import imgReactStage3Small from '../../images/portfolio/reactstage3-small.jpg';
-import imgCssMemSlider from '../../images/portfolio/cssmemslider.jpg';
-import imgCssMemSliderSmall from '../../images/portfolio/cssmemslider-small.jpg';
-import imgVirtualKeyboard from '../../images/portfolio/virtualkeyboard.jpg';
-import imgVirtualKeyboardSmall from '../../images/portfolio/virtualkeyboard-small.jpg';
-import imgShelter from '../../images/portfolio/shelter.jpg';
-import imgShelterSmall from '../../images/portfolio/shelter-small.jpg';
-import imgCustomVideoPlayer from '../../images/portfolio/customvideoplayer.jpg';
-import imgCustomVideoPlayerSmall from '../../images/portfolio/customvideoplayer-small.jpg';
-import imgPortfolio from '../../images/portfolio/portfolio.jpg';
-import imgPortfolioSmall from '../../images/portfolio/portfolio-small.jpg';
-import imgWebDev from '../../images/portfolio/webdev.jpg';
-import imgWebDevSmall from '../../images/portfolio/webdev-small.jpg';
+import imgCalculator from '../assets/images/portfolio/calculator.jpg';
+import imgCalculatorSmall from '../assets/images/portfolio/calculator-small.jpg';
+import imgCoincapApi from '../assets/images/portfolio/coincap-api.jpg';
+import imgCoincapApiSmall from '../assets/images/portfolio/coincap-api-small.jpg';
+import imgRSLang from '../assets/images/portfolio/rslang.jpg';
+import imgRSLangSmall from '../assets/images/portfolio/rslang-small.jpg';
+import imgAsyncRace from '../assets/images/portfolio/async-race.jpg';
+import imgAsyncRaceSmall from '../assets/images/portfolio/async-race-small.jpg';
+import imgOnlineStore from '../assets/images/portfolio/online-store.jpg';
+import imgOnlineStoreSmall from '../assets/images/portfolio/online-store-small.jpg';
+import imgReactForm from '../assets/images/portfolio/react-form.jpg';
+import imgReactFormSmall from '../assets/images/portfolio/react-form-small.jpg';
+import imgLLCMarketingTest from '../assets/images/portfolio/llc-marketing-test.jpg';
+import imgLLCMarketingTestSmall from '../assets/images/portfolio/llc-marketing-test-small.jpg';
+import imgParadigmaTest from '../assets/images/portfolio/paradigma-test.jpg';
+import imgParadigmaTestSmall from '../assets/images/portfolio/paradigma-test-small.jpg';
+import imgNewsApi from '../assets/images/portfolio/news-api.jpg';
+import imgNewsApiSmall from '../assets/images/portfolio/news-api-small.jpg';
+import imgProjectManagementApp from '../assets/images/portfolio/projectmanagementapp.jpg';
+import imgProjectManagementAppSmall from '../assets/images/portfolio/projectmanagementapp-small.jpg';
+import imgReactStage3 from '../assets/images/portfolio/reactstage3.jpg';
+import imgReactStage3Small from '../assets/images/portfolio/reactstage3-small.jpg';
+import imgCssMemSlider from '../assets/images/portfolio/cssmemslider.jpg';
+import imgCssMemSliderSmall from '../assets/images/portfolio/cssmemslider-small.jpg';
+import imgVirtualKeyboard from '../assets/images/portfolio/virtualkeyboard.jpg';
+import imgVirtualKeyboardSmall from '../assets/images/portfolio/virtualkeyboard-small.jpg';
+import imgShelter from '../assets/images/portfolio/shelter.jpg';
+import imgShelterSmall from '../assets/images/portfolio/shelter-small.jpg';
+import imgCustomVideoPlayer from '../assets/images/portfolio/customvideoplayer.jpg';
+import imgCustomVideoPlayerSmall from '../assets/images/portfolio/customvideoplayer-small.jpg';
+import imgPortfolio from '../assets/images/portfolio/portfolio.jpg';
+import imgPortfolioSmall from '../assets/images/portfolio/portfolio-small.jpg';
+import imgWebDev from '../assets/images/portfolio/webdev.jpg';
+import imgWebDevSmall from '../assets/images/portfolio/webdev-small.jpg';
 
 const PortfolioMock: IPortfolioMock[] = [
   {
@@ -155,7 +155,7 @@ const PortfolioMock: IPortfolioMock[] = [
     deploy: 'https://project-management-app-team53.netlify.app/',
     code: 'https://github.com/mitrofanzxc/project-management-app',
     stack:
-      'React, Redux Toolkit (RTK Query), React Hook Form, React Beautiful DnD, React Testing Library, TypeScript, SCSS',
+      'React, Redux Toolkit, RTK Query, TypeScript, React Hook Form, React Beautiful DnD, React Testing Library, SCSS',
   },
   {
     id: '280d136d-d9bb-4bd6-b9ce-f3c92dc8499e',

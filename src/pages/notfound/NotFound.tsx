@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import { useScrollToTop, useSwitchTheme } from '../../features';
-import { useAppSelector } from '../../app/hooks';
-import { LOCALIZATION } from '../../shared';
+import { useAppSelector } from 'store';
+import { useScrollToTop, useSwitchTheme } from 'hooks';
+import { Localization } from '../../constants';
 import './NotFound.scss';
 
 const NotFound: FC = () => {
@@ -13,9 +13,9 @@ const NotFound: FC = () => {
   return (
     <section data-testid="NotFoundPage" className="notfound">
       <h1 className="h1">404</h1>
-      <h2 className="h2">{language ? LOCALIZATION.en.notFound : LOCALIZATION.ru.notFound}</h2>
+      <h2 className="h2">{language ? Localization.en.notFound : Localization.ru.notFound}</h2>
       <h3 className="h3">
-        {language ? LOCALIZATION.en.resourseRequest : LOCALIZATION.ru.resourseRequest}
+        {language ? Localization.en.resourseRequest : Localization.ru.resourseRequest}
       </h3>
     </section>
   );

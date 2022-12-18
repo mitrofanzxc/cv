@@ -1,17 +1,17 @@
 import { FC, useState, MouseEvent } from 'react';
 import { useLocation } from 'react-router-dom';
-import { useAppDispatch } from '../../app/hooks';
-import { useModalOpen, setModalOpen } from '../../features';
+import { useAppDispatch, setModalOpen } from 'store';
+import { useModalOpen } from 'hooks';
+import { PortfolioMock, CertificatesMock, Paths } from '../../constants';
 import { ListItem, Modal } from '..';
-import { PORTFOLIO_LIST, CERTIFICATES_LIST, PATHS } from '../../shared';
-import { ILIST, ILIST_PROPS } from '../../shared/interface/interface';
+import { ILIST, ILIST_PROPS } from '../../constants/interface';
 import './List.scss';
 
 const List: FC<ILIST_PROPS> = ({ list, isLanguageEn }) => {
-  const [modalData, setModalData] = useState<ILIST>(PORTFOLIO_LIST[0]);
+  const [modalData, setModalData] = useState<ILIST>(PortfolioMock[0]);
   const dispatch = useAppDispatch();
 
-  const { portfolio, certificates } = PATHS;
+  const { portfolio, certificates } = Paths;
   const LOCATION = useLocation().pathname;
 
   const modalCreate = (event: MouseEvent<HTMLButtonElement>) => {
@@ -20,9 +20,9 @@ const List: FC<ILIST_PROPS> = ({ list, isLanguageEn }) => {
     let data;
 
     if (LOCATION === `/${portfolio}`) {
-      data = PORTFOLIO_LIST;
+      data = PortfolioMock;
     } else if (LOCATION === `/${certificates}`) {
-      data = CERTIFICATES_LIST;
+      data = CertificatesMock;
     }
 
     const findObject = data?.filter((element: ILIST) => element.id === currentTarget)[0];

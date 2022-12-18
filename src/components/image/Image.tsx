@@ -1,5 +1,5 @@
 import { FC, useState, useEffect } from 'react';
-import { IImage } from '../../shared/interface/interface';
+import { IImage } from '../../constants/interface';
 
 import './Image.scss';
 

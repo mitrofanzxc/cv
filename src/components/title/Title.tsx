@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import { useAppSelector } from '../../app/hooks';
-import { ITitle } from '../../shared/interface/interface';
+import { useAppSelector } from 'store';
+import { ITitle } from '../../constants/interface';
 import './Title.scss';
 
 const Title: FC<ITitle> = ({ firstWord, secondWord, bgWord }) => {

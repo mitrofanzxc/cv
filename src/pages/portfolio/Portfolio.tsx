@@ -1,8 +1,8 @@
 import { FC } from 'react';
-import { useScrollToTop, useSwitchTheme } from '../../features';
-import { useAppSelector } from '../../app/hooks';
-import { Title, List } from '../../components';
-import { LOCALIZATION, PORTFOLIO_LIST } from '../../shared';
+import { useAppSelector } from 'store';
+import { useScrollToTop, useSwitchTheme } from 'hooks';
+import { Title, List } from 'components';
+import { Localization, PortfolioMock } from '../../constants';
 import './Portfolio.scss';
 
 const Portfolio: FC = () => {
@@ -14,11 +14,11 @@ const Portfolio: FC = () => {
   return (
     <section className="portfolio-page">
       <Title
-        firstWord={isLanguageEn ? LOCALIZATION.en.myE : LOCALIZATION.ru.myE}
-        secondWord={isLanguageEn ? LOCALIZATION.en.portfolio : LOCALIZATION.ru.portfolio}
-        bgWord={isLanguageEn ? LOCALIZATION.en.works : LOCALIZATION.ru.works}
+        firstWord={isLanguageEn ? Localization.en.myE : Localization.ru.myE}
+        secondWord={isLanguageEn ? Localization.en.portfolio : Localization.ru.portfolio}
+        bgWord={isLanguageEn ? Localization.en.works : Localization.ru.works}
       />
-      <List list={PORTFOLIO_LIST} isLanguageEn={isLanguageEn} />
+      <List list={PortfolioMock} isLanguageEn={isLanguageEn} />
     </section>
   );
 };

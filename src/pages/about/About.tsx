@@ -1,8 +1,8 @@
 import { FC } from 'react';
-import { useAppSelector } from '../../app/hooks';
-import { useScrollToTop, useSwitchTheme } from '../../features';
-import { Title, List } from '../../components';
-import { LOCALIZATION, SKILLS_LIST } from '../../shared';
+import { useAppSelector } from 'store';
+import { useScrollToTop, useSwitchTheme } from 'hooks';
+import { Title, List } from 'components';
+import { Localization, SkillsMock } from '../../constants';
 import './About.scss';
 
 const About: FC = () => {
@@ -14,11 +14,11 @@ const About: FC = () => {
   return (
     <section className="about-page">
       <Title
-        firstWord={isLanguageEn ? LOCALIZATION.en.about : LOCALIZATION.ru.about}
-        secondWord={isLanguageEn ? LOCALIZATION.en.me : LOCALIZATION.ru.me}
-        bgWord={isLanguageEn ? LOCALIZATION.en.resume : LOCALIZATION.ru.resume}
+        firstWord={isLanguageEn ? Localization.en.about : Localization.ru.about}
+        secondWord={isLanguageEn ? Localization.en.me : Localization.ru.me}
+        bgWord={isLanguageEn ? Localization.en.resume : Localization.ru.resume}
       />
-      <List list={SKILLS_LIST} isLanguageEn={isLanguageEn} />
+      <List list={SkillsMock} isLanguageEn={isLanguageEn} />
     </section>
   );
 };

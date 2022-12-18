@@ -1,8 +1,8 @@
 import { FC } from 'react';
-import { useScrollToTop, useSwitchTheme } from '../../features';
-import { useAppSelector } from '../../app/hooks';
+import { useAppSelector } from 'store';
+import { useScrollToTop, useSwitchTheme } from 'hooks';
 import { Title, List } from '../../components';
-import { LOCALIZATION, CERTIFICATES_LIST } from '../../shared';
+import { Localization, CertificatesMock } from '../../constants';
 import './Certificates.scss';
 
 const Certificates: FC = () => {
@@ -14,11 +14,11 @@ const Certificates: FC = () => {
   return (
     <section className="certificates-page">
       <Title
-        firstWord={isLanguageEn ? LOCALIZATION.en.myI : LOCALIZATION.ru.myI}
-        secondWord={isLanguageEn ? LOCALIZATION.en.certificates : LOCALIZATION.ru.certificates}
-        bgWord={isLanguageEn ? LOCALIZATION.en.awards : LOCALIZATION.ru.awards}
+        firstWord={isLanguageEn ? Localization.en.myI : Localization.ru.myI}
+        secondWord={isLanguageEn ? Localization.en.certificates : Localization.ru.certificates}
+        bgWord={isLanguageEn ? Localization.en.awards : Localization.ru.awards}
       />
-      <List list={CERTIFICATES_LIST} isLanguageEn={isLanguageEn} />
+      <List list={CertificatesMock} isLanguageEn={isLanguageEn} />
     </section>
   );
 };
