@@ -1,6 +1,6 @@
-import { IPATHS } from '../interface/interface';
+import { IPaths } from './interface';
 
-const PATHS: IPATHS = {
+const Paths: IPaths = {
   main: '/',
   about: 'about',
   portfolio: 'portfolio',
@@ -9,4 +9,4 @@ const PATHS: IPATHS = {
   notFound: '*',
 };
 
-export { PATHS };
+export { Paths };

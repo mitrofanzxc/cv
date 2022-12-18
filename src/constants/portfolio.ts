@@ -1,5 +1,4 @@
-import { ILIST } from '../interface/interface';
-
+import { IPortfolioMock } from './interface';
 import imgCalculator from '../../images/portfolio/calculator.jpg';
 import imgCalculatorSmall from '../../images/portfolio/calculator-small.jpg';
 import imgCoincapApi from '../../images/portfolio/coincap-api.jpg';
@@ -35,8 +34,9 @@ import imgPortfolioSmall from '../../images/portfolio/portfolio-small.jpg';
 import imgWebDev from '../../images/portfolio/webdev.jpg';
 import imgWebDevSmall from '../../images/portfolio/webdev-small.jpg';
 
-const PORTFOLIO_LIST: ILIST[] = [
+const PortfolioMock: IPortfolioMock[] = [
   {
+    id: 'da008180-0652-4570-a366-3e6156e9f592',
     src: imgCalculator,
     srcSmall: imgCalculatorSmall,
     alt: 'Calculator',
@@ -45,10 +45,11 @@ const PORTFOLIO_LIST: ILIST[] = [
     descriptionRu: 'Калькулятор',
     deploy: 'https://mitrofanzxc.github.io/calculator/',
     code: 'https://github.com/mitrofanzxc/calculator',
-    stack: 'React, Redux Toolkit, Styled Components, Cypress, TypeScript, SCSS',
-    id: 'c1cfa258-9044-4c06-a8ea-347543923498',
+    stack:
+      'React, Functional + Class Components, Redux Toolkit, TypeScript, Styled Components, SCSS, Cypress, Webpack',
   },
   {
+    id: '7ed601ce-f30a-4066-882d-7a260d0c9211',
     src: imgCoincapApi,
     srcSmall: imgCoincapApiSmall,
     alt: 'CoinCap API',
@@ -58,9 +59,9 @@ const PORTFOLIO_LIST: ILIST[] = [
     deploy: 'https://mitrofanzxc.github.io/coincap-api/',
     code: 'https://github.com/mitrofanzxc/coincap-api',
     stack: 'React, Redux Toolkit, RTK Query, TypeScript, SCSS',
-    id: 'c1cfa258-9044-4c06-a8ea-347543923497',
   },
   {
+    id: '81df2a6e-3574-491f-a1aa-1b3325a54e8f',
     src: imgRSLang,
     srcSmall: imgRSLangSmall,
     alt: 'RS Lang',
@@ -70,9 +71,9 @@ const PORTFOLIO_LIST: ILIST[] = [
     deploy: 'https://gendev-1001.github.io/rslang/',
     code: 'https://github.com/mitrofanzxc/rslang',
     stack: 'React, Redux Toolkit, RTK Query, TypeScript, SCSS',
-    id: 'c1cfa258-9044-4c06-a8ea-347543923496',
   },
   {
+    id: 'c217c746-b59b-4f04-ab90-049e3d1e51a2',
     src: imgAsyncRace,
     srcSmall: imgAsyncRaceSmall,
     alt: 'Async Race',
@@ -82,9 +83,9 @@ const PORTFOLIO_LIST: ILIST[] = [
     deploy: 'https://rolling-scopes-school.github.io/mitrofanzxc-JSFE2022Q1/async-race/',
     code: 'https://github.com/rolling-scopes-school/mitrofanzxc-JSFE2022Q1/tree/async-race',
     stack: 'React, Redux Toolkit, TypeScript, React Testing Library, SCSS',
-    id: 'ca102e38-7dff-4a39-8e32-cb57cad0bff3',
   },
   {
+    id: '4a44fedc-c253-49e9-9966-429c4a9e91ab',
     src: imgOnlineStore,
     srcSmall: imgOnlineStoreSmall,
     alt: 'Online Store',
@@ -94,9 +95,9 @@ const PORTFOLIO_LIST: ILIST[] = [
     deploy: 'https://rolling-scopes-school.github.io/mitrofanzxc-JSFE2022Q1/online-store/',
     code: 'https://github.com/rolling-scopes-school/mitrofanzxc-JSFE2022Q1/tree/online-store',
     stack: 'React, Redux Toolkit, TypeScript, React Testing Library, Swiper, SCSS',
-    id: 'ca102e38-7dff-4a39-8e32-cb57cad0bff2',
   },
   {
+    id: '7b9f5f46-6d64-4b29-8cd5-813f5a714d24',
     src: imgLLCMarketingTest,
     srcSmall: imgLLCMarketingTestSmall,
     alt: 'Montajcolec.by',
@@ -106,9 +107,9 @@ const PORTFOLIO_LIST: ILIST[] = [
     deploy: 'https://mitrofanzxc.github.io/llc-marketing-test/',
     code: 'https://github.com/mitrofanzxc/llc-marketing-test',
     stack: 'React, Redux Toolkit, TypeScript, React Testing Library, Swiper, SCSS',
-    id: 'ca102e38-7dff-4a39-8e32-cb57cad0bff2',
   },
   {
+    id: 'ed9e23f4-4545-4b13-8674-5c590b7e7908',
     src: imgReactForm,
     srcSmall: imgReactFormSmall,
     alt: 'React From',
@@ -118,9 +119,9 @@ const PORTFOLIO_LIST: ILIST[] = [
     deploy: 'https://mitrofanzxc.github.io/react-form-test/',
     code: 'https://github.com/mitrofanzxc/react-form-test',
     stack: 'React, TypeScript, SCSS',
-    id: 'ca102e38-7dff-4a39-8e32-cb57cad0bff2',
   },
   {
+    id: '1cbe2a98-c281-4a83-ac8c-b8e1ea1e4c04',
     src: imgParadigmaTest,
     srcSmall: imgParadigmaTestSmall,
     alt: 'Roofing Academy',
@@ -130,9 +131,9 @@ const PORTFOLIO_LIST: ILIST[] = [
     deploy: 'https://mitrofanzxc.github.io/paradigma-test/',
     code: 'https://github.com/mitrofanzxc/paradigma-test',
     stack: 'React, Redux Toolkit, TypeScript, Swiper, SCSS',
-    id: 'ca102e38-7dff-4a39-8e32-cb57cad0bff2',
   },
   {
+    id: '52956caa-2ecb-4a23-a955-2a38721338a1',
     src: imgNewsApi,
     srcSmall: imgNewsApiSmall,
     alt: 'News API',
@@ -142,9 +143,9 @@ const PORTFOLIO_LIST: ILIST[] = [
     deploy: 'https://rolling-scopes-school.github.io/mitrofanzxc-JSFE2022Q1/online-store/',
     code: 'https://github.com/rolling-scopes-school/mitrofanzxc-JSFE2022Q1/tree/online-store',
     stack: 'React, Redux Toolkit, TypeScript, React Testing Library, SCSS',
-    id: 'ca102e38-7dff-4a39-8e32-cb57cad0bff1',
   },
   {
+    id: 'bae3950b-c535-482b-8182-efc45568c088',
     src: imgProjectManagementApp,
     srcSmall: imgProjectManagementAppSmall,
     alt: 'Project Management App',
@@ -155,9 +156,9 @@ const PORTFOLIO_LIST: ILIST[] = [
     code: 'https://github.com/mitrofanzxc/project-management-app',
     stack:
       'React, Redux Toolkit (RTK Query), React Hook Form, React Beautiful DnD, React Testing Library, TypeScript, SCSS',
-    id: '1df505e9-67d7-44d5-af50-1bec2252c8b6',
   },
   {
+    id: '280d136d-d9bb-4bd6-b9ce-f3c92dc8499e',
     src: imgReactStage3,
     srcSmall: imgReactStage3Small,
     alt: 'RSSchool Stage 3',
@@ -167,9 +168,9 @@ const PORTFOLIO_LIST: ILIST[] = [
     deploy: 'https://rolling-scopes-school.github.io/mitrofanzxc-REACT2022Q1/',
     code: 'https://github.com/rolling-scopes-school/mitrofanzxc-REACT2022Q1',
     stack: 'React, React Testing Library, TypeScript, SCSS',
-    id: '95d33a4d-1c55-45b0-855e-85a8f1281582',
   },
   {
+    id: '73aac3fe-3ece-42f2-9846-e2fe5def8704',
     src: imgCssMemSlider,
     srcSmall: imgCssMemSliderSmall,
     alt: 'СSS Mem Slider',
@@ -179,9 +180,9 @@ const PORTFOLIO_LIST: ILIST[] = [
     deploy: 'https://mitrofanzxc.github.io/cssMemSlider/cssMemSlider/',
     code: 'https://github.com/mitrofanzxc/cssMemSlider',
     stack: 'HTML, SCSS',
-    id: 'db26059a-66ad-43d1-9e8c-d4e8db8b364e',
   },
   {
+    id: '10fd2227-d5e3-4c0a-8612-7d6f58b42c05',
     src: imgVirtualKeyboard,
     srcSmall: imgVirtualKeyboardSmall,
     alt: 'Virtual Keyboard',
@@ -191,9 +192,9 @@ const PORTFOLIO_LIST: ILIST[] = [
     deploy: 'https://mitrofanzxc.github.io/virtual-keyboard/',
     code: 'https://github.com/mitrofanzxc/virtual-keyboard',
     stack: 'HTML, SCSS, JavaScript',
-    id: '043762e5-3f6b-4dc2-9af4-b301baba32ef',
   },
   {
+    id: 'fca7ac50-e653-4c63-b413-ce546dd9cbb5',
     src: imgShelter,
     srcSmall: imgShelterSmall,
     alt: 'Shelter',
@@ -203,9 +204,9 @@ const PORTFOLIO_LIST: ILIST[] = [
     deploy: 'https://rolling-scopes-school.github.io/mitrofanzxc-JSFE2022Q1/shelter/pages/main/',
     code: 'https://github.com/rolling-scopes-school/mitrofanzxc-JSFE2022Q1',
     stack: 'HTML, SCSS, JavaScript',
-    id: '4ae3c9ac-d607-40db-8a03-2930cc0ae753',
   },
   {
+    id: 'd76bd02b-2f6e-44d9-a9a0-8f950c6ce587',
     src: imgCustomVideoPlayer,
     srcSmall: imgCustomVideoPlayerSmall,
     alt: 'Custom Video Player',
@@ -215,9 +216,9 @@ const PORTFOLIO_LIST: ILIST[] = [
     deploy: 'https://rolling-scopes-school.github.io/mitrofanzxc-JSFEPRESCHOOL/js30/',
     code: 'https://github.com/rolling-scopes-school/mitrofanzxc-JSFEPRESCHOOL',
     stack: 'HTML, SCSS, JavaScript',
-    id: '62a00433-8549-44c7-b14d-5826b0e42634',
   },
   {
+    id: '09415f0e-7f12-429b-a13d-4afafa3849ad',
     src: imgPortfolio,
     srcSmall: imgPortfolioSmall,
     alt: 'Portfolio',
@@ -227,9 +228,9 @@ const PORTFOLIO_LIST: ILIST[] = [
     deploy: 'https://rolling-scopes-school.github.io/mitrofanzxc-JSFEPRESCHOOL/portfolio/',
     code: 'https://github.com/rolling-scopes-school/mitrofanzxc-JSFEPRESCHOOL',
     stack: 'HTML, SCSS, JavaScript',
-    id: '7e44fd62-022f-41c3-a3e0-5c1396f7eae3',
   },
   {
+    id: '1f13f811-a988-46c8-9117-e9296aa4629d',
     src: imgWebDev,
     srcSmall: imgWebDevSmall,
     alt: 'WebDev',
@@ -239,8 +240,7 @@ const PORTFOLIO_LIST: ILIST[] = [
     deploy: 'https://rolling-scopes-school.github.io/mitrofanzxc-JSFELT/webdev/',
     code: 'https://github.com/rolling-scopes-school/mitrofanzxc-JSFELT',
     stack: 'HTML, SCSS',
-    id: '42f74b42-0daf-4e1e-97d3-1cfa53cc841a',
   },
 ];
 
-export { PORTFOLIO_LIST };
+export { PortfolioMock };

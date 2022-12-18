@@ -35,8 +35,9 @@ const ListItem: FC<ILIST> = ({
           <h3 className="h3">{isLanguageEn ? description : descriptionRu}</h3>
         </li>
       )}
+
       {LOCATION === `/${certificates}` && (
-        <li id={id} className="list-item__wrapper" onClick={modalCreate}>
+        <button type="button" id={id} className="list-item__wrapper" onClick={modalCreate}>
           <div className="list-item">
             <Image
               src={src}
@@ -46,10 +47,11 @@ const ListItem: FC<ILIST> = ({
             />
           </div>
           <h3 className="h3">{isLanguageEn ? description : descriptionRu}</h3>
-        </li>
+        </button>
       )}
+
       {LOCATION === `/${portfolio}` && (
-        <li id={id} className="list-item__wrapper" onClick={modalCreate}>
+        <button type="button" id={id} className="list-item__wrapper" onClick={modalCreate}>
           <div className="list-item">
             <Image
               src={src}
@@ -59,8 +61,9 @@ const ListItem: FC<ILIST> = ({
             />
           </div>
           <h3 className="h3">{isLanguageEn ? description : descriptionRu}</h3>
-        </li>
+        </button>
       )}
+
       {LOCATION === `/${contacts}` && (
         <li className="list-item__wrapper social-item__wrapper">
           <a

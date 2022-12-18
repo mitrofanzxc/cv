@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useAppSelector } from '../../app/hooks';
+import { useAppSelector } from 'store';
 
 const useModalOpen = () => {
   const isModalOpen = useAppSelector(({ modal: { value } }) => value);
@@ -8,9 +8,9 @@ const useModalOpen = () => {
     const BODY = document.querySelector('.body') as HTMLBodyElement;
 
     if (isModalOpen) {
-      BODY.classList.add('body__overflow');
+      BODY.classList.add('body_overflow');
     } else {
-      BODY.classList.remove('body__overflow');
+      BODY.classList.remove('body_overflow');
     }
   }, [isModalOpen]);
 };

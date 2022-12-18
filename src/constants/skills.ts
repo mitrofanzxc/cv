@@ -1,5 +1,4 @@
-import { ILIST } from '../interface/interface';
-
+import { ISkillsMock } from './interface';
 import imgReact from '../../images/icons/skills/react.png';
 import imgReactSmall from '../../images/icons/skills/react-small.png';
 import imgRedux from '../../images/icons/skills/redux.png';
@@ -29,133 +28,133 @@ import imgFigmaSmall from '../../images/icons/skills/figma-small.png';
 import imgPhotoshop from '../../images/icons/skills/photoshop.png';
 import imgPhotoshopSmall from '../../images/icons/skills/photoshop-small.png';
 
-const SKILLS_LIST: ILIST[] = [
+const SkillsMock: ISkillsMock[] = [
   {
+    id: '00b6ff43-a9b5-4f2c-9d43-75ace12265c8',
     src: imgReact,
     srcSmall: imgReactSmall,
     alt: 'React',
     altRu: 'Реакт',
     description: 'React',
     descriptionRu: 'Реакт',
-    id: 'c70dbbb0-cd60-4ca0-bcb2-7794f08a8d2e',
   },
   {
+    id: 'b7148b70-85a4-4dd9-87e7-8fb6a3ef8bb8',
     src: imgRedux,
     srcSmall: imgReduxSmall,
     alt: 'Redux',
     altRu: 'Редакс',
     description: 'Redux',
     descriptionRu: 'Редакс',
-    id: '14bb7d7a-fb86-46ac-88e2-f29b32c1df23',
   },
   {
+    id: '6a95f69b-ff81-4f52-a08e-6b28f7ad168e',
     src: imgTs,
     srcSmall: imgTsSmall,
     alt: 'TypeScript',
     altRu: 'ТайпСкрипт',
     description: 'TypeScript',
     descriptionRu: 'ТайпСкрипт',
-    id: 'd0af7368-202f-4f4d-8570-b3b6f2c6eadd',
   },
   {
+    id: 'd76a8256-4f9c-4690-a834-ad49ead700af',
     src: imgRtl,
     srcSmall: imgRtlSmall,
     alt: 'React Testing Library',
     altRu: 'Библиотека Тестирования Реакт',
     description: 'React Testing Library',
     descriptionRu: 'Библиотека Тестирования Реакт',
-    id: 'd019f4f2-87e8-48d2-a62d-425803d1a82d',
   },
   {
+    id: '88991854-22ab-4e97-9efa-e1a1bb9617b5',
     src: imgJs,
     srcSmall: imgJsSmall,
     alt: 'JavaScript',
     altRu: 'ДжаваСкрипт',
     description: 'JavaScript',
     descriptionRu: 'ДжаваСкрипт',
-    id: 'd8732128-4432-49ea-9e8f-de67b5e2211f',
   },
   {
+    id: '047f2984-0d24-4b8b-9c19-f62a590a4c84',
     src: imgSass,
     srcSmall: imgSassSmall,
     alt: 'SASS / SCSS',
     altRu: 'SASS / SCSS',
     description: 'SASS / SCSS',
     descriptionRu: 'SASS / SCSS',
-    id: 'daad99a9-f473-4ba8-823e-bab8cf45c6ef',
   },
   {
+    id: 'adc23522-71f7-4e03-9dde-d32148c2afcc',
     src: imgCss,
     srcSmall: imgCssSmall,
     alt: 'CSS',
     altRu: 'CSS',
     description: 'CSS',
     descriptionRu: 'CSS',
-    id: '02fcfbe3-7163-425e-9a64-ad658a9388d4',
   },
   {
+    id: 'b256bb63-4723-42bc-8bda-4beb29f2d178',
     src: imgHtml,
     srcSmall: imgHtmlSmall,
     alt: 'HTML',
     altRu: 'HTML',
     description: 'HTML',
     descriptionRu: 'HTML',
-    id: 'bc4b89f6-d23e-46a7-8730-6829dd452c3a',
   },
   {
+    id: 'f5e1fc61-f337-423b-9b2a-a562e2347c2e',
     src: imgGit,
     srcSmall: imgGitSmall,
     alt: 'Git / GitHub',
     altRu: 'Гит / ГитХаб',
     description: 'Git / GitHub',
     descriptionRu: 'Гит / ГитХаб',
-    id: '4064e2b9-810b-416f-bbd9-672d8280ed42',
   },
   {
+    id: 'f2edaeee-a091-484b-9a0b-91dccf10cdd5',
     src: imgVscode,
     srcSmall: imgVscodeSmall,
     alt: 'VS Code',
     altRu: 'VS Code',
     description: 'VS Code',
     descriptionRu: 'VS Code',
-    id: '3b7aafc7-364c-47bb-b5b4-43e96ff4b256',
   },
   {
+    id: '6432d40e-b721-4c68-89fd-16e5c7fca8d6',
     src: imgWebpack,
     srcSmall: imgWebpackSmall,
     alt: 'WebPack',
     altRu: 'ВебПак',
     description: 'WebPack',
     descriptionRu: 'ВебПак',
-    id: 'ef91a1f6-9c13-4178-a24e-9f1d87ac69b3',
   },
   {
+    id: '52a67578-fe05-4f4a-a279-214bdd93e2fa',
     src: imgGulp,
     srcSmall: imgGulpSmall,
     alt: 'Gulp',
     altRu: 'Галп',
     description: 'Gulp',
     descriptionRu: 'Галп',
-    id: 'b0d73cd9-51b2-48db-8992-76adabe92a00',
   },
   {
+    id: 'aada8a1a-1c20-4a69-ae2e-121a14d1c74a',
     src: imgFigma,
     srcSmall: imgFigmaSmall,
     alt: 'Figma',
     altRu: 'Фигма',
     description: 'Figma',
     descriptionRu: 'Фигма',
-    id: 'bf40f764-8738-4959-a07a-e4770787caf5',
   },
   {
+    id: '4176c17d-aed0-49bf-8a66-120bc0c8ac48',
     src: imgPhotoshop,
     srcSmall: imgPhotoshopSmall,
     alt: 'Photoshop',
     altRu: 'Фотошоп',
     description: 'Photoshop',
     descriptionRu: 'Фотошоп',
-    id: '26225607-8da8-4a66-bc86-567c7fe3e95d',
   },
 ];
 
-export { SKILLS_LIST };
+export { SkillsMock };

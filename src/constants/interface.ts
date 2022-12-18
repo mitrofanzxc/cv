@@ -1,12 +1,57 @@
 import { MouseEvent } from 'react';
 
-export interface IPATHS {
+export interface IPaths {
   main: string;
   about: string;
   portfolio: string;
   certificates: string;
   contacts: string;
   notFound: string;
+}
+
+export interface ICertificatesMock {
+  id: string;
+  src: string;
+  srcSmall: string;
+  alt: string;
+  altRu: string;
+  description: string;
+  descriptionRu: string;
+  link: string;
+}
+
+export interface IPortfolioMock {
+  id: string;
+  src: string;
+  srcSmall: string;
+  alt: string;
+  altRu: string;
+  description: string;
+  descriptionRu: string;
+  deploy: string;
+  code: string;
+  stack: string;
+}
+
+export interface ISkillsMock {
+  id: string;
+  src: string;
+  srcSmall: string;
+  alt: string;
+  altRu: string;
+  description: string;
+  descriptionRu: string;
+}
+
+export interface ISocialsMock {
+  id: string;
+  src: string;
+  srcSmall: string;
+  alt: string;
+  altRu: string;
+  description: string;
+  descriptionRu: string;
+  link: string;
 }
 
 export interface ILIST {
@@ -22,7 +67,7 @@ export interface ILIST {
   key?: string;
   id?: string;
   isLanguageEn?: boolean;
-  modalCreate?: (event: MouseEvent<HTMLLIElement>) => void;
+  modalCreate?: (event: MouseEvent<HTMLButtonElement>) => void;
   stack?: string;
 }
 

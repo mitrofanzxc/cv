@@ -1,4 +1,4 @@
-export const LOCALIZATION = {
+export const Localization = {
   ru: {
     name: 'Дмитрий Каракулько',
     specialization: 'Фронт-енд Разработчик',

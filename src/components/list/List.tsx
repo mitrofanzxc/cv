@@ -14,7 +14,7 @@ const List: FC<ILIST_PROPS> = ({ list, isLanguageEn }) => {
   const { portfolio, certificates } = PATHS;
   const LOCATION = useLocation().pathname;
 
-  const modalCreate = (event: MouseEvent<HTMLLIElement>) => {
+  const modalCreate = (event: MouseEvent<HTMLButtonElement>) => {
     const currentTarget = event.currentTarget.id;
 
     let data;

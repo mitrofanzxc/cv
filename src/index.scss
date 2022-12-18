@@ -1,5 +1,9 @@
-@import './sass/constants.scss';
-@import './sass/normalize.scss';
+@import './styles/constants.scss';
+@import './styles/normalize.scss';
+@import './styles/reset.scss';
+@import './styles/indents.scss';
+@import './styles/headers.scss';
+@import './styles/flex.scss';
 
 // === FONTS ===
 
@@ -7,47 +11,36 @@
   @font-face {
     font-family: $font_name;
     font-display: swap;
-    src: url('./fonts/#{$file_name}.woff') format('woff'),
-      url('./fonts/#{$file_name}.woff2') format('woff2');
+    src: url('./assets/fonts/#{$file_name}.woff') format('woff'),
+      url('./assets/fonts/#{$file_name}.woff2') format('woff2');
     font-weight: #{$weight};
     font-style: #{$style};
   }
 }
 
-@import './sass/fonts.scss';
+@import './styles/fonts.scss';
 
 // === / FONTS ===
 
-html,
-body {
+.body {
   @include poppins;
+  @include scroll;
   position: relative;
   width: 100%;
   background-color: $color-dark;
   color: $color-white;
   scroll-behavior: smooth;
-}
-
-.body {
-  @include scroll;
   transition: $transition-01;
 }
 
-.body-light {
+.body_light {
   background-color: $color-white;
   color: $color-dark;
   transition: $transition-01;
 }
 
-.body__overflow {
+.body_overflow {
   overflow-y: hidden;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }
 
 #root {
@@ -64,78 +57,14 @@ body {
 }
 
 .wrapper {
-  display: flex;
-  width: 80%;
-  max-width: $base * 288;
-  margin: 0 auto;
+  max-width: $base * 256;
+  width: calc(100vw - ($base * 4));
+  margin-right: auto;
+  margin-left: auto;
 
   @media (max-width: $breakpoint-lg-min) {
-    width: 97%;
+    width: calc(100vw - ($base));
   }
-}
-
-.h1 {
-  @include poppins;
-  margin: 0;
-  padding: 0;
-  font-size: calc(1.5em + 4vw);
-  color: $color-orange;
-  text-align: center;
-  text-transform: uppercase;
-  @include disableSelection;
-  transition: $transition-01;
-}
-
-.h2 {
-  @include poppins;
-  position: relative;
-  z-index: 2;
-  margin: 0;
-  padding: 0;
-  font-size: calc(0.5em + 4vw);
-  font-weight: $fw-semi-bold;
-  letter-spacing: 0.125rem;
-  text-align: center;
-  text-transform: uppercase;
-  @include disableSelection;
-  transition: $transition-01;
-
-  span {
-    color: $color-orange;
-  }
-}
-
-.h3 {
-  @include poppins;
-  margin: 0;
-  padding: 0;
-  font-size: $fs-xl;
-  font-weight: $fw-semi-bold;
-  color: $color-white;
-  text-align: center;
-  text-transform: uppercase;
-  @include disableSelection;
-  transition: $transition-01;
-}
-
-.h3-light {
-  color: $color-dark;
-  transition: $transition-01;
-}
-
-.h4 {
-  @include poppins;
-  margin: 0;
-  padding: 0;
-  font-size: $fs-m;
-  font-weight: $fw-regular;
-  color: $color-dark-08;
-  line-height: $base * 4;
-  letter-spacing: 0.06em;
-}
-
-a {
-  text-decoration: none;
 }
 
 .active {
