@@ -1,14 +1,10 @@
 import { FC } from 'react';
 import { useAppSelector } from 'store';
-import { useScrollToTop, useSwitchTheme } from 'hooks';
 import { Localization } from '../../constants';
 import './NotFound.scss';
 
 const NotFound: FC = () => {
   const language = useAppSelector(({ language: { value } }) => value);
-
-  useScrollToTop();
-  useSwitchTheme();
 
   return (
     <section data-testid="NotFoundPage" className="notfound">

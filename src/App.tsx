@@ -1,14 +1,10 @@
 import { FC } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { useScrollToTop, useSwitchTheme } from 'hooks';
 import { Layout, NotFound, Main, About, Portfolio, Certificates, Contacts } from 'pages';
 import { Paths } from './constants';
 
 const App: FC = () => {
   const { main, about, portfolio, certificates, contacts, notFound } = Paths;
-
-  useScrollToTop();
-  useSwitchTheme();
 
   return (
     <Routes>

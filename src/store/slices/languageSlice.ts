@@ -1,12 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
+import { getLocalStorage } from 'utils';
 
 export interface LanguageState {
   value: boolean;
 }
 
 const initialState: LanguageState = {
-  value: true,
+  value: getLocalStorage('language') || true,
 };
 
 export const languageSlice = createSlice({

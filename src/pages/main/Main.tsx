@@ -1,6 +1,5 @@
 import { FC } from 'react';
 import { useAppSelector } from 'store';
-import { useScrollToTop, useSwitchTheme } from 'hooks';
 import { Image } from 'components';
 import { Localization } from '../../constants';
 import Avatar from '../../assets/images/avatar.jpg';
@@ -9,9 +8,6 @@ import './Main.scss';
 
 const Main: FC = () => {
   const language = useAppSelector(({ language: { value } }) => value);
-
-  useScrollToTop();
-  useSwitchTheme();
 
   return (
     <>

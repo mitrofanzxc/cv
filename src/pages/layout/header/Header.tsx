@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useAppSelector, useAppDispatch, setThemeByAmount, setLanguageByAmount } from 'store';
-import { useScrollToTop, useSwitchTheme } from 'hooks';
+import { useScrollToTop, useSwitchTheme, useSetLocalStorage } from 'hooks';
 import { Paths } from '../../../constants';
 import Sprite from '../../../assets/images/sprite.svg';
 import './Header.scss';
@@ -21,8 +21,11 @@ const Header: FC = () => {
     dispatch(setThemeByAmount(!theme));
   };
 
-  useScrollToTop();
+  useSetLocalStorage('theme');
+  useSetLocalStorage('language');
+  useSetLocalStorage('modal');
   useSwitchTheme();
+  useScrollToTop();
 
   return (
     <header data-testid="header" className="header">

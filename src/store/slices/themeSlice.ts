@@ -1,12 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
+import { getLocalStorage } from 'utils';
 
 export interface ThemeState {
   value: boolean;
 }
 
 const initialState: ThemeState = {
-  value: true,
+  value: getLocalStorage('theme') || true,
 };
 
 export const themeSlice = createSlice({

@@ -1,15 +1,11 @@
 import { FC } from 'react';
 import { useAppSelector } from 'store';
-import { useScrollToTop, useSwitchTheme } from 'hooks';
 import { Title, List } from 'components';
 import { Localization, SocialsMock } from '../../constants';
 import './Contacts.scss';
 
 const Contacts: FC = () => {
   const isLanguageEn = useAppSelector(({ language: { value } }) => value);
-
-  useScrollToTop();
-  useSwitchTheme();
 
   return (
     <section className="contacts-page">

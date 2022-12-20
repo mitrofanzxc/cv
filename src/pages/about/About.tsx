@@ -1,15 +1,11 @@
 import { FC } from 'react';
 import { useAppSelector } from 'store';
-import { useScrollToTop, useSwitchTheme } from 'hooks';
 import { Title, List } from 'components';
 import { Localization, SkillsMock } from '../../constants';
 import './About.scss';
 
 const About: FC = () => {
   const isLanguageEn = useAppSelector(({ language: { value } }) => value);
-
-  useScrollToTop();
-  useSwitchTheme();
 
   return (
     <section className="about-page">
