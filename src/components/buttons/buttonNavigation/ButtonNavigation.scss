@@ -1,7 +1,6 @@
 @import '../../../styles/constants.scss';
 
 .button-navigation {
-  @include poppins;
   position: absolute;
   top: -$base * 5;
   left: calc(100% - ($base * 5));

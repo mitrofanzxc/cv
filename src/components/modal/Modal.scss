@@ -8,19 +8,24 @@
   bottom: 0;
   right: 0;
   z-index: 3;
-  width: 70vw;
-  // min-height: 500px;
+  max-width: $base * 256;
+  width: calc(100vw - ($base * 25));
+  max-height: max-content;
   padding: $base * 2;
   margin: auto;
   background-color: $color-white;
   border-radius: $base * 2;
+
+  @media (max-width: $breakpoint-xs-min) {
+    width: calc(100vw - ($base * 12));
+  }
 }
 
-.modal-active {
+.modal_active {
   display: block;
 }
 
-.modal__container {
+.modal__wrapper {
   display: flex;
   align-items: stretch;
   color: $color-dark-08;
@@ -35,8 +40,7 @@
   display: block;
   width: 60%;
   height: auto;
-  border-radius: $base * 4;
-  border: $base solid $color-orange;
+  border-radius: $base;
 
   @media (max-width: $breakpoint-md-min) {
     width: 100%;
@@ -70,8 +74,7 @@
   }
 }
 
-.modal__list-item {
-  @include poppins;
+.modal-list__item {
   margin-top: $base * 2;
   font-size: $base * 3;
   font-weight: $fw-bold;
@@ -86,8 +89,7 @@
   }
 }
 
-.modal__list-item-span {
-  @include poppins;
+.modal-list__link {
   position: relative;
   margin-left: $base;
   font-size: $base * 3;
@@ -126,12 +128,12 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 2;
+  z-index: 3;
   width: 100vw;
   height: 100vh;
   background-color: $color-dark-06;
 }
 
-.modal__shadow-active {
+.modal__shadow_active {
   display: block;
 }

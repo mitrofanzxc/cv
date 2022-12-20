@@ -25,44 +25,44 @@ const Modal: FC<IModal> = ({ modalData }) => {
         type="button"
         aria-label="Close modal"
         onClick={() => dispatch(setModalClose())}
-        className={`modal__shadow ${isModalOpen ? 'modal__shadow-active' : ''}`}
+        className={`modal__shadow ${isModalOpen ? 'modal__shadow_active' : ''}`}
       />
-      <div className={`modal ${isModalOpen ? 'modal-active' : ''}`}>
-        <div className="modal__container">
+      <div className={`modal ${isModalOpen ? 'modal_active' : ''}`}>
+        <div className="modal__wrapper">
           <Image
             src={src}
             srcSmall={srcSmall}
             alt={isLanguageEn ? alt : altRu}
-            className="modal__img"
+            className="modal__img box-shadow"
           />
           <div className="modal__info">
             <h3 className="h3">{isLanguageEn ? description : descriptionRu}</h3>
-            <ul className="modal__list">
+            <ul className="modal-list">
               {LOCATION === `/${portfolio}` && (
                 <>
-                  <li className="modal__list-item">
+                  <li className="modal-list__item">
                     {`${isLanguageEn ? Localization.en.deploy : Localization.ru.deploy}: `}
                     <a
                       href={deploy}
                       target="_blank"
                       rel="noreferrer noopener"
-                      className="modal__list-item-span"
+                      className="modal-list__link"
                     >
                       {isLanguageEn ? Localization.en.link : Localization.ru.link}
                     </a>
                   </li>
-                  <li className="modal__list-item">
+                  <li className="modal-list__item">
                     {`${isLanguageEn ? Localization.en.code : Localization.ru.code}: `}
                     <a
                       href={code}
                       target="_blank"
                       rel="noreferrer noopener"
-                      className="modal__list-item-span"
+                      className="modal-list__link"
                     >
                       {isLanguageEn ? Localization.en.link : Localization.ru.link}
                     </a>
                   </li>
-                  <li className="modal__list-item">
+                  <li className="modal-list__item">
                     {`${isLanguageEn ? Localization.en.stack : Localization.ru.stack}: `}
                     <span className="stack">{stack}</span>
                   </li>
@@ -70,7 +70,7 @@ const Modal: FC<IModal> = ({ modalData }) => {
               )}
 
               {LOCATION === `/${certificates}` && (
-                <li className="modal__list-item">
+                <li className="modal-list__item">
                   {`${
                     isLanguageEn ? Localization.en.electronicForm : Localization.ru.electronicForm
                   }: `}
@@ -78,7 +78,7 @@ const Modal: FC<IModal> = ({ modalData }) => {
                     href={link}
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="modal__list-item-span"
+                    className="modal-list__link"
                   >
                     {isLanguageEn ? Localization.en.link : Localization.ru.link}
                   </a>

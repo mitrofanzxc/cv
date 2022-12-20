@@ -10,7 +10,6 @@
 }
 
 .h2 {
-  @include poppins;
   @include disableSelection;
   position: relative;
   z-index: 2;
@@ -41,7 +40,6 @@
 }
 
 .h4 {
-  @include poppins;
   font-size: $fs-m;
   font-weight: $fw-regular;
   color: $color-dark-08;
