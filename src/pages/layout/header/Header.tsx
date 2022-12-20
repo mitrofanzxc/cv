@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { useAppSelector, useAppDispatch, setThemeByAmount, setLanguageByAmount } from 'store';
 import { useScrollToTop, useSwitchTheme } from 'hooks';
 import { Paths } from '../../../constants';
+import Sprite from '../../../assets/images/sprite.svg';
 import './Header.scss';
 
 const Header: FC = () => {
@@ -12,45 +13,81 @@ const Header: FC = () => {
   const language = useAppSelector(({ language: { value } }) => value);
   const dispatch = useAppDispatch();
 
+  const handleLanguage = () => {
+    dispatch(setLanguageByAmount(!language));
+  };
+
+  const handleTheme = () => {
+    dispatch(setThemeByAmount(!theme));
+  };
+
   useScrollToTop();
   useSwitchTheme();
 
   return (
     <header data-testid="header" className="header">
       <nav className="nav">
-        <ul className="nav__list">
-          <li className="nav__list-item">
-            <NavLink to={main} end className="nav__list-item__link home" />
+        <ul className="nav-list">
+          <li className="nav-list__item">
+            <NavLink to={main} end className="nav-list__link">
+              <svg className="nav-list__img">
+                <use xlinkHref={`${Sprite}#main`} />
+              </svg>
+            </NavLink>
           </li>
-          <li className="nav__list-item">
-            <NavLink to={about} className="nav__list-item__link about" />
+          <li className="nav-list__item">
+            <NavLink to={about} className="nav-list__link">
+              <svg className="nav-list__img">
+                <use xlinkHref={`${Sprite}#about`} />
+              </svg>
+            </NavLink>
           </li>
-          <li className="nav__list-item">
-            <NavLink to={portfolio} className="nav__list-item__link portfolio" />
+          <li className="nav-list__item">
+            <NavLink to={portfolio} className="nav-list__link">
+              <svg className="nav-list__img">
+                <use xlinkHref={`${Sprite}#portfolio`} />
+              </svg>
+            </NavLink>
           </li>
-          <li className="nav__list-item">
-            <NavLink to={certificates} className="nav__list-item__link certificates" />
+          <li className="nav-list__item">
+            <NavLink to={certificates} className="nav-list__link">
+              <svg className="nav-list__img">
+                <use xlinkHref={`${Sprite}#certificates`} />
+              </svg>
+            </NavLink>
           </li>
-          <li className="nav__list-item">
-            <NavLink to={contacts} className="nav__list-item__link contacts" />
+          <li className="nav-list__item">
+            <NavLink to={contacts} className="nav-list__link">
+              <svg className="nav-list__img">
+                <use xlinkHref={`${Sprite}#contacts`} />
+              </svg>
+            </NavLink>
           </li>
         </ul>
-        <ul className="nav__list nav__list-secondary">
-          <li className="nav__list-item">
+        <ul className="nav-list nav-list-secondary">
+          <li className="nav-list__item">
             <button
-              className={`nav__list-item__link ${language ? 'en' : 'ru'}`}
+              className="nav-list__link"
               type="button"
               aria-label="Change language"
-              onClick={() => dispatch(setLanguageByAmount(!language))}
-            />
+              onClick={handleLanguage}
+            >
+              <svg className="nav-list__img">
+                <use xlinkHref={`${Sprite}#${language ? 'en' : 'ru'}`} />
+              </svg>
+            </button>
           </li>
-          <li className="nav__list-item">
+          <li className="nav-list__item">
             <button
-              className={`nav__list-item__link ${theme ? 'dark' : 'light'}`}
+              className={`nav-list__link ${theme ? 'dark' : 'light'}`}
               type="button"
               aria-label="Change theme"
-              onClick={() => dispatch(setThemeByAmount(!theme))}
-            />
+              onClick={handleTheme}
+            >
+              <svg className="nav-list__img">
+                <use xlinkHref={`${Sprite}#${theme ? 'dark' : 'light'}`} />
+              </svg>
+            </button>
           </li>
         </ul>
       </nav>

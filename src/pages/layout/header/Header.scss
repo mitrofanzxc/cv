@@ -33,7 +33,7 @@
   }
 }
 
-.nav__list {
+.nav-list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,7 +49,7 @@
   }
 }
 
-.nav__list-secondary {
+.nav-list-secondary {
   position: absolute;
   bottom: $base;
   gap: $base;
@@ -63,7 +63,7 @@
   }
 }
 
-.nav__list-item {
+.nav-list__item {
   width: $base * 10;
   height: $base * 10;
 
@@ -78,8 +78,10 @@
   }
 }
 
-.nav__list-item__link {
-  display: block;
+.nav-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: $base * 10;
   height: $base * 10;
   border: 0.125rem solid $color-dark;
@@ -89,7 +91,7 @@
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
-  transition: $transition-01;
+  transition: all $transition-01;
 
   @media (max-width: $breakpoint-xs-min) {
     width: $base * 8;
@@ -102,49 +104,25 @@
   }
 }
 
-.home {
-  background-image: url('../../../assets/images/icons/navigation/main.svg');
-  transition: $transition-01;
-}
+.nav-list__img {
+  width: $base * 7;
+  height: $base * 7;
 
-.about {
-  background-image: url('../../../assets/images/icons/navigation/about.svg');
-  transition: $transition-01;
-}
+  @media (max-width: $breakpoint-xs-min) {
+    width: $base * 5;
+    height: $base * 5;
+  }
 
-.portfolio {
-  background-image: url('../../../assets/images/icons/navigation/portfolio.svg');
-  transition: $transition-01;
-}
-
-.certificates {
-  background-image: url('../../../assets/images/icons/navigation/certificates.svg');
-  transition: $transition-01;
-}
-
-.contacts {
-  background-image: url('../../../assets/images/icons/navigation/contacts.svg');
-  transition: $transition-01;
-}
-
-.en {
-  background-image: url('../../../assets/images/icons/navigation/en.svg');
-  transition: $transition-01;
-}
-
-.ru {
-  background-image: url('../../../assets/images/icons/navigation/ru.svg');
-  transition: $transition-01;
+  @media (max-width: $breakpoint-xxs-min) {
+    width: $base * 4;
+    height: $base * 4;
+  }
 }
 
 .dark {
   background-color: $color-dark;
-  background-image: url('../../../assets/images/icons/navigation/dark.svg');
-  transition: $transition-01;
 }
 
 .light {
   background-color: $color-white;
-  background-image: url('../../../assets/images/icons/navigation/light.svg');
-  transition: $transition-01;
 }
