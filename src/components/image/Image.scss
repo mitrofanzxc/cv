@@ -1,21 +1,20 @@
 @import '../../styles/constants.scss';
 
-.list-item__img {
+.list__img {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: $base * 2;
   pointer-events: none;
   @include disableSelection;
 }
 
-.list-item__img-loading {
+.list__img_loading {
   filter: blur(0.156rem);
 }
 
-.list-item__img-onload {
+.list__img_onload {
   filter: blur(0);
-  transition: filter $transition-02 linear;
+  transition: filter $transition-01 linear;
 }
 
 .social-item__img {

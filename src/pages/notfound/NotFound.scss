@@ -1,19 +1,10 @@
 @import '../../styles/constants.scss';
 
 .notfound {
-  .h1 {
-    margin-top: $base * 5;
-    font-size: $base * 40;
-    color: $color-orange;
-  }
-
-  .h2 {
-    margin-top: $base * 5;
-    font-size: $base * 20;
-  }
-
-  .h3 {
-    margin-top: $base * 10;
-    font-size: $base * 8;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: $base * 4;
+  height: 100vh;
 }

@@ -54,7 +54,7 @@ export interface ISocialsMock {
   link: string;
 }
 
-export interface ILIST {
+export interface IList {
   link?: string;
   src: string;
   srcSmall: string;
@@ -71,8 +71,8 @@ export interface ILIST {
   stack?: string;
 }
 
-export interface ILIST_PROPS {
-  list: ILIST[];
+export interface IListProps {
+  list: IList[];
   isLanguageEn: boolean;
 }
 
@@ -94,7 +94,7 @@ export interface ITitle {
 }
 
 export interface IModal {
-  modalData: ILIST;
+  modalData: IList;
 }
 
 export interface IButtonNavigation {

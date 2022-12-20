@@ -1,6 +1,5 @@
 import { FC } from 'react';
 import { IButtonNavigation } from '../../../constants/interface';
-
 import './ButtonNavigation.scss';
 
 const ButtonNavigation: FC<IButtonNavigation> = ({ onClick, className }) => {

@@ -7,14 +7,13 @@
   flex-direction: column;
   gap: $base;
   cursor: pointer;
-  transition: $transition-02;
+  transition: all $transition-01;
 
   &:hover,
   &:active,
   &:focus {
     .h3 {
       color: $color-orange;
-      transition: $transition-02;
     }
   }
 }
@@ -25,20 +24,9 @@
   align-items: center;
   justify-content: center;
   background-color: $color-white;
-  border-radius: $base * 4;
-  border: $base solid $color-orange;
+  border-radius: $base;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   overflow: hidden;
-}
-
-.list-item-link {
-  display: block;
-  color: $color-dark;
-  transition: $transition-01;
-
-  &:hover {
-    color: $color-orange;
-    transition: $transition-01;
-  }
 }
 
 .social-item__wrapper {
@@ -49,17 +37,17 @@
   &:focus {
     .social-item {
       background-color: $color-white-08;
-      transition: $transition-01;
+      transition: all $transition-01;
     }
 
     .h3 {
       color: $color-orange;
-      transition: $transition-01;
+      transition: all $transition-01;
     }
   }
 }
 
 .social-item {
   border-radius: 50%;
-  transition: $transition-01;
+  transition: all $transition-01;
 }

@@ -6,7 +6,7 @@
   color: $color-orange;
   text-align: center;
   text-transform: uppercase;
-  transition: color $transition-01 linear;
+  transition: all $transition-01;
 }
 
 .h2 {
@@ -19,7 +19,7 @@
   letter-spacing: 0.125rem;
   text-align: center;
   text-transform: uppercase;
-  transition: color $transition-01 linear;
+  transition: all $transition-01;
 
   span {
     color: $color-orange;
@@ -33,7 +33,7 @@
   color: $color-white;
   text-align: center;
   text-transform: uppercase;
-  transition: color $transition-01 linear;
+  transition: all $transition-01;
 }
 
 .h3_light {

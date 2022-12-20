@@ -3,7 +3,6 @@ import { useAppSelector } from 'store';
 import { useScrollToTop, useSwitchTheme } from 'hooks';
 import { Title, List } from 'components';
 import { Localization, PortfolioMock } from '../../constants';
-import './Portfolio.scss';
 
 const Portfolio: FC = () => {
   const isLanguageEn = useAppSelector(({ language: { value } }) => value);

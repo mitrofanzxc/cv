@@ -1,11 +1,11 @@
 import { FC } from 'react';
 import { useLocation } from 'react-router-dom';
+import { Image } from 'components';
 import { Paths } from '../../../constants';
-import { ILIST } from '../../../constants/interface';
-import { Image } from '../..';
+import { IList } from '../../../constants/interface';
 import './ListItem.scss';
 
-const ListItem: FC<ILIST> = ({
+const ListItem: FC<IList> = ({
   src,
   srcSmall,
   alt,
@@ -29,7 +29,7 @@ const ListItem: FC<ILIST> = ({
               src={src}
               srcSmall={srcSmall}
               alt={isLanguageEn ? alt : altRu}
-              className="list-item__img"
+              className="list__img"
             />
           </div>
           <h3 className="h3">{isLanguageEn ? description : descriptionRu}</h3>
@@ -43,7 +43,7 @@ const ListItem: FC<ILIST> = ({
               src={src}
               srcSmall={srcSmall}
               alt={isLanguageEn ? alt : altRu}
-              className="list-item__img"
+              className="list__img"
             />
           </div>
           <h3 className="h3">{isLanguageEn ? description : descriptionRu}</h3>
@@ -57,7 +57,7 @@ const ListItem: FC<ILIST> = ({
               src={src}
               srcSmall={srcSmall}
               alt={isLanguageEn ? alt : altRu}
-              className="list-item__img"
+              className="list__img"
             />
           </div>
           <h3 className="h3">{isLanguageEn ? description : descriptionRu}</h3>
@@ -76,7 +76,7 @@ const ListItem: FC<ILIST> = ({
               src={src}
               srcSmall={srcSmall}
               alt={isLanguageEn ? alt : altRu}
-              className="list-item__img social-item__img"
+              className="list__img social-item__img"
             />
           </a>
           <h3 className="h3">{isLanguageEn ? description : descriptionRu}</h3>

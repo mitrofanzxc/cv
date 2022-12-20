@@ -16,11 +16,10 @@
   background-repeat: no-repeat;
   cursor: pointer;
   z-index: 2;
-  transition: $transition-01;
+  transition: all $transition-01;
 
   &:hover {
     background-color: $color-orange;
-    transition: $transition-01;
   }
 }
 

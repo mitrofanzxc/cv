@@ -16,25 +16,25 @@ const Main: FC = () => {
   return (
     <>
       <section data-testid="mainpage" className="main-page">
-        <div className="avatar__wrapper">
+        <div className="avatar">
           <Image
             src={Avatar}
             srcSmall={AvatarSmall}
             alt={language ? Localization.en.name : Localization.ru.name}
-            className="avatar"
+            className="avatar__img"
           />
         </div>
-        <div className="home__container">
+        <div className="main-page__info">
           <h1 className="h1">{language ? Localization.en.name : Localization.ru.name}</h1>
           <h2 className="h2">
             {language ? Localization.en.specialization : Localization.ru.specialization}
           </h2>
-          <div className="home__about">
+          <div className="main-page__about">
             {language ? Localization.en.aboutMe : Localization.ru.aboutMe}
           </div>
         </div>
       </section>
-      <div className="color__block" />
+      <div className="bg-block" />
     </>
   );
 };

@@ -9,7 +9,7 @@
   right: 0;
   z-index: 3;
   width: 70vw;
-  height: max-content;
+  // min-height: 500px;
   padding: $base * 2;
   margin: auto;
   background-color: $color-white;
@@ -105,14 +105,13 @@
     height: 0.125rem;
     background-color: $color-dark;
     opacity: 0;
-    transition: $transition-02;
+    transition: all $transition-01;
   }
 
   &:hover {
     &::after {
       left: 0;
       opacity: 1;
-      transition: $transition-02;
     }
   }
 }
