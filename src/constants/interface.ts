@@ -31,6 +31,7 @@ export interface IPortfolioMock {
   deploy: string;
   code: string;
   stack: string;
+  requirements: string;
 }
 
 export interface ISkillsMock {

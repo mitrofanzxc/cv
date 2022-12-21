@@ -66,6 +66,19 @@ const Modal: FC<IModal> = ({ modalData }) => {
                     {`${isLanguageEn ? Localization.en.stack : Localization.ru.stack}: `}
                     <span className="stack">{stack}</span>
                   </li>
+                  <li className="modal-list__item">
+                    {`${
+                      isLanguageEn ? Localization.en.requirements : Localization.ru.requirements
+                    }: `}
+                    <a
+                      href={code}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="modal-list__link"
+                    >
+                      {isLanguageEn ? Localization.en.link : Localization.ru.link}
+                    </a>
+                  </li>
                 </>
               )}
 

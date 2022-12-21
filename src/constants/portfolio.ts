@@ -47,6 +47,7 @@ const PortfolioMock: IPortfolioMock[] = [
     code: 'https://github.com/mitrofanzxc/calculator',
     stack:
       'React, Functional + Class Components, Redux Toolkit, TypeScript, Styled Components, SCSS, Cypress, Webpack',
+    requirements: 'https://github.com/mitrofanzxc/calculator#readme',
   },
   {
     id: '7ed601ce-f30a-4066-882d-7a260d0c9211',
@@ -59,6 +60,7 @@ const PortfolioMock: IPortfolioMock[] = [
     deploy: 'https://mitrofanzxc.github.io/coincap-api/',
     code: 'https://github.com/mitrofanzxc/coincap-api',
     stack: 'React, Redux Toolkit, RTK Query, TypeScript, SCSS',
+    requirements: 'https://github.com/mitrofanzxc/coincap-api#readme',
   },
   {
     id: '81df2a6e-3574-491f-a1aa-1b3325a54e8f',
@@ -71,6 +73,7 @@ const PortfolioMock: IPortfolioMock[] = [
     deploy: 'https://gendev-1001.github.io/rslang/',
     code: 'https://github.com/mitrofanzxc/rslang',
     stack: 'React, Redux Toolkit, RTK Query, TypeScript, SCSS',
+    requirements: 'https://github.com/mitrofanzxc/rslang#readme',
   },
   {
     id: 'c217c746-b59b-4f04-ab90-049e3d1e51a2',
@@ -83,6 +86,8 @@ const PortfolioMock: IPortfolioMock[] = [
     deploy: 'https://rolling-scopes-school.github.io/mitrofanzxc-JSFE2022Q1/async-race/',
     code: 'https://github.com/rolling-scopes-school/mitrofanzxc-JSFE2022Q1/tree/async-race',
     stack: 'React, Redux Toolkit, TypeScript, React Testing Library, SCSS',
+    requirements:
+      'https://github.com/rolling-scopes-school/mitrofanzxc-JSFE2022Q1/tree/async-race#readme',
   },
   {
     id: '4a44fedc-c253-49e9-9966-429c4a9e91ab',
@@ -95,6 +100,8 @@ const PortfolioMock: IPortfolioMock[] = [
     deploy: 'https://rolling-scopes-school.github.io/mitrofanzxc-JSFE2022Q1/online-store/',
     code: 'https://github.com/rolling-scopes-school/mitrofanzxc-JSFE2022Q1/tree/online-store',
     stack: 'React, Redux Toolkit, TypeScript, React Testing Library, Swiper, SCSS',
+    requirements:
+      'https://github.com/rolling-scopes-school/mitrofanzxc-JSFE2022Q1/tree/online-store#readme',
   },
   {
     id: '7b9f5f46-6d64-4b29-8cd5-813f5a714d24',
@@ -107,6 +114,7 @@ const PortfolioMock: IPortfolioMock[] = [
     deploy: 'https://mitrofanzxc.github.io/llc-marketing-test/',
     code: 'https://github.com/mitrofanzxc/llc-marketing-test',
     stack: 'React, Redux Toolkit, TypeScript, React Testing Library, Swiper, SCSS',
+    requirements: 'https://github.com/mitrofanzxc/llc-marketing-test#readme',
   },
   {
     id: 'ed9e23f4-4545-4b13-8674-5c590b7e7908',
@@ -119,6 +127,7 @@ const PortfolioMock: IPortfolioMock[] = [
     deploy: 'https://mitrofanzxc.github.io/react-form-test/',
     code: 'https://github.com/mitrofanzxc/react-form-test',
     stack: 'React, TypeScript, SCSS',
+    requirements: 'https://github.com/mitrofanzxc/react-form-test#readme',
   },
   {
     id: '1cbe2a98-c281-4a83-ac8c-b8e1ea1e4c04',
@@ -131,6 +140,7 @@ const PortfolioMock: IPortfolioMock[] = [
     deploy: 'https://mitrofanzxc.github.io/paradigma-test/',
     code: 'https://github.com/mitrofanzxc/paradigma-test',
     stack: 'React, Redux Toolkit, TypeScript, Swiper, SCSS',
+    requirements: 'https://github.com/mitrofanzxc/paradigma-test#readme',
   },
   {
     id: '52956caa-2ecb-4a23-a955-2a38721338a1',
@@ -143,6 +153,8 @@ const PortfolioMock: IPortfolioMock[] = [
     deploy: 'https://rolling-scopes-school.github.io/mitrofanzxc-JSFE2022Q1/online-store/',
     code: 'https://github.com/rolling-scopes-school/mitrofanzxc-JSFE2022Q1/tree/online-store',
     stack: 'React, Redux Toolkit, TypeScript, React Testing Library, SCSS',
+    requirements:
+      'https://github.com/rolling-scopes-school/mitrofanzxc-JSFE2022Q1/tree/online-store#readme',
   },
   {
     id: 'bae3950b-c535-482b-8182-efc45568c088',
@@ -156,6 +168,7 @@ const PortfolioMock: IPortfolioMock[] = [
     code: 'https://github.com/mitrofanzxc/project-management-app',
     stack:
       'React, Redux Toolkit, RTK Query, TypeScript, React Hook Form, React Beautiful DnD, React Testing Library, SCSS',
+    requirements: 'https://github.com/mitrofanzxc/project-management-app#readme',
   },
   {
     id: '280d136d-d9bb-4bd6-b9ce-f3c92dc8499e',
@@ -168,6 +181,7 @@ const PortfolioMock: IPortfolioMock[] = [
     deploy: 'https://rolling-scopes-school.github.io/mitrofanzxc-REACT2022Q1/',
     code: 'https://github.com/rolling-scopes-school/mitrofanzxc-REACT2022Q1',
     stack: 'React, React Testing Library, TypeScript, SCSS',
+    requirements: 'https://github.com/rolling-scopes-school/mitrofanzxc-REACT2022Q1#readme',
   },
   {
     id: '73aac3fe-3ece-42f2-9846-e2fe5def8704',
@@ -180,6 +194,7 @@ const PortfolioMock: IPortfolioMock[] = [
     deploy: 'https://mitrofanzxc.github.io/cssMemSlider/cssMemSlider/',
     code: 'https://github.com/mitrofanzxc/cssMemSlider',
     stack: 'HTML, SCSS',
+    requirements: 'https://github.com/mitrofanzxc/cssMemSlider#readme',
   },
   {
     id: '10fd2227-d5e3-4c0a-8612-7d6f58b42c05',
@@ -192,6 +207,7 @@ const PortfolioMock: IPortfolioMock[] = [
     deploy: 'https://mitrofanzxc.github.io/virtual-keyboard/',
     code: 'https://github.com/mitrofanzxc/virtual-keyboard',
     stack: 'HTML, SCSS, JavaScript',
+    requirements: 'https://github.com/mitrofanzxc/virtual-keyboard#readme',
   },
   {
     id: 'fca7ac50-e653-4c63-b413-ce546dd9cbb5',
@@ -204,6 +220,7 @@ const PortfolioMock: IPortfolioMock[] = [
     deploy: 'https://rolling-scopes-school.github.io/mitrofanzxc-JSFE2022Q1/shelter/pages/main/',
     code: 'https://github.com/rolling-scopes-school/mitrofanzxc-JSFE2022Q1',
     stack: 'HTML, SCSS, JavaScript',
+    requirements: 'https://github.com/rolling-scopes-school/mitrofanzxc-JSFE2022Q1#readme',
   },
   {
     id: 'd76bd02b-2f6e-44d9-a9a0-8f950c6ce587',
@@ -216,6 +233,7 @@ const PortfolioMock: IPortfolioMock[] = [
     deploy: 'https://rolling-scopes-school.github.io/mitrofanzxc-JSFEPRESCHOOL/js30/',
     code: 'https://github.com/rolling-scopes-school/mitrofanzxc-JSFEPRESCHOOL',
     stack: 'HTML, SCSS, JavaScript',
+    requirements: 'https://github.com/rolling-scopes-school/mitrofanzxc-JSFEPRESCHOOL#readme',
   },
   {
     id: '09415f0e-7f12-429b-a13d-4afafa3849ad',
@@ -228,6 +246,7 @@ const PortfolioMock: IPortfolioMock[] = [
     deploy: 'https://rolling-scopes-school.github.io/mitrofanzxc-JSFEPRESCHOOL/portfolio/',
     code: 'https://github.com/rolling-scopes-school/mitrofanzxc-JSFEPRESCHOOL',
     stack: 'HTML, SCSS, JavaScript',
+    requirements: 'https://github.com/rolling-scopes-school/mitrofanzxc-JSFEPRESCHOOL#readme',
   },
   {
     id: '1f13f811-a988-46c8-9117-e9296aa4629d',
@@ -240,6 +259,7 @@ const PortfolioMock: IPortfolioMock[] = [
     deploy: 'https://rolling-scopes-school.github.io/mitrofanzxc-JSFELT/webdev/',
     code: 'https://github.com/rolling-scopes-school/mitrofanzxc-JSFELT',
     stack: 'HTML, SCSS',
+    requirements: 'https://github.com/rolling-scopes-school/mitrofanzxc-JSFELT#readme',
   },
 ];
 
