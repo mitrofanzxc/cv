@@ -1,4 +1,10 @@
 import { IPortfolioMock } from './interface';
+import imgNotepad from '../assets/images/portfolio/notepad.jpg';
+import imgNotepadSmall from '../assets/images/portfolio/notepad-small.jpg';
+import imgAngularTest from '../assets/images/portfolio/angular-test.jpg';
+import imgAngularTestSmall from '../assets/images/portfolio/angular-test-small.jpg';
+import imgZikmesTest from '../assets/images/portfolio/zikmes-test.jpg';
+import imgZikmesTestSmall from '../assets/images/portfolio/zikmes-test-small.jpg';
 import imgCalculator from '../assets/images/portfolio/calculator.jpg';
 import imgCalculatorSmall from '../assets/images/portfolio/calculator-small.jpg';
 import imgCoincapApi from '../assets/images/portfolio/coincap-api.jpg';
@@ -35,6 +41,48 @@ import imgWebDev from '../assets/images/portfolio/webdev.jpg';
 import imgWebDevSmall from '../assets/images/portfolio/webdev-small.jpg';
 
 const PortfolioMock: IPortfolioMock[] = [
+  {
+    id: 'd54ff891-0721-4c54-90a5-28c2dcb2de3a',
+    src: imgNotepad,
+    srcSmall: imgNotepadSmall,
+    alt: 'Notepad',
+    altRu: 'Текстовый редактор',
+    description: 'Notepad',
+    descriptionRu: 'Текстовый редактор',
+    deploy: 'https://mitrofanzxc.github.io/calculator/',
+    code: 'https://github.com/mitrofanzxc/calculator',
+    stack:
+      'React, Functional + Class Components, Redux Toolkit, TypeScript, Styled Components, SCSS, Cypress, Webpack',
+    requirements: 'https://github.com/mitrofanzxc/calculator#readme',
+  },
+  {
+    id: '8ea909a5-ce8e-42bf-bef0-7d8e47198b05',
+    src: imgAngularTest,
+    srcSmall: imgAngularTestSmall,
+    alt: 'Tab set',
+    altRu: 'Набор вкладок',
+    description: 'Tab set',
+    descriptionRu: 'Набор вкладок',
+    deploy: 'https://mitrofanzxc.github.io/calculator/',
+    code: 'https://github.com/mitrofanzxc/calculator',
+    stack:
+      'React, Functional + Class Components, Redux Toolkit, TypeScript, Styled Components, SCSS, Cypress, Webpack',
+    requirements: 'https://github.com/mitrofanzxc/calculator#readme',
+  },
+  {
+    id: '7d28cdc6-23c5-49a1-8753-ee0604b32c55',
+    src: imgZikmesTest,
+    srcSmall: imgZikmesTestSmall,
+    alt: 'Form validation',
+    altRu: 'Валидация формы',
+    description: 'Form validation',
+    descriptionRu: 'Валидация формы',
+    deploy: 'https://mitrofanzxc.github.io/calculator/',
+    code: 'https://github.com/mitrofanzxc/calculator',
+    stack:
+      'React, Functional + Class Components, Redux Toolkit, TypeScript, Styled Components, SCSS, Cypress, Webpack',
+    requirements: 'https://github.com/mitrofanzxc/calculator#readme',
+  },
   {
     id: 'da008180-0652-4570-a366-3e6156e9f592',
     src: imgCalculator,
