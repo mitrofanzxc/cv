@@ -49,11 +49,11 @@ const PortfolioMock: IPortfolioMock[] = [
     altRu: 'Текстовый редактор',
     description: 'Notepad',
     descriptionRu: 'Текстовый редактор',
-    deploy: 'https://mitrofanzxc.github.io/calculator/',
-    code: 'https://github.com/mitrofanzxc/calculator',
+    deploy: 'https://mitrofanzxc-ivashin-test.netlify.app/',
+    code: 'https://github.com/mitrofanzxc/ivashin-test',
     stack:
-      'React, Functional + Class Components, Redux Toolkit, TypeScript, Styled Components, SCSS, Cypress, Webpack',
-    requirements: 'https://github.com/mitrofanzxc/calculator#readme',
+      'React, Redux Toolkit, React Router 6, TypeScript, localStorage, SCSS, Webpack 5, yarn',
+    requirements: 'https://github.com/mitrofanzxc/ivashin-test#requirements-of-the-project',
   },
   {
     id: '8ea909a5-ce8e-42bf-bef0-7d8e47198b05',
@@ -63,11 +63,11 @@ const PortfolioMock: IPortfolioMock[] = [
     altRu: 'Набор вкладок',
     description: 'Tab set',
     descriptionRu: 'Набор вкладок',
-    deploy: 'https://mitrofanzxc.github.io/calculator/',
-    code: 'https://github.com/mitrofanzxc/calculator',
+    deploy: 'https://mitrofanzxc.github.io/angular-test/summary',
+    code: 'https://github.com/mitrofanzxc/angular-test',
     stack:
-      'React, Functional + Class Components, Redux Toolkit, TypeScript, Styled Components, SCSS, Cypress, Webpack',
-    requirements: 'https://github.com/mitrofanzxc/calculator#readme',
+      'Angular, TypeScript, localStorage, Bootstrap 5, SCSS, Angular CLI',
+    requirements: 'https://github.com/mitrofanzxc/angular-test#requirements-of-the-project',
   },
   {
     id: '7d28cdc6-23c5-49a1-8753-ee0604b32c55',
@@ -77,11 +77,11 @@ const PortfolioMock: IPortfolioMock[] = [
     altRu: 'Валидация формы',
     description: 'Form validation',
     descriptionRu: 'Валидация формы',
-    deploy: 'https://mitrofanzxc.github.io/calculator/',
-    code: 'https://github.com/mitrofanzxc/calculator',
+    deploy: 'https://mitrofanzxc.github.io/zikmes-test/',
+    code: 'https://github.com/mitrofanzxc/zikmes-test',
     stack:
-      'React, Functional + Class Components, Redux Toolkit, TypeScript, Styled Components, SCSS, Cypress, Webpack',
-    requirements: 'https://github.com/mitrofanzxc/calculator#readme',
+      'TypeScript, DOM, CSS Animations, SCSS, Webpack 5, yarn',
+    requirements: 'https://github.com/mitrofanzxc/zikmes-test#requirements-of-the-project',
   },
   {
     id: 'da008180-0652-4570-a366-3e6156e9f592',
@@ -94,7 +94,7 @@ const PortfolioMock: IPortfolioMock[] = [
     deploy: 'https://mitrofanzxc.github.io/calculator/',
     code: 'https://github.com/mitrofanzxc/calculator',
     stack:
-      'React, Functional + Class Components, Redux Toolkit, TypeScript, Styled Components, SCSS, Cypress, Webpack',
+      'React, Functional + Class Components, Redux Toolkit, TypeScript, Styled Components, SCSS, Cypress, Webpack 5, npm',
     requirements: 'https://github.com/mitrofanzxc/calculator#readme',
   },
   {
@@ -107,7 +107,7 @@ const PortfolioMock: IPortfolioMock[] = [
     descriptionRu: 'КоинКап АПИ',
     deploy: 'https://mitrofanzxc.github.io/coincap-api/',
     code: 'https://github.com/mitrofanzxc/coincap-api',
-    stack: 'React, Redux Toolkit, RTK Query, TypeScript, SCSS',
+    stack: 'React, Redux Toolkit, RTK Query, TypeScript, SCSS, Webpack 5, npm',
     requirements: 'https://github.com/mitrofanzxc/coincap-api#readme',
   },
   {
@@ -120,7 +120,7 @@ const PortfolioMock: IPortfolioMock[] = [
     descriptionRu: 'РС Лэнг',
     deploy: 'https://gendev-1001.github.io/rslang/',
     code: 'https://github.com/mitrofanzxc/rslang',
-    stack: 'React, Redux Toolkit, RTK Query, TypeScript, SCSS',
+    stack: 'React, Redux Toolkit, RTK Query, TypeScript, SCSS, Webpack 5, npm',
     requirements: 'https://github.com/mitrofanzxc/rslang#readme',
   },
   {
