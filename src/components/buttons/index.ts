@@ -1,3 +1,4 @@
-import { ButtonNavigation } from './buttonNavigation/ButtonNavigation';
+import { ButtonPrimary } from './ButtonPrimary';
+import { ButtonNav } from './ButtonNav';
 
-export { ButtonNavigation };
+export { ButtonPrimary, ButtonNav };

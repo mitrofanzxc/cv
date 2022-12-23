@@ -1,0 +1,32 @@
+@import '../../../styles/constants.scss';
+
+.button-primary {
+  position: absolute;
+  top: -$base * 5;
+  left: calc(100% - ($base * 5));
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $base * 10;
+  height: $base * 10;
+  border-radius: 50%;
+  border: 0.125rem solid $color-orange;
+  background-color: $color-white;
+  // background-size: 60%;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  cursor: pointer;
+  transition: all $transition-01;
+
+  &:hover {
+    background-color: $color-orange;
+  }
+}
+
+.button-primary__close {
+  position: absolute;
+  top: -$base * 5;
+  left: calc(100% - ($base * 5));
+  z-index: 2;
+}

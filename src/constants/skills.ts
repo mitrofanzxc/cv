@@ -1,38 +1,10 @@
 import { ISkillsMock } from './interface';
-import imgReact from '../assets/images/icons/skills/react.png';
-import imgReactSmall from '../assets/images/icons/skills/react-small.png';
-import imgRedux from '../assets/images/icons/skills/redux.png';
-import imgReduxSmall from '../assets/images/icons/skills/redux-small.png';
-import imgTs from '../assets/images/icons/skills/ts.png';
-import imgTsSmall from '../assets/images/icons/skills/ts-small.png';
-import imgRtl from '../assets/images/icons/skills/react-testing-library.png';
-import imgRtlSmall from '../assets/images/icons/skills/react-testing-library-small.png';
-import imgJs from '../assets/images/icons/skills/js.png';
-import imgJsSmall from '../assets/images/icons/skills/js-small.png';
-import imgSass from '../assets/images/icons/skills/sass.png';
-import imgSassSmall from '../assets/images/icons/skills/sass-small.png';
-import imgCss from '../assets/images/icons/skills/css.png';
-import imgCssSmall from '../assets/images/icons/skills/css-small.png';
-import imgHtml from '../assets/images/icons/skills/html.png';
-import imgHtmlSmall from '../assets/images/icons/skills/html-small.png';
-import imgGit from '../assets/images/icons/skills/git.png';
-import imgGitSmall from '../assets/images/icons/skills/git-small.png';
-import imgVscode from '../assets/images/icons/skills/vscode.png';
-import imgVscodeSmall from '../assets/images/icons/skills/vscode-small.png';
-import imgWebpack from '../assets/images/icons/skills/webpack.png';
-import imgWebpackSmall from '../assets/images/icons/skills/webpack-small.png';
-import imgGulp from '../assets/images/icons/skills/gulp.png';
-import imgGulpSmall from '../assets/images/icons/skills/gulp-small.png';
-import imgFigma from '../assets/images/icons/skills/figma.png';
-import imgFigmaSmall from '../assets/images/icons/skills/figma-small.png';
-import imgPhotoshop from '../assets/images/icons/skills/photoshop.png';
-import imgPhotoshopSmall from '../assets/images/icons/skills/photoshop-small.png';
+import Sprite from '../assets/images/icons/sprite.svg';
 
 const SkillsMock: ISkillsMock[] = [
   {
     id: '00b6ff43-a9b5-4f2c-9d43-75ace12265c8',
-    src: imgReact,
-    srcSmall: imgReactSmall,
+    src: `${Sprite}#react`,
     alt: 'React',
     altRu: 'Реакт',
     description: 'React',
@@ -40,8 +12,7 @@ const SkillsMock: ISkillsMock[] = [
   },
   {
     id: 'b7148b70-85a4-4dd9-87e7-8fb6a3ef8bb8',
-    src: imgRedux,
-    srcSmall: imgReduxSmall,
+    src: `${Sprite}#redux`,
     alt: 'Redux',
     altRu: 'Редакс',
     description: 'Redux',
@@ -49,35 +20,31 @@ const SkillsMock: ISkillsMock[] = [
   },
   {
     id: '6a95f69b-ff81-4f52-a08e-6b28f7ad168e',
-    src: imgTs,
-    srcSmall: imgTsSmall,
+    src: `${Sprite}#typescript`,
     alt: 'TypeScript',
     altRu: 'ТайпСкрипт',
     description: 'TypeScript',
     descriptionRu: 'ТайпСкрипт',
   },
   {
-    id: 'd76a8256-4f9c-4690-a834-ad49ead700af',
-    src: imgRtl,
-    srcSmall: imgRtlSmall,
-    alt: 'React Testing Library',
-    altRu: 'Библиотека Тестирования Реакт',
-    description: 'React Testing Library',
-    descriptionRu: 'Библиотека Тестирования Реакт',
-  },
-  {
     id: '88991854-22ab-4e97-9efa-e1a1bb9617b5',
-    src: imgJs,
-    srcSmall: imgJsSmall,
+    src: `${Sprite}#javascript`,
     alt: 'JavaScript',
     altRu: 'ДжаваСкрипт',
     description: 'JavaScript',
     descriptionRu: 'ДжаваСкрипт',
   },
   {
+    id: 'd76a8256-4f9c-4690-a834-ad49ead700af',
+    src: `${Sprite}#react`,
+    alt: 'Cypress',
+    altRu: 'Сайпресс',
+    description: 'Cypress',
+    descriptionRu: 'Сайпресс',
+  },
+  {
     id: '047f2984-0d24-4b8b-9c19-f62a590a4c84',
-    src: imgSass,
-    srcSmall: imgSassSmall,
+    src: `${Sprite}#scss`,
     alt: 'SASS / SCSS',
     altRu: 'SASS / SCSS',
     description: 'SASS / SCSS',
@@ -85,8 +52,7 @@ const SkillsMock: ISkillsMock[] = [
   },
   {
     id: 'adc23522-71f7-4e03-9dde-d32148c2afcc',
-    src: imgCss,
-    srcSmall: imgCssSmall,
+    src: `${Sprite}#css`,
     alt: 'CSS',
     altRu: 'CSS',
     description: 'CSS',
@@ -94,8 +60,7 @@ const SkillsMock: ISkillsMock[] = [
   },
   {
     id: 'b256bb63-4723-42bc-8bda-4beb29f2d178',
-    src: imgHtml,
-    srcSmall: imgHtmlSmall,
+    src: `${Sprite}#html`,
     alt: 'HTML',
     altRu: 'HTML',
     description: 'HTML',
@@ -103,8 +68,7 @@ const SkillsMock: ISkillsMock[] = [
   },
   {
     id: 'f5e1fc61-f337-423b-9b2a-a562e2347c2e',
-    src: imgGit,
-    srcSmall: imgGitSmall,
+    src: `${Sprite}#git`,
     alt: 'Git / GitHub',
     altRu: 'Гит / ГитХаб',
     description: 'Git / GitHub',
@@ -112,8 +76,7 @@ const SkillsMock: ISkillsMock[] = [
   },
   {
     id: 'f2edaeee-a091-484b-9a0b-91dccf10cdd5',
-    src: imgVscode,
-    srcSmall: imgVscodeSmall,
+    src: `${Sprite}#vscode`,
     alt: 'VS Code',
     altRu: 'VS Code',
     description: 'VS Code',
@@ -121,26 +84,15 @@ const SkillsMock: ISkillsMock[] = [
   },
   {
     id: '6432d40e-b721-4c68-89fd-16e5c7fca8d6',
-    src: imgWebpack,
-    srcSmall: imgWebpackSmall,
+    src: `${Sprite}#webpack`,
     alt: 'WebPack',
     altRu: 'ВебПак',
     description: 'WebPack',
     descriptionRu: 'ВебПак',
   },
   {
-    id: '52a67578-fe05-4f4a-a279-214bdd93e2fa',
-    src: imgGulp,
-    srcSmall: imgGulpSmall,
-    alt: 'Gulp',
-    altRu: 'Галп',
-    description: 'Gulp',
-    descriptionRu: 'Галп',
-  },
-  {
     id: 'aada8a1a-1c20-4a69-ae2e-121a14d1c74a',
-    src: imgFigma,
-    srcSmall: imgFigmaSmall,
+    src: `${Sprite}#figma`,
     alt: 'Figma',
     altRu: 'Фигма',
     description: 'Figma',
@@ -148,8 +100,7 @@ const SkillsMock: ISkillsMock[] = [
   },
   {
     id: '4176c17d-aed0-49bf-8a66-120bc0c8ac48',
-    src: imgPhotoshop,
-    srcSmall: imgPhotoshopSmall,
+    src: `${Sprite}#photoshop`,
     alt: 'Photoshop',
     altRu: 'Фотошоп',
     description: 'Photoshop',

@@ -1,13 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
-import { getLocalStorage } from 'utils';
 
 export interface ModalState {
   value: boolean;
 }
 
 const initialState: ModalState = {
-  value: getLocalStorage('modal') || false,
+  value: false,
 };
 
 export const modalSlice = createSlice({

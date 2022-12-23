@@ -37,7 +37,6 @@ export interface IPortfolioMock {
 export interface ISkillsMock {
   id: string;
   src: string;
-  srcSmall: string;
   alt: string;
   altRu: string;
   description: string;
@@ -47,7 +46,6 @@ export interface ISkillsMock {
 export interface ISocialsMock {
   id: string;
   src: string;
-  srcSmall: string;
   alt: string;
   altRu: string;
   description: string;
@@ -98,7 +96,14 @@ export interface IModal {
   modalData: IList;
 }
 
-export interface IButtonNavigation {
-  onClick: () => void;
+export interface IButtonPrimary {
   className: string;
+  ariaLabel: string;
+  svg: string;
+  onClick: () => void;
+}
+
+export interface IButtonNav {
+  path: string;
+  svg: string;
 }

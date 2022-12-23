@@ -1,0 +1,128 @@
+@import '../../styles/constants.scss';
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 3;
+
+  @media (max-width: $breakpoint-md-min) {
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 $base;
+  background-color: $color-white-02;
+  transition: $transition-01;
+
+  @media (max-width: $breakpoint-md-min) {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    height: auto;
+    padding: $base 0;
+  }
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: $base * 2;
+
+  @media (max-width: $breakpoint-md-min) {
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: $base;
+    width: 100%;
+    margin-right: $base;
+  }
+}
+
+.nav-list-secondary {
+  position: absolute;
+  bottom: $base;
+  gap: $base;
+
+  @media (max-width: $breakpoint-md-min) {
+    position: static;
+    justify-content: center;
+    flex-direction: row-reverse;
+    width: auto;
+    margin-left: $base;
+  }
+}
+
+.nav-list__item {
+  width: $base * 10;
+  height: $base * 10;
+
+  @media (max-width: $breakpoint-xs-min) {
+    width: $base * 8;
+    height: $base * 8;
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    width: $base * 7;
+    height: $base * 7;
+  }
+}
+
+.nav-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $base * 10;
+  height: $base * 10;
+  border: 0.125rem solid $color-dark;
+  border-radius: 50%;
+  background-color: $color-white;
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: all $transition-01;
+
+  @media (max-width: $breakpoint-xs-min) {
+    width: $base * 8;
+    height: $base * 8;
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    width: $base * 7;
+    height: $base * 7;
+  }
+}
+
+.nav-list__img {
+  width: $base * 7;
+  height: $base * 7;
+
+  @media (max-width: $breakpoint-xs-min) {
+    width: $base * 5;
+    height: $base * 5;
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    width: $base * 4;
+    height: $base * 4;
+  }
+}
+
+.dark {
+  background-color: $color-dark;
+}
+
+.light {
+  background-color: $color-white;
+}

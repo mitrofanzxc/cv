@@ -1,8 +1,9 @@
-import { ButtonNavigation } from './buttons';
-import { Image } from './image/Image';
-import { List } from './list/List';
-import { ListItem } from './list/listItem/ListItem';
-import { Modal } from './modal/Modal';
-import { Title } from './title/Title';
+import { ButtonPrimary, ButtonNav } from './buttons';
+import { Image } from './Image';
+import { List } from './List';
+import { ListItem } from './ListItem';
+import { Modal } from './Modal';
+import { Title } from './Title';
+import { Header } from './Header';
 
-export { ButtonNavigation, Image, List, ListItem, Modal, Title };
+export { ButtonPrimary, ButtonNav, Image, List, ListItem, Modal, Title, Header };

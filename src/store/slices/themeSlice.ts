@@ -7,7 +7,7 @@ export interface ThemeState {
 }
 
 const initialState: ThemeState = {
-  value: getLocalStorage('theme') || true,
+  value: getLocalStorage('theme') || false,
 };
 
 export const themeSlice = createSlice({

@@ -1,0 +1,10 @@
+@import '../../styles/constants.scss';
+
+.not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: $base * 4;
+  height: 100vh;
+}

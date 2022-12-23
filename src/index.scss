@@ -1,6 +1,6 @@
-@import './styles/constants.scss';
 @import './styles/normalize.scss';
 @import './styles/reset.scss';
+@import './styles/constants.scss';
 @import './styles/indents.scss';
 @import './styles/headers.scss';
 @import './styles/flex.scss';
@@ -24,7 +24,6 @@
 
 .body {
   @include poppins;
-  @include scroll;
   position: relative;
   width: 100%;
   background-color: $color-dark;

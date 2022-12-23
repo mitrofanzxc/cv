@@ -1,0 +1,53 @@
+@import '../../styles/constants.scss';
+
+.list-item__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: $base;
+  cursor: pointer;
+  transition: all $transition-01;
+
+  &:hover,
+  &:active,
+  &:focus {
+    .h3 {
+      color: $color-orange;
+    }
+  }
+}
+
+.list-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-white;
+  border-radius: $base;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  overflow: hidden;
+}
+
+.social-item__wrapper {
+  cursor: pointer;
+
+  &:hover,
+  &:active,
+  &:focus {
+    .social-item {
+      background-color: $color-white-08;
+      transition: all $transition-01;
+    }
+
+    .h3 {
+      color: $color-orange;
+      transition: all $transition-01;
+    }
+  }
+}
+
+.social-item {
+  border-radius: 50%;
+  transition: all $transition-01;
+}
