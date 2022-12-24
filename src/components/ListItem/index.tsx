@@ -23,8 +23,8 @@ const ListItem: FC<IList> = ({
   return (
     <>
       {LOCATION === `/${about}` && (
-        <li className="list-item__wrapper">
-          <div className="list-item">
+        <li className="list__item">
+          <div className="list__img-wrapper">
             <svg className="list__img">
               <use xlinkHref={src} />
             </svg>
@@ -34,8 +34,8 @@ const ListItem: FC<IList> = ({
       )}
 
       {LOCATION === `/${certificates}` && (
-        <button type="button" id={id} className="list-item__wrapper" onClick={modalCreate}>
-          <div className="list-item">
+        <button type="button" id={id} className="list__item" onClick={modalCreate}>
+          <div className="list__img-wrapper">
             <Image
               src={src}
               srcSmall={srcSmall}
@@ -48,8 +48,8 @@ const ListItem: FC<IList> = ({
       )}
 
       {LOCATION === `/${portfolio}` && (
-        <button type="button" id={id} className="list-item__wrapper" onClick={modalCreate}>
-          <div className="list-item">
+        <button type="button" id={id} className="list__item" onClick={modalCreate}>
+          <div className="list__img-wrapper">
             <Image
               src={src}
               srcSmall={srcSmall}
@@ -62,14 +62,9 @@ const ListItem: FC<IList> = ({
       )}
 
       {LOCATION === `/${contacts}` && (
-        <li className="list-item__wrapper social-item__wrapper">
-          <a
-            href={link}
-            target="_blank"
-            rel="noreferrer noopener"
-            className="list-item social-item"
-          >
-            <svg className="list__img social-item__img">
+        <li className="list__item">
+          <a href={link} target="_blank" rel="noreferrer noopener" className="list-item">
+            <svg className="list__img">
               <use xlinkHref={src} />
             </svg>
           </a>

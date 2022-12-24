@@ -48,8 +48,6 @@
 }
 
 .main {
-  flex-grow: 1;
-
   @media (max-width: $breakpoint-md-min) {
     padding-bottom: $base * 12;
   }
@@ -62,6 +60,14 @@
   margin-left: auto;
 
   @media (max-width: $breakpoint-lg-min) {
+    width: calc(100vw - ($base * 3));
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    width: calc(100vw - ($base * 2));
+  }
+
+  @media (max-width: $breakpoint-sm-min) {
     width: calc(100vw - ($base));
   }
 }

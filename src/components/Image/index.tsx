@@ -15,7 +15,7 @@ const Image: FC<IImage> = ({ src, srcSmall, alt, className }) => {
 
   return (
     <img
-      className={`${className} ${imageSrc === srcSmall ? 'list__img_loading' : 'list__img_onload'}`}
+      className={`${className} ${imageSrc === srcSmall ? 'image_loading' : 'image_onload'}`}
       src={imageSrc}
       alt={alt}
     />

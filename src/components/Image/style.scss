@@ -1,6 +1,6 @@
 @import '../../styles/constants.scss';
 
-.list__img {
+.image {
   display: block;
   width: 100%;
   height: auto;
@@ -8,23 +8,11 @@
   @include disableSelection;
 }
 
-.list__img_loading {
+.image_loading {
   filter: blur(0.156rem);
 }
 
-.list__img_onload {
+.image_onload {
   filter: blur(0);
   transition: filter $transition-01 linear;
-}
-
-.social-item__img {
-  padding: $base * 7;
-
-  @media (max-width: $breakpoint-xs-min) {
-    padding: $base * 5;
-  }
-
-  @media (max-width: $breakpoint-xxs-min) {
-    padding: $base * 4;
-  }
 }
