@@ -18,6 +18,10 @@ const Modal: FC = () => {
   const { src, srcSmall, alt, altRu, description, descriptionRu, deploy, code, link, stack } =
     modalData;
 
+  const handleModal = () => {
+    dispatch(setModalClose());
+  };
+
   useModalOpen();
 
   return (
@@ -25,7 +29,7 @@ const Modal: FC = () => {
       <button
         type="button"
         aria-label="Close modal"
-        onClick={() => dispatch(setModalClose())}
+        onClick={handleModal}
         className={`modal__shadow ${isModalOpen ? 'modal__shadow_active' : ''}`}
       />
       <div className={`modal ${isModalOpen ? 'modal_active' : ''}`}>
@@ -105,7 +109,7 @@ const Modal: FC = () => {
           className="button-primary button-primary__close"
           ariaLabel="Close"
           svg="close"
-          onClick={() => dispatch(setModalClose())}
+          onClick={handleModal}
         />
       </div>
     </>

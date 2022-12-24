@@ -10,14 +10,18 @@
   z-index: 3;
   max-width: $base * 256;
   width: calc(100vw - ($base * 25));
-  max-height: $base * 84;
+  height: min-content;
   padding: $base * 2;
   margin: auto;
   background-color: $color-white;
   border-radius: $base * 2;
 
-  @media (max-width: $breakpoint-xs-min) {
+  @media (max-width: $breakpoint-md-min) {
     width: calc(100vw - ($base * 12));
+  }
+
+  @media (max-width: $breakpoint-xs-min) {
+    width: calc(100vw - ($base));
   }
 }
 
@@ -27,24 +31,15 @@
 
 .modal__wrapper {
   display: flex;
+  flex-direction: column;
+  row-gap: $base * 5;
   height: 100%;
   color: $color-dark-08;
-
-  @media (max-width: $breakpoint-md-min) {
-    flex-direction: column;
-    row-gap: $base * 2;
-  }
 }
 
 .modal__img {
   display: block;
-  width: auto;
-  height: $base * 80;
   border-radius: $base;
-
-  @media (max-width: $breakpoint-md-min) {
-    width: 100%;
-  }
 }
 
 .modal__info {
@@ -52,23 +47,10 @@
   align-items: flex-start;
   flex-direction: column;
   padding-left: $base * 3;
+  padding-bottom: $base * 3;
 
   .h3 {
-    text-align: left;
     color: $color-dark;
-  }
-
-  @media (max-width: $breakpoint-md-min) {
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-direction: column;
-    row-gap: $base * 2;
-    padding-left: 0;
-  }
-
-  @media (max-width: $breakpoint-xs-min) {
-    flex-direction: column;
-    justify-content: flex-start;
   }
 }
 
