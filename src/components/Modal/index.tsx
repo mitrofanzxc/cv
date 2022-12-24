@@ -4,18 +4,19 @@ import { useAppSelector, useAppDispatch, setModalClose } from 'store';
 import { useModalOpen } from 'hooks';
 import { Image, ButtonPrimary } from 'components';
 import { Localization, Paths } from '../../constants';
-import { IModal } from '../../constants/interface';
 import './style.scss';
 
-const Modal: FC<IModal> = ({ modalData }) => {
-  const { src, srcSmall, alt, altRu, description, descriptionRu, deploy, code, link, stack } =
-    modalData;
+const Modal: FC = () => {
   const { portfolio, certificates } = Paths;
   const LOCATION = useLocation().pathname;
 
   const isLanguageEn = useAppSelector(({ language: { value } }) => value);
   const isModalOpen = useAppSelector(({ modal: { value } }) => value);
+  const modalData = useAppSelector(({ modal: { data } }) => data);
   const dispatch = useAppDispatch();
+
+  const { src, srcSmall, alt, altRu, description, descriptionRu, deploy, code, link, stack } =
+    modalData;
 
   useModalOpen();
 
@@ -101,8 +102,9 @@ const Modal: FC<IModal> = ({ modalData }) => {
           </div>
         </div>
         <ButtonPrimary
-          ariaLabel="Close"
           className="button-primary button-primary__close"
+          ariaLabel="Close"
+          svg="close"
           onClick={() => dispatch(setModalClose())}
         />
       </div>

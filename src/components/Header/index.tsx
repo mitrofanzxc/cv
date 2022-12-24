@@ -1,15 +1,14 @@
 import { FC } from 'react';
 import { useAppSelector, useAppDispatch, setThemeByAmount, setLanguageByAmount } from 'store';
-import { useScrollToTop, useSwitchTheme, useSetLocalStorage } from 'hooks';
+import { useSetLocalStorage } from 'hooks';
 import { ButtonPrimary, ButtonNav } from 'components';
 import { Paths } from '../../constants';
-import Sprite from '../../assets/images/icons/sprite.svg';
 import './style.scss';
 
 const Header: FC = () => {
   const { main, about, portfolio, certificates, contacts } = Paths;
 
-  const theme = useAppSelector(({ theme: { value } }) => value);
+  const isThemeDark = useAppSelector(({ theme: { value } }) => value);
   const language = useAppSelector(({ language: { value } }) => value);
   const dispatch = useAppDispatch();
 
@@ -18,13 +17,11 @@ const Header: FC = () => {
   };
 
   const handleTheme = () => {
-    dispatch(setThemeByAmount(!theme));
+    dispatch(setThemeByAmount(!isThemeDark));
   };
 
   useSetLocalStorage('theme');
   useSetLocalStorage('language');
-  useSwitchTheme();
-  useScrollToTop();
 
   return (
     <header data-testid="header" className="header">
@@ -57,9 +54,9 @@ const Header: FC = () => {
           </li>
           <li className="nav-list__item">
             <ButtonPrimary
-              className={`nav-list__link ${theme ? 'dark' : 'light'}`}
+              className={`nav-list__link ${isThemeDark ? 'dark' : 'light'}`}
               ariaLabel="Change theme"
-              svg={`${Sprite}#${theme ? 'dark' : 'light'}`}
+              svg={`${isThemeDark ? 'dark' : 'light'}`}
               onClick={handleTheme}
             />
           </li>

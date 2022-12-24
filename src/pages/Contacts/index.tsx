@@ -1,11 +1,15 @@
 import { FC } from 'react';
 import { useAppSelector } from 'store';
+import { useScrollToTop, useSwitchTheme } from 'hooks';
 import { Title, List } from 'components';
 import { Localization, SocialsMock } from '../../constants';
 import './style.scss';
 
 const Contacts: FC = () => {
   const isLanguageEn = useAppSelector(({ language: { value } }) => value);
+
+  useScrollToTop();
+  useSwitchTheme();
 
   return (
     <section className="contacts-page">
@@ -22,7 +26,7 @@ const Contacts: FC = () => {
       >
         {isLanguageEn ? Localization.en.cv : Localization.ru.cv}
       </a>
-      <List list={SocialsMock} isLanguageEn={isLanguageEn} />
+      <List data={SocialsMock} isLanguageEn={isLanguageEn} />
       <Title
         firstWord={isLanguageEn ? Localization.en.self : Localization.ru.self}
         secondWord={isLanguageEn ? Localization.en.introduction : Localization.ru.introduction}

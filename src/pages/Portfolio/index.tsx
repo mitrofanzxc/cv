@@ -1,10 +1,14 @@
 import { FC } from 'react';
 import { useAppSelector } from 'store';
+import { useScrollToTop, useSwitchTheme } from 'hooks';
 import { Title, List } from 'components';
 import { Localization, PortfolioMock } from '../../constants';
 
 const Portfolio: FC = () => {
   const isLanguageEn = useAppSelector(({ language: { value } }) => value);
+
+  useScrollToTop();
+  useSwitchTheme();
 
   return (
     <section className="portfolio-page">
@@ -13,7 +17,7 @@ const Portfolio: FC = () => {
         secondWord={isLanguageEn ? Localization.en.portfolio : Localization.ru.portfolio}
         bgWord={isLanguageEn ? Localization.en.works : Localization.ru.works}
       />
-      <List list={PortfolioMock} isLanguageEn={isLanguageEn} />
+      <List data={PortfolioMock} isLanguageEn={isLanguageEn} />
     </section>
   );
 };

@@ -11,16 +11,28 @@
   width: $base * 10;
   height: $base * 10;
   border-radius: 50%;
-  border: 0.125rem solid $color-orange;
+  border: 0.063rem solid $color-orange;
   background-color: $color-white;
-  // background-size: 60%;
-  // background-position: center;
-  // background-repeat: no-repeat;
   cursor: pointer;
   transition: all $transition-01;
 
   &:hover {
     background-color: $color-orange;
+  }
+}
+
+.button-primary__img {
+  width: $base * 7;
+  height: $base * 7;
+
+  @media (max-width: $breakpoint-xs-min) {
+    width: $base * 5;
+    height: $base * 5;
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    width: $base * 4;
+    height: $base * 4;
   }
 }
 

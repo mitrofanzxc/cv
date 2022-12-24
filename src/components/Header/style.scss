@@ -84,7 +84,7 @@
   justify-content: center;
   width: $base * 10;
   height: $base * 10;
-  border: 0.125rem solid $color-dark;
+  border: 0.063rem solid $color-dark;
   border-radius: 50%;
   background-color: $color-white;
   background-size: 70%;
@@ -119,10 +119,10 @@
   }
 }
 
-.dark {
-  background-color: $color-dark;
-}
+// .dark {
+//   background-color: $color-dark;
+// }
 
-.light {
-  background-color: $color-white;
-}
+// .light {
+//   background-color: $color-white;
+// }

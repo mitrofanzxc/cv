@@ -1,42 +1,20 @@
-import { FC, useState, MouseEvent } from 'react';
-import { useLocation } from 'react-router-dom';
-import { useAppDispatch, setModalOpen } from 'store';
+import { FC, MouseEvent } from 'react';
+import { useAppDispatch, setModalOpen, addDataToModal } from 'store';
 import { useModalOpen } from 'hooks';
 import { ListItem, Modal } from 'components';
-import { PortfolioMock, CertificatesMock, Paths } from '../../constants';
 import { IList, IListProps } from '../../constants/interface';
 import './style.scss';
 
-const List: FC<IListProps> = ({ list, isLanguageEn }) => {
-  const [data, setData] = useState<IList[] | null>(null);
-  const [modalData, setModalData] = useState<IList>(PortfolioMock[0]);
+const List: FC<IListProps> = ({ data, isLanguageEn }) => {
   const dispatch = useAppDispatch();
 
-  const { portfolio, certificates } = Paths;
-  const LOCATION = useLocation().pathname;
-
   const modalCreate = (event: MouseEvent<HTMLButtonElement>) => {
-    const target = event.target as HTMLButtonElement;
+    const target = event.currentTarget as HTMLButtonElement;
     const { id }: { id: string } = target;
+    const findObject: IList | undefined = data.find((value) => value.id === id);
 
-    switch (LOCATION) {
-      case `/${portfolio}`:
-        setData(PortfolioMock);
-        break;
-      case `/${certificates}`:
-        setData(CertificatesMock);
-        break;
-      default:
-        break;
-    }
-
-    if (data) {
-      const findObject = data.filter((el) => el.id === id)[0];
-
-      if (findObject) {
-        setModalData(findObject);
-      }
-
+    if (findObject) {
+      dispatch(addDataToModal(findObject));
       dispatch(setModalOpen());
     }
   };
@@ -45,7 +23,7 @@ const List: FC<IListProps> = ({ list, isLanguageEn }) => {
 
   return (
     <ul className="list">
-      {list.map(({ src, srcSmall, alt, altRu, description, descriptionRu, link, id }) => {
+      {data.map(({ src, srcSmall, alt, altRu, description, descriptionRu, link, id }) => {
         return (
           <ListItem
             key={id}
@@ -62,7 +40,7 @@ const List: FC<IListProps> = ({ list, isLanguageEn }) => {
           />
         );
       })}
-      <Modal modalData={modalData} />
+      <Modal />
     </ul>
   );
 };

@@ -71,7 +71,7 @@ export interface IList {
 }
 
 export interface IListProps {
-  list: IList[];
+  data: IList[];
   isLanguageEn: boolean;
 }
 

@@ -1,11 +1,15 @@
 import { FC } from 'react';
 import { useAppSelector } from 'store';
+import { useScrollToTop, useSwitchTheme } from 'hooks';
 import { Title, List } from 'components';
 import { Localization, CertificatesMock } from '../../constants';
 import './style.scss';
 
 const Certificates: FC = () => {
   const isLanguageEn = useAppSelector(({ language: { value } }) => value);
+
+  useScrollToTop();
+  useSwitchTheme();
 
   return (
     <section className="certificates-page">
@@ -14,7 +18,7 @@ const Certificates: FC = () => {
         secondWord={isLanguageEn ? Localization.en.certificates : Localization.ru.certificates}
         bgWord={isLanguageEn ? Localization.en.awards : Localization.ru.awards}
       />
-      <List list={CertificatesMock} isLanguageEn={isLanguageEn} />
+      <List data={CertificatesMock} isLanguageEn={isLanguageEn} />
     </section>
   );
 };
