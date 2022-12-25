@@ -19,6 +19,14 @@ const SkillsMock: ISkillsMock[] = [
     descriptionRu: 'Редакс',
   },
   {
+    id: 'b7148b70-85a4-4dd9-87e7-8fb6a3ef8bb7',
+    src: `${Sprite}#angular`,
+    alt: 'Angular',
+    altRu: 'Ангуляр',
+    description: 'Angular',
+    descriptionRu: 'Ангуляр',
+  },
+  {
     id: '6a95f69b-ff81-4f52-a08e-6b28f7ad168e',
     src: `${Sprite}#typescript`,
     alt: 'TypeScript',

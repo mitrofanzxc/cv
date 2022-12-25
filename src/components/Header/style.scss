@@ -23,7 +23,7 @@
   height: 100%;
   padding: 0 $base;
   background-color: $color-white-02;
-  transition: $transition-01;
+  transition: all $transition-01;
 
   @media (max-width: $breakpoint-md-min) {
     justify-content: space-between;
@@ -31,6 +31,10 @@
     height: auto;
     padding: $base 0;
   }
+}
+
+.nav_light {
+  background-color: $color-dark-02;
 }
 
 .nav-list {

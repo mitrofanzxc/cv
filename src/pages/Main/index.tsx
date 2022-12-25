@@ -9,6 +9,7 @@ import './style.scss';
 
 const Main: FC = () => {
   const isLanguageEn = useAppSelector(({ language: { value } }) => value);
+  const isThemeDark = useAppSelector(({ theme: { value } }) => value);
 
   useScrollToTop();
   useSwitchTheme();
@@ -16,12 +17,12 @@ const Main: FC = () => {
   return (
     <>
       <section data-testid="mainpage" className="main-page">
-        <div className="avatar">
+        <div className="avatar box-shadow">
           <Image
             src={Avatar}
             srcSmall={AvatarSmall}
             alt={isLanguageEn ? Localization.en.name : Localization.ru.name}
-            className="avatar__img box-shadow"
+            className="avatar__img"
           />
         </div>
         <div className="main-page__info">

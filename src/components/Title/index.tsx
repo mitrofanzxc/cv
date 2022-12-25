@@ -7,11 +7,11 @@ const Title: FC<ITitle> = ({ firstWord, secondWord, bgWord }) => {
   const theme = useAppSelector(({ theme: { value } }) => value);
 
   return (
-    <div className="title__wrapper">
-      <h2 className="h2 title">
-        {firstWord} <span>{secondWord}</span>
+    <div className="title">
+      <h2 className="h2 title__text">
+        {firstWord || ''} <span>{secondWord}</span>
       </h2>
-      <span className={`title-bg ${!theme ? 'title-bg-light' : ''}`}>{bgWord}</span>
+      {bgWord && <span className={`title__bg ${!theme ? 'title__bg_light' : ''}`}>{bgWord}</span>}
     </div>
   );
 };

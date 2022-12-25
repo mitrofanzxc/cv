@@ -22,10 +22,14 @@ const Contacts: FC = () => {
         href="https://drive.google.com/file/d/1jU63AOhtD3uks_hfX9_VgPH8_TWDW6NH/view?usp=sharing"
         target="_blank"
         rel="noreferrer noopener"
-        className="h2 title"
+        className="h2 display_block ml-auto mr-auto"
       >
         {isLanguageEn ? Localization.en.cv : Localization.ru.cv}
       </a>
+      <Title
+        firstWord={isLanguageEn ? Localization.en.myI : Localization.ru.myI}
+        secondWord={isLanguageEn ? Localization.en.socials : Localization.ru.socials}
+      />
       <List data={SocialsMock} isLanguageEn={isLanguageEn} />
       <Title
         firstWord={isLanguageEn ? Localization.en.self : Localization.ru.self}

@@ -87,7 +87,7 @@ export interface IImage {
 }
 
 export interface ITitle {
-  firstWord: string;
+  firstWord?: string;
   secondWord: string;
   bgWord?: string;
 }

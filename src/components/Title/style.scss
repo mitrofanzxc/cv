@@ -1,16 +1,16 @@
 @import '../../styles/constants.scss';
 
-.title__wrapper {
+.title {
   position: relative;
   padding: $base * 4 0;
 }
 
-.title {
+.title__text {
   font-size: $base * 8;
   font-weight: $fw-bold;
 }
 
-.title-bg {
+.title__bg {
   @include disableSelection;
   position: absolute;
   top: 50%;
@@ -27,6 +27,6 @@
   }
 }
 
-.title-bg-light {
+.title__bg_light {
   color: $color-blue-grey-02;
 }

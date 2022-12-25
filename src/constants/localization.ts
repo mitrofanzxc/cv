@@ -29,6 +29,7 @@ export const Localization = {
     introduction: 'Презентация',
     cv: 'Нажмите здесь, чтобы скачать резюме pdf',
     requirements: 'Требования',
+    socials: 'Социальные сети',
   },
   en: {
     name: 'Dzmitry Karakulka',
@@ -60,5 +61,6 @@ export const Localization = {
     introduction: 'Introduction',
     cv: 'Click here to download cv pdf',
     requirements: 'Requirements',
+    socials: 'Socials',
   },
 };

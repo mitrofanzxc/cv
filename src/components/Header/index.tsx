@@ -25,7 +25,7 @@ const Header: FC = () => {
 
   return (
     <header data-testid="header" className="header">
-      <nav className="nav">
+      <nav className={`nav ${!isThemeDark ? 'nav_light' : ''}`}>
         <ul className="nav-list">
           <li className="nav-list__item">
             <ButtonNav path={main} svg="main" />

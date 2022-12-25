@@ -35,7 +35,7 @@ const ListItem: FC<IList> = ({
 
       {LOCATION === `/${certificates}` && (
         <button type="button" id={id} className="list__item" onClick={modalCreate}>
-          <div className="list__img-wrapper">
+          <div className="list__img-wrapper box-shadow">
             <Image
               src={src}
               srcSmall={srcSmall}
@@ -49,7 +49,7 @@ const ListItem: FC<IList> = ({
 
       {LOCATION === `/${portfolio}` && (
         <button type="button" id={id} className="list__item" onClick={modalCreate}>
-          <div className="list__img-wrapper">
+          <div className="list__img-wrapper box-shadow">
             <Image
               src={src}
               srcSmall={srcSmall}
