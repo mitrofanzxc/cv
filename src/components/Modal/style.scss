@@ -1,20 +1,23 @@
 @import '../../styles/constants.scss';
 
 .modal {
-  display: none;
   position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 3;
   max-width: $base * 256;
-  width: calc(100vw - ($base * 25));
-  height: min-content;
-  padding: $base * 2;
   margin: auto;
+  padding: $base * 2;
   background-color: $color-white;
-  border-radius: $base * 2;
+  border-radius: $base;
+  visibility: hidden;
+  opacity: 0;
+  transition: all $transition;
+
+  @media (max-width: $breakpoint-lg-min) {
+    width: calc(100vw - ($base * 25));
+  }
 
   @media (max-width: $breakpoint-md-min) {
     width: calc(100vw - ($base * 12));
@@ -26,19 +29,19 @@
 }
 
 .modal_active {
-  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__wrapper {
-  display: flex;
-  flex-direction: column;
-  row-gap: $base * 5;
-  height: 100%;
   color: $color-dark-08;
 }
 
 .modal__img {
   display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
   border-radius: $base;
 }
 
@@ -46,6 +49,7 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  margin-top: $base * 3;
   padding-left: $base * 3;
   padding-bottom: $base * 3;
 

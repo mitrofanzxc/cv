@@ -105,12 +105,12 @@ const Modal: FC = () => {
             </ul>
           </div>
         </div>
-        <ButtonPrimary
+        {/* <ButtonPrimary
           className="button-primary button-primary__close"
           ariaLabel="Close"
           svg="close"
           onClick={handleModal}
-        />
+        /> */}
       </div>
     </>
   );
