@@ -29,16 +29,11 @@
   @include disableSelection;
   font-size: $fs-xl;
   font-weight: $fw-semi-bold;
-  color: $color-white;
   text-align: center;
   text-transform: uppercase;
   word-wrap: break-word;
   overflow-wrap: break-word;
   transition: all $transition-01;
-}
-
-.h3_light {
-  color: $color-dark;
 }
 
 .h4 {

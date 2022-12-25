@@ -21,7 +21,7 @@ const Main: FC = () => {
             src={Avatar}
             srcSmall={AvatarSmall}
             alt={isLanguageEn ? Localization.en.name : Localization.ru.name}
-            className="avatar__img"
+            className="avatar__img box-shadow"
           />
         </div>
         <div className="main-page__info">
