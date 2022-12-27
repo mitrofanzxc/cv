@@ -1,4 +1,6 @@
 import { ICertificatesMock } from './interface';
+import imgRsschoolStage12 from '../assets/images/certificates/rsschoolstage1-2.jpg';
+import imgRsschoolStage12Small from '../assets/images/certificates/rsschoolstage1-2-small.jpg';
 import imgRsschoolStage3 from '../assets/images/certificates/rsschoolstage3.jpg';
 import imgRsschoolStage3Small from '../assets/images/certificates/rsschoolstage3-small.jpg';
 import imgRsschoolStage0 from '../assets/images/certificates/rsschoolstage0.jpg';
@@ -21,6 +23,16 @@ import imgSqlSolo from '../assets/images/certificates/sqlsololearn.jpg';
 import imgSqlSoloSmall from '../assets/images/certificates/sqlsololearn-small.jpg';
 
 const CertificatesMock: ICertificatesMock[] = [
+  {
+    id: '8bf20ac4-4eac-496c-88ce-36a972c48522',
+    src: imgRsschoolStage12,
+    srcSmall: imgRsschoolStage12Small,
+    alt: 'RSSchool Stage 1-2',
+    altRu: 'РССкул Стадия 1-2',
+    description: 'RSSchool Stage 1-2',
+    descriptionRu: 'РССкул Стадия 1-2',
+    link: 'https://app.rs.school/certificate/5cb4f418',
+  },
   {
     id: '8bf20ac4-4eac-496c-88ce-36a972c48521',
     src: imgRsschoolStage3,

@@ -8,9 +8,9 @@ const useModalOpen = () => {
     const BODY = document.querySelector('.body') as HTMLBodyElement;
 
     if (isModalOpen) {
-      BODY.classList.add('body_overflow');
+      BODY.classList.add('overflow_hidden');
     } else {
-      BODY.classList.remove('body_overflow');
+      BODY.classList.remove('overflow_hidden');
     }
   }, [isModalOpen]);
 };
